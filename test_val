@@ -1,0 +1,2935 @@
+2026-06-16 01:44:29 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_dispatches_to_txt0\test.txt
+2026-06-16 01:44:29 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_dispatches_to_csv0\test.csv
+2026-06-16 01:44:29 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_dispatches_to_json0\test.json
+2026-06-16 01:44:29 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_dispatches_to_pdf0\test.pdf
+2026-06-16 01:44:29 - document_loader - INFO - 加载PDF: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_dispatches_to_pdf0\test.pdf, 1页
+2026-06-16 01:44:29 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_dispatches_to_word0\test.docx
+2026-06-16 01:44:29 - document_loader - INFO - [原生] 加载 test.xyz
+2026-06-16 01:44:29 - document_loader - INFO - [LangChain] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_valid_ext_loads0\test.txt: 1 个文档
+2026-06-16 01:44:29 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_langchain_fallback_to_nat0\test.txt
+2026-06-16 01:44:29 - document_loader - INFO - [LangChain] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_load_directory0\a.txt: 1 个文档
+2026-06-16 01:44:29 - document_loader - INFO - 已加载: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_load_directory0\a.txt
+2026-06-16 01:44:29 - document_loader - INFO - [LangChain] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_load_directory0\b.txt: 1 个文档
+2026-06-16 01:44:29 - document_loader - INFO - 已加载: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_load_directory0\b.txt
+2026-06-16 01:44:29 - document_loader - INFO - 目录加载完成: 2 个文档
+2026-06-16 01:44:29 - document_loader - INFO - [LangChain] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_load_directory_filter_ext0\b.csv: 1 个文档
+2026-06-16 01:44:29 - document_loader - INFO - 已加载: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_load_directory_filter_ext0\b.csv
+2026-06-16 01:44:29 - document_loader - INFO - 目录加载完成: 1 个文档
+2026-06-16 01:44:29 - document_loader - INFO - [LangChain] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_load_directory_skips_unsu0\a.txt: 1 个文档
+2026-06-16 01:44:29 - document_loader - INFO - 已加载: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_load_directory_skips_unsu0\a.txt
+2026-06-16 01:44:29 - document_loader - INFO - 目录加载完成: 1 个文档
+2026-06-16 01:44:30 - evaluator - INFO - 开始评估: 0 个样本
+2026-06-16 01:44:31 - evaluator - INFO - 评估完成: P=0.0000 R=0.0000 F1=0.0000 BLEU-1=0.0000 ROUGE-L=0.0000
+2026-06-16 01:44:31 - evaluator - INFO - 开始评估: 1 个样本
+2026-06-16 01:44:31 - evaluator - INFO - 评估样本 [1/1]: test query...
+2026-06-16 01:44:31 - evaluator - INFO - 评估完成: P=1.0000 R=0.5000 F1=0.6667 BLEU-1=0.0000 ROUGE-L=0.0000
+2026-06-16 01:44:31 - evaluator - INFO - 开始评估: 1 个样本
+2026-06-16 01:44:31 - evaluator - INFO - 评估样本 [1/1]: test query...
+2026-06-16 01:44:31 - evaluator - ERROR - 评估样本 0 失败: timeout
+2026-06-16 01:44:31 - evaluator - ERROR - 评估样本 0 失败: timeout
+2026-06-16 01:44:31 - evaluator - INFO - 评估完成: P=0.0000 R=0.0000 F1=0.0000 BLEU-1=0.0000 ROUGE-L=0.0000
+2026-06-16 01:44:31 - evaluator - INFO - 开始评估: 3 个样本
+2026-06-16 01:44:31 - evaluator - INFO - 评估样本 [1/3]: q0...
+2026-06-16 01:44:31 - evaluator - INFO - 评估样本 [2/3]: q1...
+2026-06-16 01:44:31 - evaluator - INFO - 评估样本 [3/3]: q2...
+2026-06-16 01:44:32 - evaluator - INFO - 评估完成: P=1.0000 R=0.5000 F1=0.6667 BLEU-1=0.6667 ROUGE-L=0.5000
+2026-06-16 01:44:32 - evaluator - INFO - 开始评估: 1 个样本
+2026-06-16 01:44:32 - evaluator - INFO - 评估样本 [1/1]: test query...
+2026-06-16 01:44:32 - evaluator - INFO - 评估完成: P=0.0000 R=0.0000 F1=0.0000 BLEU-1=0.0000 ROUGE-L=0.0000
+2026-06-16 01:44:32 - evaluator - INFO - 开始评估: 1 个样本
+2026-06-16 01:44:32 - evaluator - INFO - 评估样本 [1/1]: test query...
+2026-06-16 01:44:32 - evaluator - INFO - 评估完成: P=0.0000 R=0.0000 F1=0.0000 BLEU-1=0.1353 ROUGE-L=0.6667
+2026-06-16 01:44:32 - evaluator - INFO - 开始流式评估: 0 个样本
+2026-06-16 01:44:32 - evaluator - INFO - 流式评估完成: 0 个样本, 0.0s
+2026-06-16 01:44:32 - evaluator - INFO - 开始流式评估: 1 个样本
+2026-06-16 01:44:33 - evaluator - INFO - 流式评估完成: 1 个样本, 0.0s
+2026-06-16 01:44:33 - evaluator - INFO - 开始流式评估: 5 个样本
+2026-06-16 01:44:33 - evaluator - INFO - 评测已被用户取消
+2026-06-16 01:44:33 - evaluator - INFO - 开始流式评估: 1 个样本
+2026-06-16 01:44:33 - evaluator - ERROR - 评估样本 0 失败: fail
+2026-06-16 01:44:33 - evaluator - ERROR - 评估样本 0 失败: fail
+2026-06-16 01:44:33 - evaluator - INFO - 流式评估完成: 1 个样本, 0.0s
+2026-06-16 01:44:33 - evaluator - INFO - 开始流式评估: 1 个样本
+2026-06-16 01:44:33 - evaluator - INFO - 流式评估完成: 1 个样本, 0.0s
+2026-06-16 01:44:33 - evaluator - INFO - 开始流式评估: 1 个样本
+2026-06-16 01:44:33 - evaluator - INFO - 流式评估完成: 1 个样本, 0.0s
+2026-06-16 01:44:33 - evaluator - INFO - 开始流式评估: 1 个样本
+2026-06-16 01:44:34 - evaluator - INFO - 流式评估完成: 1 个样本, 0.0s
+2026-06-16 01:44:35 - grading - WARNING - LLMClient 初始化失败，批改将不可用: no config
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=11) ===
+test prompt
+[LLM监控] === prompt结束 ===
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] LLM返回 (长度=16)：
+{"result": "ok"}
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=4) ===
+test
+[LLM监控] === prompt结束 ===
+2026-06-16 01:44:35 - grading - ERROR - LLM调用失败: API error
+2026-06-16 01:44:35 - grading - ERROR - LLM调用失败: API error
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=984) ===
+你是一位资深英语教师。请依靠你的专业知识和教学经验，认真批改以下英语作文。
+
+⚠️ 重要：请优先使用你的英语教学专业知识来判断。如果下面的"参考信息"与题目不相关或与你的判断冲突，忽略它，以你的专业判断为准。
+
+## 题目要求
+Write about...
+
+## 学生作文
+My essay...
+
+## 评分维度（每项0-100分）
+1. **grammar（语法准确性）**: 语法错误数量与严重程度
+2. **vocabulary（词汇多样性）**: 词汇丰富度、搭配准确度
+3. **sentence_complexity（句式复杂度）**: 句型多样性和衔接
+4. **content_relevance（内容切题度）**: 是否紧扣主题
+5. **overall（综合评分）**: = (grammar*0.35 + vocabulary*0.25 + complexity*0.2 + relevance*0.2)
+
+## 额外要求
+- 找出至少3处语法错误，标注位置并给出修改建议（highlight字段）
+- 给出逐句修改建议（corrections字段）
+- 给出3-5条提升建议（suggestions字段）
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "scores": {"grammar": 85, "vocabulary": 78, "sentence_complexity": 72, "content_relevance": 90, "overall": 82},
+    "highlights": [{"original": "...", "position": "第X句", "error_type": "grammar/vocabulary/logic", "correction": "...", "explanation": "..."}],
+    "corrections": [{"original_sentence": "...", "improved_sentence": "...", "comment": "修改理由"}],
+    "suggestions": ["建议1", "建议2", "建议3"],
+    "feedback": "总体评语（2-3句，要具体）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] LLM返回 (长度=324)：
+{"scores": {"grammar": 85, "vocabulary": 78, "sentence_complexity": 72, "content_relevance": 90, "overall": 82}, "highlights": [{"original": "He go", "position": "第1句", "error_type": "grammar", "correction": "He goes", "explanation": "主谓一致"}], "corrections": [], "suggestions": ["多用复杂句", "注意时态"], "feedback": "整体不错，需注意语法细节"}
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=961) ===
+你是一位资深英语教师。请依靠你的专业知识和教学经验，认真批改以下英语作文。
+
+⚠️ 重要：请优先使用你的英语教学专业知识来判断。如果下面的"参考信息"与题目不相关或与你的判断冲突，忽略它，以你的专业判断为准。
+
+## 题目要求
+Q
+
+## 学生作文
+A
+
+## 评分维度（每项0-100分）
+1. **grammar（语法准确性）**: 语法错误数量与严重程度
+2. **vocabulary（词汇多样性）**: 词汇丰富度、搭配准确度
+3. **sentence_complexity（句式复杂度）**: 句型多样性和衔接
+4. **content_relevance（内容切题度）**: 是否紧扣主题
+5. **overall（综合评分）**: = (grammar*0.35 + vocabulary*0.25 + complexity*0.2 + relevance*0.2)
+
+## 额外要求
+- 找出至少3处语法错误，标注位置并给出修改建议（highlight字段）
+- 给出逐句修改建议（corrections字段）
+- 给出3-5条提升建议（suggestions字段）
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "scores": {"grammar": 85, "vocabulary": 78, "sentence_complexity": 72, "content_relevance": 90, "overall": 82},
+    "highlights": [{"original": "...", "position": "第X句", "error_type": "grammar/vocabulary/logic", "correction": "...", "explanation": "..."}],
+    "corrections": [{"original_sentence": "...", "improved_sentence": "...", "comment": "修改理由"}],
+    "suggestions": ["建议1", "建议2", "建议3"],
+    "feedback": "总体评语（2-3句，要具体）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] LLM返回 (长度=21)：
+not valid json at all
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=1354) ===
+你是中考语文阅卷老师。批改以下议论文，从5个维度评分（每项0-100），并找出所有逻辑错误。
+
+【题目】
+题目
+
+【作文】
+作文内容
+
+【年级】初中
+
+一、评分维度
+1. 立意（25%）：是否切题、观点明确、有深度
+2. 结构（20%）：开头-本论-结尾是否完整、层次清晰
+3. 语言（25%）：是否流畅、用词准确、有文采
+4. 素材（15%）：先数清楚文中用了哪些事例（人名、事件），再评价用得对不对、好不好。如果文中已有名人事例，不能写"缺乏名人事例"
+5. 逻辑（20%）：重点检查——
+   - 前后段落的观点有没有矛盾？（比如前面说"坚持必胜"，后面说"盲目坚持白费"）
+   - 例子是不是真的在证明论点？（比如讲"坚持"时扯到"速度"，跑偏了）
+   - 有没有"只要…就一定…""完全只靠…"这种绝对化说法？
+   - 有没有把复杂成功简单归因为单一因素？（比如"成功全靠坚持，跟天赋、团队无关"）
+
+二、评分锚点
+- 立意：跑题0-40 / 平淡40-60 / 正确60-80 / 有深度80-100
+- 结构：残缺0-40 / 勉强完整40-60 / 完整但衔接一般60-80 / 严谨80-100
+- 语言：多处语病0-40 / 通顺但平淡40-60 / 流畅60-80 / 有文采80-100
+- 素材：无事例0 / 有事例但用错20-40 / 准确但单一50-70 / 丰富贴切80-100
+- 逻辑：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+
+三、输出JSON（只输出JSON，不要任何其他文字）
+{
+  "content_inventory": {
+    "famous_examples": ["列出文中出现的人名"],
+    "life_examples": ["列出文中的生活事例"],
+    "paragraph_count": 5
+  },
+  "scores": {
+    "立意": 75, "结构": 70, "语言": 75, "素材": 65, "逻辑": 60,
+    "overall": 计算：(立意*25+结构*20+语言*25+素材*15+逻辑*20)/100 后四舍五入取整
+  },
+  "idea_analysis": "立意一句话评价",
+  "structure_evaluation": "结构一句话评价",
+  "logic_errors": [
+    {
+      "original": "有问题的原句（一字不差）",
+      "error_type": "自相矛盾/论据偏离/单一归因/绝对化/因果跳跃/其他",
+      "explanation": "为什么错",
+      "correction": "改写成正确的句子"
+    }
+  ],
+  "polish": [{"original": "原句", "improved": "润色后", "reason": "理由"}],
+  "suggestions": ["改进建议1", "改进建议2"],
+  "feedback": "总评（80-150字，引用文中具体句子，不准写套话）"
+}
+[LLM监控] === prompt结束 ===
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] LLM返回 (长度=465)：
+{"content_inventory": {"famous_examples": ["鲁迅"], "life_examples": [], "paragraph_count": 3}, "scores": {"立意": 75, "结构": 70, "语言": 75, "素材": 65, "逻辑": 60, "overall": 65}, "idea_analysis": "观点明确但不够深刻", "structure_evaluation": "结构完整", "logic_errors": [{"original": "只要坚持就能成功", "error_type": "绝对化", "explanation": "过于绝对", "correction": "坚持是成功的重要因素之一"}], "polish": [{"original": "很好", "improved": "表现出色", "reason": "用词更丰富"}], "suggestions": ["建议1"], "feedback": "总评内容"}
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=1350) ===
+你是中考语文阅卷老师。批改以下议论文，从5个维度评分（每项0-100），并找出所有逻辑错误。
+
+【题目】
+Q
+
+【作文】
+A
+
+【年级】初中
+
+一、评分维度
+1. 立意（25%）：是否切题、观点明确、有深度
+2. 结构（20%）：开头-本论-结尾是否完整、层次清晰
+3. 语言（25%）：是否流畅、用词准确、有文采
+4. 素材（15%）：先数清楚文中用了哪些事例（人名、事件），再评价用得对不对、好不好。如果文中已有名人事例，不能写"缺乏名人事例"
+5. 逻辑（20%）：重点检查——
+   - 前后段落的观点有没有矛盾？（比如前面说"坚持必胜"，后面说"盲目坚持白费"）
+   - 例子是不是真的在证明论点？（比如讲"坚持"时扯到"速度"，跑偏了）
+   - 有没有"只要…就一定…""完全只靠…"这种绝对化说法？
+   - 有没有把复杂成功简单归因为单一因素？（比如"成功全靠坚持，跟天赋、团队无关"）
+
+二、评分锚点
+- 立意：跑题0-40 / 平淡40-60 / 正确60-80 / 有深度80-100
+- 结构：残缺0-40 / 勉强完整40-60 / 完整但衔接一般60-80 / 严谨80-100
+- 语言：多处语病0-40 / 通顺但平淡40-60 / 流畅60-80 / 有文采80-100
+- 素材：无事例0 / 有事例但用错20-40 / 准确但单一50-70 / 丰富贴切80-100
+- 逻辑：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+
+三、输出JSON（只输出JSON，不要任何其他文字）
+{
+  "content_inventory": {
+    "famous_examples": ["列出文中出现的人名"],
+    "life_examples": ["列出文中的生活事例"],
+    "paragraph_count": 5
+  },
+  "scores": {
+    "立意": 75, "结构": 70, "语言": 75, "素材": 65, "逻辑": 60,
+    "overall": 计算：(立意*25+结构*20+语言*25+素材*15+逻辑*20)/100 后四舍五入取整
+  },
+  "idea_analysis": "立意一句话评价",
+  "structure_evaluation": "结构一句话评价",
+  "logic_errors": [
+    {
+      "original": "有问题的原句（一字不差）",
+      "error_type": "自相矛盾/论据偏离/单一归因/绝对化/因果跳跃/其他",
+      "explanation": "为什么错",
+      "correction": "改写成正确的句子"
+    }
+  ],
+  "polish": [{"original": "原句", "improved": "润色后", "reason": "理由"}],
+  "suggestions": ["改进建议1", "改进建议2"],
+  "feedback": "总评（80-150字，引用文中具体句子，不准写套话）"
+}
+[LLM监控] === prompt结束 ===
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] LLM返回 (长度=12)：
+invalid json
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=830) ===
+你是一位资深理科教师。请依靠你的学科专业知识和教学经验，按步骤批改以下理科大题。
+
+⚠️ 重要：请优先使用你的学科专业知识来判断。如果"参考答案"不存在或与题目不匹配，请根据你的专业知识自行拆解题目、设定关键步骤并评分。
+
+## 题目
+解方程
+
+## 参考答案（如提供，仅供参考；如不匹配请忽略）
+x=3
+
+## 学生作答
+x=3
+
+## 批改要求
+1. 将题目拆解为3-6个关键步骤（根据你的专业知识判断拆解是否合理）
+2. 每个步骤分配分数（总分100）
+3. 对比学生作答，逐步骤判定得分
+4. 标注每个失分点的错误类型（公式用错/计算失误/概念错误/步骤缺失/单位错误）
+5. 给出各步骤的正确解法
+6. 如果参考答案不存在或不匹配，完全依靠你的专业知识来设定正确步骤和判断
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "steps": [
+        {"step_num": 1, "description": "步骤描述", "max_score": 20, "student_score": 18,
+          "status": "correct/partial/wrong/missing",
+          "error_type": "公式用错/计算失误/概念错误/步骤缺失/单位错误/无",
+          "feedback": "该步骤评价",
+          "correct_solution": "该步骤的正确解法"}
+    ],
+    "total_score": 85,
+    "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 5}],
+    "suggestions": ["建议1", "建议2"],
+    "feedback": "总体评语（要具体，结合作答内容）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] LLM返回 (长度=644)：
+{"steps": [{"step_num": 1, "description": "审题", "max_score": 20, "student_score": 20, "status": "correct", "error_type": "无", "feedback": "正确", "correct_solution": "正确审题"}, {"step_num": 2, "description": "列方程", "max_score": 30, "student_score": 15, "status": "partial", "error_type": "公式用错", "feedback": "公式部分错误", "correct_solution": "x+2=5"}, {"step_num": 3, "description": "求解", "max_score": 50, "student_score": 50, "status": "correct", "error_type": "无", "feedback": "正确", "correct_solution": "x=3"}], "total_score": 85, "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 15}], "suggestions": ["注意公式记忆"], "feedback": "总体还可以"}
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=824) ===
+你是一位资深理科教师。请依靠你的学科专业知识和教学经验，按步骤批改以下理科大题。
+
+⚠️ 重要：请优先使用你的学科专业知识来判断。如果"参考答案"不存在或与题目不匹配，请根据你的专业知识自行拆解题目、设定关键步骤并评分。
+
+## 题目
+Q
+
+## 参考答案（如提供，仅供参考；如不匹配请忽略）
+R
+
+## 学生作答
+A
+
+## 批改要求
+1. 将题目拆解为3-6个关键步骤（根据你的专业知识判断拆解是否合理）
+2. 每个步骤分配分数（总分100）
+3. 对比学生作答，逐步骤判定得分
+4. 标注每个失分点的错误类型（公式用错/计算失误/概念错误/步骤缺失/单位错误）
+5. 给出各步骤的正确解法
+6. 如果参考答案不存在或不匹配，完全依靠你的专业知识来设定正确步骤和判断
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "steps": [
+        {"step_num": 1, "description": "步骤描述", "max_score": 20, "student_score": 18,
+          "status": "correct/partial/wrong/missing",
+          "error_type": "公式用错/计算失误/概念错误/步骤缺失/单位错误/无",
+          "feedback": "该步骤评价",
+          "correct_solution": "该步骤的正确解法"}
+    ],
+    "total_score": 85,
+    "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 5}],
+    "suggestions": ["建议1", "建议2"],
+    "feedback": "总体评语（要具体，结合作答内容）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] LLM返回 (长度=254)：
+{"steps": [{"step_num": 1, "description": "求解", "max_score": 100, "student_score": 100, "status": "correct", "error_type": "无", "feedback": "完全正确", "correct_solution": "x=2"}], "total_score": 100, "error_summary": [], "suggestions": [], "feedback": "完美"}
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=824) ===
+你是一位资深理科教师。请依靠你的学科专业知识和教学经验，按步骤批改以下理科大题。
+
+⚠️ 重要：请优先使用你的学科专业知识来判断。如果"参考答案"不存在或与题目不匹配，请根据你的专业知识自行拆解题目、设定关键步骤并评分。
+
+## 题目
+Q
+
+## 参考答案（如提供，仅供参考；如不匹配请忽略）
+R
+
+## 学生作答
+A
+
+## 批改要求
+1. 将题目拆解为3-6个关键步骤（根据你的专业知识判断拆解是否合理）
+2. 每个步骤分配分数（总分100）
+3. 对比学生作答，逐步骤判定得分
+4. 标注每个失分点的错误类型（公式用错/计算失误/概念错误/步骤缺失/单位错误）
+5. 给出各步骤的正确解法
+6. 如果参考答案不存在或不匹配，完全依靠你的专业知识来设定正确步骤和判断
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "steps": [
+        {"step_num": 1, "description": "步骤描述", "max_score": 20, "student_score": 18,
+          "status": "correct/partial/wrong/missing",
+          "error_type": "公式用错/计算失误/概念错误/步骤缺失/单位错误/无",
+          "feedback": "该步骤评价",
+          "correct_solution": "该步骤的正确解法"}
+    ],
+    "total_score": 85,
+    "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 5}],
+    "suggestions": ["建议1", "建议2"],
+    "feedback": "总体评语（要具体，结合作答内容）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] LLM返回 (长度=8)：
+not json
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=794) ===
+你是历史学科的批改老师。按以下步骤批改。
+
+【题目】
+题目
+
+【参考答案】
+参考答案
+
+【学生作答】
+作答
+
+步骤：
+1. 从题目中提炼3-5个关键点，逐点判断学生是否覆盖、准确度如何
+2. 检查逻辑：前后观点有无矛盾？例子是否支撑论点？有无绝对化表述？有无单一归因？
+3. 检查表达：用词是否准确、有无歧义
+4. 综合评分
+
+输出JSON：
+{
+  "key_points": [
+    {"point": "关键点", "covered": true/false, "quality": "good/partial/missing", "comment": "引用原文评价"}
+  ],
+  "logic_score": 70,
+  "clarity_score": 80,
+  "overall": 75,
+  "logic_issues": [
+    {"original": "原句", "issue_type": "自相矛盾/论据偏离/绝对化/因果跳跃/单一归因/其他", "explanation": "为什么错", "correction": "修改为"}
+  ],
+  "strengths": ["优点1（引用原文）"],
+  "weaknesses": ["不足1（引用原文）"],
+  "feedback": "总评（80-150字，不准写套话）",
+  "suggestions": ["建议1", "建议2"]
+}
+
+评分锚点：
+- logic_score：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+- overall = logic_score×0.35 + clarity_score×0.25 + key_points覆盖率×0.4
+- 发现逻辑问题必须填入logic_issues，不能只给低分
+[LLM监控] === prompt结束 ===
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] LLM返回 (长度=497)：
+{"key_points": [{"point": "要点1", "covered": true, "quality": "good", "comment": "正确覆盖"}, {"point": "要点2", "covered": true, "quality": "partial", "comment": "部分正确"}, {"point": "要点3", "covered": false, "quality": "missing", "comment": "未提及"}], "logic_score": 75, "clarity_score": 80, "overall": 70, "logic_issues": [{"original": "绝对化表述", "issue_type": "绝对化", "explanation": "太绝对", "correction": "改为..."}], "strengths": ["逻辑清晰"], "weaknesses": ["审题不够深入"], "feedback": "总体合格", "suggestions": ["改进建议"]}
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=789) ===
+你是通用学科的批改老师。按以下步骤批改。
+
+【题目】
+Q
+
+【参考答案】
+无
+
+【学生作答】
+A
+
+步骤：
+1. 从题目中提炼3-5个关键点，逐点判断学生是否覆盖、准确度如何
+2. 检查逻辑：前后观点有无矛盾？例子是否支撑论点？有无绝对化表述？有无单一归因？
+3. 检查表达：用词是否准确、有无歧义
+4. 综合评分
+
+输出JSON：
+{
+  "key_points": [
+    {"point": "关键点", "covered": true/false, "quality": "good/partial/missing", "comment": "引用原文评价"}
+  ],
+  "logic_score": 70,
+  "clarity_score": 80,
+  "overall": 75,
+  "logic_issues": [
+    {"original": "原句", "issue_type": "自相矛盾/论据偏离/绝对化/因果跳跃/单一归因/其他", "explanation": "为什么错", "correction": "修改为"}
+  ],
+  "strengths": ["优点1（引用原文）"],
+  "weaknesses": ["不足1（引用原文）"],
+  "feedback": "总评（80-150字，不准写套话）",
+  "suggestions": ["建议1", "建议2"]
+}
+
+评分锚点：
+- logic_score：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+- overall = logic_score×0.35 + clarity_score×0.25 + key_points覆盖率×0.4
+- 发现逻辑问题必须填入logic_issues，不能只给低分
+[LLM监控] === prompt结束 ===
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] LLM返回 (长度=20)：
+{"feedback": "评语内容"}
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=789) ===
+你是通用学科的批改老师。按以下步骤批改。
+
+【题目】
+Q
+
+【参考答案】
+无
+
+【学生作答】
+A
+
+步骤：
+1. 从题目中提炼3-5个关键点，逐点判断学生是否覆盖、准确度如何
+2. 检查逻辑：前后观点有无矛盾？例子是否支撑论点？有无绝对化表述？有无单一归因？
+3. 检查表达：用词是否准确、有无歧义
+4. 综合评分
+
+输出JSON：
+{
+  "key_points": [
+    {"point": "关键点", "covered": true/false, "quality": "good/partial/missing", "comment": "引用原文评价"}
+  ],
+  "logic_score": 70,
+  "clarity_score": 80,
+  "overall": 75,
+  "logic_issues": [
+    {"original": "原句", "issue_type": "自相矛盾/论据偏离/绝对化/因果跳跃/单一归因/其他", "explanation": "为什么错", "correction": "修改为"}
+  ],
+  "strengths": ["优点1（引用原文）"],
+  "weaknesses": ["不足1（引用原文）"],
+  "feedback": "总评（80-150字，不准写套话）",
+  "suggestions": ["建议1", "建议2"]
+}
+
+评分锚点：
+- logic_score：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+- overall = logic_score×0.35 + clarity_score×0.25 + key_points覆盖率×0.4
+- 发现逻辑问题必须填入logic_issues，不能只给低分
+[LLM监控] === prompt结束 ===
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] LLM返回 (长度=8)：
+not json
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=961) ===
+你是一位资深英语教师。请依靠你的专业知识和教学经验，认真批改以下英语作文。
+
+⚠️ 重要：请优先使用你的英语教学专业知识来判断。如果下面的"参考信息"与题目不相关或与你的判断冲突，忽略它，以你的专业判断为准。
+
+## 题目要求
+Q
+
+## 学生作文
+A
+
+## 评分维度（每项0-100分）
+1. **grammar（语法准确性）**: 语法错误数量与严重程度
+2. **vocabulary（词汇多样性）**: 词汇丰富度、搭配准确度
+3. **sentence_complexity（句式复杂度）**: 句型多样性和衔接
+4. **content_relevance（内容切题度）**: 是否紧扣主题
+5. **overall（综合评分）**: = (grammar*0.35 + vocabulary*0.25 + complexity*0.2 + relevance*0.2)
+
+## 额外要求
+- 找出至少3处语法错误，标注位置并给出修改建议（highlight字段）
+- 给出逐句修改建议（corrections字段）
+- 给出3-5条提升建议（suggestions字段）
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "scores": {"grammar": 85, "vocabulary": 78, "sentence_complexity": 72, "content_relevance": 90, "overall": 82},
+    "highlights": [{"original": "...", "position": "第X句", "error_type": "grammar/vocabulary/logic", "correction": "...", "explanation": "..."}],
+    "corrections": [{"original_sentence": "...", "improved_sentence": "...", "comment": "修改理由"}],
+    "suggestions": ["建议1", "建议2", "建议3"],
+    "feedback": "总体评语（2-3句，要具体）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] LLM返回 (长度=186)：
+{"scores": {"grammar": 80, "vocabulary": 80, "sentence_complexity": 80, "content_relevance": 80, "overall": 80}, "highlights": [], "corrections": [], "suggestions": [], "feedback": "ok"}
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=1350) ===
+你是中考语文阅卷老师。批改以下议论文，从5个维度评分（每项0-100），并找出所有逻辑错误。
+
+【题目】
+Q
+
+【作文】
+A
+
+【年级】初中
+
+一、评分维度
+1. 立意（25%）：是否切题、观点明确、有深度
+2. 结构（20%）：开头-本论-结尾是否完整、层次清晰
+3. 语言（25%）：是否流畅、用词准确、有文采
+4. 素材（15%）：先数清楚文中用了哪些事例（人名、事件），再评价用得对不对、好不好。如果文中已有名人事例，不能写"缺乏名人事例"
+5. 逻辑（20%）：重点检查——
+   - 前后段落的观点有没有矛盾？（比如前面说"坚持必胜"，后面说"盲目坚持白费"）
+   - 例子是不是真的在证明论点？（比如讲"坚持"时扯到"速度"，跑偏了）
+   - 有没有"只要…就一定…""完全只靠…"这种绝对化说法？
+   - 有没有把复杂成功简单归因为单一因素？（比如"成功全靠坚持，跟天赋、团队无关"）
+
+二、评分锚点
+- 立意：跑题0-40 / 平淡40-60 / 正确60-80 / 有深度80-100
+- 结构：残缺0-40 / 勉强完整40-60 / 完整但衔接一般60-80 / 严谨80-100
+- 语言：多处语病0-40 / 通顺但平淡40-60 / 流畅60-80 / 有文采80-100
+- 素材：无事例0 / 有事例但用错20-40 / 准确但单一50-70 / 丰富贴切80-100
+- 逻辑：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+
+三、输出JSON（只输出JSON，不要任何其他文字）
+{
+  "content_inventory": {
+    "famous_examples": ["列出文中出现的人名"],
+    "life_examples": ["列出文中的生活事例"],
+    "paragraph_count": 5
+  },
+  "scores": {
+    "立意": 75, "结构": 70, "语言": 75, "素材": 65, "逻辑": 60,
+    "overall": 计算：(立意*25+结构*20+语言*25+素材*15+逻辑*20)/100 后四舍五入取整
+  },
+  "idea_analysis": "立意一句话评价",
+  "structure_evaluation": "结构一句话评价",
+  "logic_errors": [
+    {
+      "original": "有问题的原句（一字不差）",
+      "error_type": "自相矛盾/论据偏离/单一归因/绝对化/因果跳跃/其他",
+      "explanation": "为什么错",
+      "correction": "改写成正确的句子"
+    }
+  ],
+  "polish": [{"original": "原句", "improved": "润色后", "reason": "理由"}],
+  "suggestions": ["改进建议1", "改进建议2"],
+  "feedback": "总评（80-150字，引用文中具体句子，不准写套话）"
+}
+[LLM监控] === prompt结束 ===
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] LLM返回 (长度=222)：
+{"content_inventory": {}, "scores": {"立意": 70, "结构": 70, "语言": 70, "素材": 70, "逻辑": 70, "overall": 70}, "idea_analysis": "", "structure_evaluation": "", "logic_errors": [], "polish": [], "suggestions": [], "feedback": "ok"}
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=823) ===
+你是一位资深理科教师。请依靠你的学科专业知识和教学经验，按步骤批改以下理科大题。
+
+⚠️ 重要：请优先使用你的学科专业知识来判断。如果"参考答案"不存在或与题目不匹配，请根据你的专业知识自行拆解题目、设定关键步骤并评分。
+
+## 题目
+Q
+
+## 参考答案（如提供，仅供参考；如不匹配请忽略）
+
+
+## 学生作答
+A
+
+## 批改要求
+1. 将题目拆解为3-6个关键步骤（根据你的专业知识判断拆解是否合理）
+2. 每个步骤分配分数（总分100）
+3. 对比学生作答，逐步骤判定得分
+4. 标注每个失分点的错误类型（公式用错/计算失误/概念错误/步骤缺失/单位错误）
+5. 给出各步骤的正确解法
+6. 如果参考答案不存在或不匹配，完全依靠你的专业知识来设定正确步骤和判断
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "steps": [
+        {"step_num": 1, "description": "步骤描述", "max_score": 20, "student_score": 18,
+          "status": "correct/partial/wrong/missing",
+          "error_type": "公式用错/计算失误/概念错误/步骤缺失/单位错误/无",
+          "feedback": "该步骤评价",
+          "correct_solution": "该步骤的正确解法"}
+    ],
+    "total_score": 85,
+    "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 5}],
+    "suggestions": ["建议1", "建议2"],
+    "feedback": "总体评语（要具体，结合作答内容）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] LLM返回 (长度=249)：
+{"steps": [{"step_num": 1, "description": "解", "max_score": 100, "student_score": 90, "status": "correct", "error_type": "无", "feedback": "ok", "correct_solution": "x=1"}], "total_score": 90, "error_summary": [], "suggestions": [], "feedback": "ok"}
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=823) ===
+你是一位资深理科教师。请依靠你的学科专业知识和教学经验，按步骤批改以下理科大题。
+
+⚠️ 重要：请优先使用你的学科专业知识来判断。如果"参考答案"不存在或与题目不匹配，请根据你的专业知识自行拆解题目、设定关键步骤并评分。
+
+## 题目
+Q
+
+## 参考答案（如提供，仅供参考；如不匹配请忽略）
+
+
+## 学生作答
+A
+
+## 批改要求
+1. 将题目拆解为3-6个关键步骤（根据你的专业知识判断拆解是否合理）
+2. 每个步骤分配分数（总分100）
+3. 对比学生作答，逐步骤判定得分
+4. 标注每个失分点的错误类型（公式用错/计算失误/概念错误/步骤缺失/单位错误）
+5. 给出各步骤的正确解法
+6. 如果参考答案不存在或不匹配，完全依靠你的专业知识来设定正确步骤和判断
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "steps": [
+        {"step_num": 1, "description": "步骤描述", "max_score": 20, "student_score": 18,
+          "status": "correct/partial/wrong/missing",
+          "error_type": "公式用错/计算失误/概念错误/步骤缺失/单位错误/无",
+          "feedback": "该步骤评价",
+          "correct_solution": "该步骤的正确解法"}
+    ],
+    "total_score": 85,
+    "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 5}],
+    "suggestions": ["建议1", "建议2"],
+    "feedback": "总体评语（要具体，结合作答内容）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] LLM返回 (长度=250)：
+{"steps": [{"step_num": 1, "description": "解", "max_score": 100, "student_score": 80, "status": "correct", "error_type": "无", "feedback": "ok", "correct_solution": "F=ma"}], "total_score": 80, "error_summary": [], "suggestions": [], "feedback": "ok"}
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=791) ===
+你是未知学科学科的批改老师。按以下步骤批改。
+
+【题目】
+Q
+
+【参考答案】
+无
+
+【学生作答】
+A
+
+步骤：
+1. 从题目中提炼3-5个关键点，逐点判断学生是否覆盖、准确度如何
+2. 检查逻辑：前后观点有无矛盾？例子是否支撑论点？有无绝对化表述？有无单一归因？
+3. 检查表达：用词是否准确、有无歧义
+4. 综合评分
+
+输出JSON：
+{
+  "key_points": [
+    {"point": "关键点", "covered": true/false, "quality": "good/partial/missing", "comment": "引用原文评价"}
+  ],
+  "logic_score": 70,
+  "clarity_score": 80,
+  "overall": 75,
+  "logic_issues": [
+    {"original": "原句", "issue_type": "自相矛盾/论据偏离/绝对化/因果跳跃/单一归因/其他", "explanation": "为什么错", "correction": "修改为"}
+  ],
+  "strengths": ["优点1（引用原文）"],
+  "weaknesses": ["不足1（引用原文）"],
+  "feedback": "总评（80-150字，不准写套话）",
+  "suggestions": ["建议1", "建议2"]
+}
+
+评分锚点：
+- logic_score：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+- overall = logic_score×0.35 + clarity_score×0.25 + key_points覆盖率×0.4
+- 发现逻辑问题必须填入logic_issues，不能只给低分
+[LLM监控] === prompt结束 ===
+2026-06-16 01:44:35 - grading - INFO - [LLM监控] LLM返回 (长度=231)：
+{"key_points": [{"point": "p1", "covered": true, "quality": "good", "comment": ""}], "logic_score": 70, "clarity_score": 70, "overall": 70, "logic_issues": [], "strengths": [], "weaknesses": [], "feedback": "ok", "suggestions": []}
+2026-06-16 01:44:35 - graph_builder - INFO - 知识图谱已保存: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_save_and_load0\graph.json (2 实体, 1 关系)
+2026-06-16 01:44:35 - graph_builder - INFO - 知识图谱已加载: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_save_and_load0\graph.json (2 实体, 1 关系)
+2026-06-16 01:44:35 - graph_builder - INFO - 知识图谱已保存: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-14\test_get_stats_ready0\graph.json (1 实体, 0 关系)
+2026-06-16 01:44:35 - graph_builder - INFO - [GraphManager] 图谱缓存已失效
+2026-06-16 01:45:04 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 3 篇文档 → top 2 (0.00s)
+2026-06-16 01:45:04 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 1 篇文档 → top 1 (0.00s)
+2026-06-16 01:45:04 - reranker - ERROR - [云端Rerank] API调用失败: timeout
+2026-06-16 01:45:04 - reranker - ERROR - [云端Rerank] API调用失败: timeout
+2026-06-16 01:45:04 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 1 篇文档 → top 0 (0.00s)
+2026-06-16 01:45:04 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 3 篇文档 → top 3 (0.00s)
+2026-06-16 01:45:04 - reranker - INFO - 云端重排序完成: 3 -> 2
+2026-06-16 01:45:04 - reranker - ERROR - 云端重排序失败: API down，使用原始分数
+2026-06-16 01:45:04 - reranker - ERROR - 云端重排序失败: API down，使用原始分数
+2026-06-16 01:45:04 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 2 篇文档 → top 2 (0.00s)
+2026-06-16 01:45:04 - reranker - ERROR - Cross-encode失败: API error
+2026-06-16 01:45:04 - reranker - ERROR - Cross-encode失败: API error
+2026-06-16 01:45:04 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 2 篇文档 → top 2 (0.00s)
+2026-06-16 01:45:04 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 2 篇文档 → top 2 (0.00s)
+2026-06-16 01:45:05 - self_rag - INFO - Self-RAG评估: score=0.85, acceptable=True, hallucination=9
+2026-06-16 01:45:05 - self_rag - INFO - Self-RAG评估: score=0.70, acceptable=True, hallucination=7
+2026-06-16 01:45:05 - self_rag - WARNING - Self-RAG评估失败: LLM error
+2026-06-16 01:45:36 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_dispatches_to_txt0\test.txt
+2026-06-16 01:45:36 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_dispatches_to_csv0\test.csv
+2026-06-16 01:45:36 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_dispatches_to_json0\test.json
+2026-06-16 01:45:36 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_dispatches_to_pdf0\test.pdf
+2026-06-16 01:45:36 - document_loader - INFO - 加载PDF: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_dispatches_to_pdf0\test.pdf, 1页
+2026-06-16 01:45:36 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_dispatches_to_word0\test.docx
+2026-06-16 01:45:36 - document_loader - INFO - [原生] 加载 test.xyz
+2026-06-16 01:45:36 - document_loader - INFO - [LangChain] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_valid_ext_loads0\test.txt: 1 个文档
+2026-06-16 01:45:36 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_langchain_fallback_to_nat0\test.txt
+2026-06-16 01:45:36 - document_loader - INFO - [LangChain] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_load_directory0\a.txt: 1 个文档
+2026-06-16 01:45:36 - document_loader - INFO - 已加载: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_load_directory0\a.txt
+2026-06-16 01:45:36 - document_loader - INFO - [LangChain] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_load_directory0\b.txt: 1 个文档
+2026-06-16 01:45:36 - document_loader - INFO - 已加载: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_load_directory0\b.txt
+2026-06-16 01:45:36 - document_loader - INFO - 目录加载完成: 2 个文档
+2026-06-16 01:45:36 - document_loader - INFO - [LangChain] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_load_directory_filter_ext0\b.csv: 1 个文档
+2026-06-16 01:45:36 - document_loader - INFO - 已加载: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_load_directory_filter_ext0\b.csv
+2026-06-16 01:45:36 - document_loader - INFO - 目录加载完成: 1 个文档
+2026-06-16 01:45:36 - document_loader - INFO - [LangChain] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_load_directory_skips_unsu0\a.txt: 1 个文档
+2026-06-16 01:45:36 - document_loader - INFO - 已加载: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_load_directory_skips_unsu0\a.txt
+2026-06-16 01:45:36 - document_loader - INFO - 目录加载完成: 1 个文档
+2026-06-16 01:45:38 - evaluator - INFO - 开始评估: 0 个样本
+2026-06-16 01:45:38 - evaluator - INFO - 评估完成: P=0.0000 R=0.0000 F1=0.0000 BLEU-1=0.0000 ROUGE-L=0.0000
+2026-06-16 01:45:38 - evaluator - INFO - 开始评估: 1 个样本
+2026-06-16 01:45:38 - evaluator - INFO - 评估样本 [1/1]: test query...
+2026-06-16 01:45:38 - evaluator - INFO - 评估完成: P=1.0000 R=0.5000 F1=0.6667 BLEU-1=0.0000 ROUGE-L=0.0000
+2026-06-16 01:45:38 - evaluator - INFO - 开始评估: 1 个样本
+2026-06-16 01:45:38 - evaluator - INFO - 评估样本 [1/1]: test query...
+2026-06-16 01:45:38 - evaluator - ERROR - 评估样本 0 失败: timeout
+2026-06-16 01:45:38 - evaluator - ERROR - 评估样本 0 失败: timeout
+2026-06-16 01:45:39 - evaluator - INFO - 评估完成: P=0.0000 R=0.0000 F1=0.0000 BLEU-1=0.0000 ROUGE-L=0.0000
+2026-06-16 01:45:39 - evaluator - INFO - 开始评估: 3 个样本
+2026-06-16 01:45:39 - evaluator - INFO - 评估样本 [1/3]: q0...
+2026-06-16 01:45:39 - evaluator - INFO - 评估样本 [2/3]: q1...
+2026-06-16 01:45:39 - evaluator - INFO - 评估样本 [3/3]: q2...
+2026-06-16 01:45:39 - evaluator - INFO - 评估完成: P=1.0000 R=0.5000 F1=0.6667 BLEU-1=0.6667 ROUGE-L=0.5000
+2026-06-16 01:45:39 - evaluator - INFO - 开始评估: 1 个样本
+2026-06-16 01:45:39 - evaluator - INFO - 评估样本 [1/1]: test query...
+2026-06-16 01:45:39 - evaluator - INFO - 评估完成: P=0.0000 R=0.0000 F1=0.0000 BLEU-1=0.0000 ROUGE-L=0.0000
+2026-06-16 01:45:39 - evaluator - INFO - 开始评估: 1 个样本
+2026-06-16 01:45:39 - evaluator - INFO - 评估样本 [1/1]: test query...
+2026-06-16 01:45:39 - evaluator - INFO - 评估完成: P=0.0000 R=0.0000 F1=0.0000 BLEU-1=0.1353 ROUGE-L=0.6667
+2026-06-16 01:45:39 - evaluator - INFO - 开始流式评估: 0 个样本
+2026-06-16 01:45:40 - evaluator - INFO - 流式评估完成: 0 个样本, 0.0s
+2026-06-16 01:45:40 - evaluator - INFO - 开始流式评估: 1 个样本
+2026-06-16 01:45:40 - evaluator - INFO - 流式评估完成: 1 个样本, 0.0s
+2026-06-16 01:45:40 - evaluator - INFO - 开始流式评估: 5 个样本
+2026-06-16 01:45:40 - evaluator - INFO - 评测已被用户取消
+2026-06-16 01:45:40 - evaluator - INFO - 开始流式评估: 1 个样本
+2026-06-16 01:45:40 - evaluator - ERROR - 评估样本 0 失败: fail
+2026-06-16 01:45:40 - evaluator - ERROR - 评估样本 0 失败: fail
+2026-06-16 01:45:40 - evaluator - INFO - 流式评估完成: 1 个样本, 0.0s
+2026-06-16 01:45:40 - evaluator - INFO - 开始流式评估: 1 个样本
+2026-06-16 01:45:41 - evaluator - INFO - 流式评估完成: 1 个样本, 0.0s
+2026-06-16 01:45:41 - evaluator - INFO - 开始流式评估: 1 个样本
+2026-06-16 01:45:41 - evaluator - INFO - 流式评估完成: 1 个样本, 0.0s
+2026-06-16 01:45:41 - evaluator - INFO - 开始流式评估: 1 个样本
+2026-06-16 01:45:41 - evaluator - INFO - 流式评估完成: 1 个样本, 0.0s
+2026-06-16 01:45:43 - grading - WARNING - LLMClient 初始化失败，批改将不可用: no config
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=11) ===
+test prompt
+[LLM监控] === prompt结束 ===
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] LLM返回 (长度=16)：
+{"result": "ok"}
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=4) ===
+test
+[LLM监控] === prompt结束 ===
+2026-06-16 01:45:43 - grading - ERROR - LLM调用失败: API error
+2026-06-16 01:45:43 - grading - ERROR - LLM调用失败: API error
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=984) ===
+你是一位资深英语教师。请依靠你的专业知识和教学经验，认真批改以下英语作文。
+
+⚠️ 重要：请优先使用你的英语教学专业知识来判断。如果下面的"参考信息"与题目不相关或与你的判断冲突，忽略它，以你的专业判断为准。
+
+## 题目要求
+Write about...
+
+## 学生作文
+My essay...
+
+## 评分维度（每项0-100分）
+1. **grammar（语法准确性）**: 语法错误数量与严重程度
+2. **vocabulary（词汇多样性）**: 词汇丰富度、搭配准确度
+3. **sentence_complexity（句式复杂度）**: 句型多样性和衔接
+4. **content_relevance（内容切题度）**: 是否紧扣主题
+5. **overall（综合评分）**: = (grammar*0.35 + vocabulary*0.25 + complexity*0.2 + relevance*0.2)
+
+## 额外要求
+- 找出至少3处语法错误，标注位置并给出修改建议（highlight字段）
+- 给出逐句修改建议（corrections字段）
+- 给出3-5条提升建议（suggestions字段）
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "scores": {"grammar": 85, "vocabulary": 78, "sentence_complexity": 72, "content_relevance": 90, "overall": 82},
+    "highlights": [{"original": "...", "position": "第X句", "error_type": "grammar/vocabulary/logic", "correction": "...", "explanation": "..."}],
+    "corrections": [{"original_sentence": "...", "improved_sentence": "...", "comment": "修改理由"}],
+    "suggestions": ["建议1", "建议2", "建议3"],
+    "feedback": "总体评语（2-3句，要具体）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] LLM返回 (长度=324)：
+{"scores": {"grammar": 85, "vocabulary": 78, "sentence_complexity": 72, "content_relevance": 90, "overall": 82}, "highlights": [{"original": "He go", "position": "第1句", "error_type": "grammar", "correction": "He goes", "explanation": "主谓一致"}], "corrections": [], "suggestions": ["多用复杂句", "注意时态"], "feedback": "整体不错，需注意语法细节"}
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=961) ===
+你是一位资深英语教师。请依靠你的专业知识和教学经验，认真批改以下英语作文。
+
+⚠️ 重要：请优先使用你的英语教学专业知识来判断。如果下面的"参考信息"与题目不相关或与你的判断冲突，忽略它，以你的专业判断为准。
+
+## 题目要求
+Q
+
+## 学生作文
+A
+
+## 评分维度（每项0-100分）
+1. **grammar（语法准确性）**: 语法错误数量与严重程度
+2. **vocabulary（词汇多样性）**: 词汇丰富度、搭配准确度
+3. **sentence_complexity（句式复杂度）**: 句型多样性和衔接
+4. **content_relevance（内容切题度）**: 是否紧扣主题
+5. **overall（综合评分）**: = (grammar*0.35 + vocabulary*0.25 + complexity*0.2 + relevance*0.2)
+
+## 额外要求
+- 找出至少3处语法错误，标注位置并给出修改建议（highlight字段）
+- 给出逐句修改建议（corrections字段）
+- 给出3-5条提升建议（suggestions字段）
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "scores": {"grammar": 85, "vocabulary": 78, "sentence_complexity": 72, "content_relevance": 90, "overall": 82},
+    "highlights": [{"original": "...", "position": "第X句", "error_type": "grammar/vocabulary/logic", "correction": "...", "explanation": "..."}],
+    "corrections": [{"original_sentence": "...", "improved_sentence": "...", "comment": "修改理由"}],
+    "suggestions": ["建议1", "建议2", "建议3"],
+    "feedback": "总体评语（2-3句，要具体）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] LLM返回 (长度=21)：
+not valid json at all
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=1354) ===
+你是中考语文阅卷老师。批改以下议论文，从5个维度评分（每项0-100），并找出所有逻辑错误。
+
+【题目】
+题目
+
+【作文】
+作文内容
+
+【年级】初中
+
+一、评分维度
+1. 立意（25%）：是否切题、观点明确、有深度
+2. 结构（20%）：开头-本论-结尾是否完整、层次清晰
+3. 语言（25%）：是否流畅、用词准确、有文采
+4. 素材（15%）：先数清楚文中用了哪些事例（人名、事件），再评价用得对不对、好不好。如果文中已有名人事例，不能写"缺乏名人事例"
+5. 逻辑（20%）：重点检查——
+   - 前后段落的观点有没有矛盾？（比如前面说"坚持必胜"，后面说"盲目坚持白费"）
+   - 例子是不是真的在证明论点？（比如讲"坚持"时扯到"速度"，跑偏了）
+   - 有没有"只要…就一定…""完全只靠…"这种绝对化说法？
+   - 有没有把复杂成功简单归因为单一因素？（比如"成功全靠坚持，跟天赋、团队无关"）
+
+二、评分锚点
+- 立意：跑题0-40 / 平淡40-60 / 正确60-80 / 有深度80-100
+- 结构：残缺0-40 / 勉强完整40-60 / 完整但衔接一般60-80 / 严谨80-100
+- 语言：多处语病0-40 / 通顺但平淡40-60 / 流畅60-80 / 有文采80-100
+- 素材：无事例0 / 有事例但用错20-40 / 准确但单一50-70 / 丰富贴切80-100
+- 逻辑：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+
+三、输出JSON（只输出JSON，不要任何其他文字）
+{
+  "content_inventory": {
+    "famous_examples": ["列出文中出现的人名"],
+    "life_examples": ["列出文中的生活事例"],
+    "paragraph_count": 5
+  },
+  "scores": {
+    "立意": 75, "结构": 70, "语言": 75, "素材": 65, "逻辑": 60,
+    "overall": 计算：(立意*25+结构*20+语言*25+素材*15+逻辑*20)/100 后四舍五入取整
+  },
+  "idea_analysis": "立意一句话评价",
+  "structure_evaluation": "结构一句话评价",
+  "logic_errors": [
+    {
+      "original": "有问题的原句（一字不差）",
+      "error_type": "自相矛盾/论据偏离/单一归因/绝对化/因果跳跃/其他",
+      "explanation": "为什么错",
+      "correction": "改写成正确的句子"
+    }
+  ],
+  "polish": [{"original": "原句", "improved": "润色后", "reason": "理由"}],
+  "suggestions": ["改进建议1", "改进建议2"],
+  "feedback": "总评（80-150字，引用文中具体句子，不准写套话）"
+}
+[LLM监控] === prompt结束 ===
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] LLM返回 (长度=465)：
+{"content_inventory": {"famous_examples": ["鲁迅"], "life_examples": [], "paragraph_count": 3}, "scores": {"立意": 75, "结构": 70, "语言": 75, "素材": 65, "逻辑": 60, "overall": 65}, "idea_analysis": "观点明确但不够深刻", "structure_evaluation": "结构完整", "logic_errors": [{"original": "只要坚持就能成功", "error_type": "绝对化", "explanation": "过于绝对", "correction": "坚持是成功的重要因素之一"}], "polish": [{"original": "很好", "improved": "表现出色", "reason": "用词更丰富"}], "suggestions": ["建议1"], "feedback": "总评内容"}
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=1350) ===
+你是中考语文阅卷老师。批改以下议论文，从5个维度评分（每项0-100），并找出所有逻辑错误。
+
+【题目】
+Q
+
+【作文】
+A
+
+【年级】初中
+
+一、评分维度
+1. 立意（25%）：是否切题、观点明确、有深度
+2. 结构（20%）：开头-本论-结尾是否完整、层次清晰
+3. 语言（25%）：是否流畅、用词准确、有文采
+4. 素材（15%）：先数清楚文中用了哪些事例（人名、事件），再评价用得对不对、好不好。如果文中已有名人事例，不能写"缺乏名人事例"
+5. 逻辑（20%）：重点检查——
+   - 前后段落的观点有没有矛盾？（比如前面说"坚持必胜"，后面说"盲目坚持白费"）
+   - 例子是不是真的在证明论点？（比如讲"坚持"时扯到"速度"，跑偏了）
+   - 有没有"只要…就一定…""完全只靠…"这种绝对化说法？
+   - 有没有把复杂成功简单归因为单一因素？（比如"成功全靠坚持，跟天赋、团队无关"）
+
+二、评分锚点
+- 立意：跑题0-40 / 平淡40-60 / 正确60-80 / 有深度80-100
+- 结构：残缺0-40 / 勉强完整40-60 / 完整但衔接一般60-80 / 严谨80-100
+- 语言：多处语病0-40 / 通顺但平淡40-60 / 流畅60-80 / 有文采80-100
+- 素材：无事例0 / 有事例但用错20-40 / 准确但单一50-70 / 丰富贴切80-100
+- 逻辑：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+
+三、输出JSON（只输出JSON，不要任何其他文字）
+{
+  "content_inventory": {
+    "famous_examples": ["列出文中出现的人名"],
+    "life_examples": ["列出文中的生活事例"],
+    "paragraph_count": 5
+  },
+  "scores": {
+    "立意": 75, "结构": 70, "语言": 75, "素材": 65, "逻辑": 60,
+    "overall": 计算：(立意*25+结构*20+语言*25+素材*15+逻辑*20)/100 后四舍五入取整
+  },
+  "idea_analysis": "立意一句话评价",
+  "structure_evaluation": "结构一句话评价",
+  "logic_errors": [
+    {
+      "original": "有问题的原句（一字不差）",
+      "error_type": "自相矛盾/论据偏离/单一归因/绝对化/因果跳跃/其他",
+      "explanation": "为什么错",
+      "correction": "改写成正确的句子"
+    }
+  ],
+  "polish": [{"original": "原句", "improved": "润色后", "reason": "理由"}],
+  "suggestions": ["改进建议1", "改进建议2"],
+  "feedback": "总评（80-150字，引用文中具体句子，不准写套话）"
+}
+[LLM监控] === prompt结束 ===
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] LLM返回 (长度=12)：
+invalid json
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=830) ===
+你是一位资深理科教师。请依靠你的学科专业知识和教学经验，按步骤批改以下理科大题。
+
+⚠️ 重要：请优先使用你的学科专业知识来判断。如果"参考答案"不存在或与题目不匹配，请根据你的专业知识自行拆解题目、设定关键步骤并评分。
+
+## 题目
+解方程
+
+## 参考答案（如提供，仅供参考；如不匹配请忽略）
+x=3
+
+## 学生作答
+x=3
+
+## 批改要求
+1. 将题目拆解为3-6个关键步骤（根据你的专业知识判断拆解是否合理）
+2. 每个步骤分配分数（总分100）
+3. 对比学生作答，逐步骤判定得分
+4. 标注每个失分点的错误类型（公式用错/计算失误/概念错误/步骤缺失/单位错误）
+5. 给出各步骤的正确解法
+6. 如果参考答案不存在或不匹配，完全依靠你的专业知识来设定正确步骤和判断
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "steps": [
+        {"step_num": 1, "description": "步骤描述", "max_score": 20, "student_score": 18,
+          "status": "correct/partial/wrong/missing",
+          "error_type": "公式用错/计算失误/概念错误/步骤缺失/单位错误/无",
+          "feedback": "该步骤评价",
+          "correct_solution": "该步骤的正确解法"}
+    ],
+    "total_score": 85,
+    "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 5}],
+    "suggestions": ["建议1", "建议2"],
+    "feedback": "总体评语（要具体，结合作答内容）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] LLM返回 (长度=644)：
+{"steps": [{"step_num": 1, "description": "审题", "max_score": 20, "student_score": 20, "status": "correct", "error_type": "无", "feedback": "正确", "correct_solution": "正确审题"}, {"step_num": 2, "description": "列方程", "max_score": 30, "student_score": 15, "status": "partial", "error_type": "公式用错", "feedback": "公式部分错误", "correct_solution": "x+2=5"}, {"step_num": 3, "description": "求解", "max_score": 50, "student_score": 50, "status": "correct", "error_type": "无", "feedback": "正确", "correct_solution": "x=3"}], "total_score": 85, "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 15}], "suggestions": ["注意公式记忆"], "feedback": "总体还可以"}
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=824) ===
+你是一位资深理科教师。请依靠你的学科专业知识和教学经验，按步骤批改以下理科大题。
+
+⚠️ 重要：请优先使用你的学科专业知识来判断。如果"参考答案"不存在或与题目不匹配，请根据你的专业知识自行拆解题目、设定关键步骤并评分。
+
+## 题目
+Q
+
+## 参考答案（如提供，仅供参考；如不匹配请忽略）
+R
+
+## 学生作答
+A
+
+## 批改要求
+1. 将题目拆解为3-6个关键步骤（根据你的专业知识判断拆解是否合理）
+2. 每个步骤分配分数（总分100）
+3. 对比学生作答，逐步骤判定得分
+4. 标注每个失分点的错误类型（公式用错/计算失误/概念错误/步骤缺失/单位错误）
+5. 给出各步骤的正确解法
+6. 如果参考答案不存在或不匹配，完全依靠你的专业知识来设定正确步骤和判断
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "steps": [
+        {"step_num": 1, "description": "步骤描述", "max_score": 20, "student_score": 18,
+          "status": "correct/partial/wrong/missing",
+          "error_type": "公式用错/计算失误/概念错误/步骤缺失/单位错误/无",
+          "feedback": "该步骤评价",
+          "correct_solution": "该步骤的正确解法"}
+    ],
+    "total_score": 85,
+    "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 5}],
+    "suggestions": ["建议1", "建议2"],
+    "feedback": "总体评语（要具体，结合作答内容）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] LLM返回 (长度=254)：
+{"steps": [{"step_num": 1, "description": "求解", "max_score": 100, "student_score": 100, "status": "correct", "error_type": "无", "feedback": "完全正确", "correct_solution": "x=2"}], "total_score": 100, "error_summary": [], "suggestions": [], "feedback": "完美"}
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=824) ===
+你是一位资深理科教师。请依靠你的学科专业知识和教学经验，按步骤批改以下理科大题。
+
+⚠️ 重要：请优先使用你的学科专业知识来判断。如果"参考答案"不存在或与题目不匹配，请根据你的专业知识自行拆解题目、设定关键步骤并评分。
+
+## 题目
+Q
+
+## 参考答案（如提供，仅供参考；如不匹配请忽略）
+R
+
+## 学生作答
+A
+
+## 批改要求
+1. 将题目拆解为3-6个关键步骤（根据你的专业知识判断拆解是否合理）
+2. 每个步骤分配分数（总分100）
+3. 对比学生作答，逐步骤判定得分
+4. 标注每个失分点的错误类型（公式用错/计算失误/概念错误/步骤缺失/单位错误）
+5. 给出各步骤的正确解法
+6. 如果参考答案不存在或不匹配，完全依靠你的专业知识来设定正确步骤和判断
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "steps": [
+        {"step_num": 1, "description": "步骤描述", "max_score": 20, "student_score": 18,
+          "status": "correct/partial/wrong/missing",
+          "error_type": "公式用错/计算失误/概念错误/步骤缺失/单位错误/无",
+          "feedback": "该步骤评价",
+          "correct_solution": "该步骤的正确解法"}
+    ],
+    "total_score": 85,
+    "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 5}],
+    "suggestions": ["建议1", "建议2"],
+    "feedback": "总体评语（要具体，结合作答内容）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] LLM返回 (长度=8)：
+not json
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=794) ===
+你是历史学科的批改老师。按以下步骤批改。
+
+【题目】
+题目
+
+【参考答案】
+参考答案
+
+【学生作答】
+作答
+
+步骤：
+1. 从题目中提炼3-5个关键点，逐点判断学生是否覆盖、准确度如何
+2. 检查逻辑：前后观点有无矛盾？例子是否支撑论点？有无绝对化表述？有无单一归因？
+3. 检查表达：用词是否准确、有无歧义
+4. 综合评分
+
+输出JSON：
+{
+  "key_points": [
+    {"point": "关键点", "covered": true/false, "quality": "good/partial/missing", "comment": "引用原文评价"}
+  ],
+  "logic_score": 70,
+  "clarity_score": 80,
+  "overall": 75,
+  "logic_issues": [
+    {"original": "原句", "issue_type": "自相矛盾/论据偏离/绝对化/因果跳跃/单一归因/其他", "explanation": "为什么错", "correction": "修改为"}
+  ],
+  "strengths": ["优点1（引用原文）"],
+  "weaknesses": ["不足1（引用原文）"],
+  "feedback": "总评（80-150字，不准写套话）",
+  "suggestions": ["建议1", "建议2"]
+}
+
+评分锚点：
+- logic_score：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+- overall = logic_score×0.35 + clarity_score×0.25 + key_points覆盖率×0.4
+- 发现逻辑问题必须填入logic_issues，不能只给低分
+[LLM监控] === prompt结束 ===
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] LLM返回 (长度=497)：
+{"key_points": [{"point": "要点1", "covered": true, "quality": "good", "comment": "正确覆盖"}, {"point": "要点2", "covered": true, "quality": "partial", "comment": "部分正确"}, {"point": "要点3", "covered": false, "quality": "missing", "comment": "未提及"}], "logic_score": 75, "clarity_score": 80, "overall": 70, "logic_issues": [{"original": "绝对化表述", "issue_type": "绝对化", "explanation": "太绝对", "correction": "改为..."}], "strengths": ["逻辑清晰"], "weaknesses": ["审题不够深入"], "feedback": "总体合格", "suggestions": ["改进建议"]}
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=789) ===
+你是通用学科的批改老师。按以下步骤批改。
+
+【题目】
+Q
+
+【参考答案】
+无
+
+【学生作答】
+A
+
+步骤：
+1. 从题目中提炼3-5个关键点，逐点判断学生是否覆盖、准确度如何
+2. 检查逻辑：前后观点有无矛盾？例子是否支撑论点？有无绝对化表述？有无单一归因？
+3. 检查表达：用词是否准确、有无歧义
+4. 综合评分
+
+输出JSON：
+{
+  "key_points": [
+    {"point": "关键点", "covered": true/false, "quality": "good/partial/missing", "comment": "引用原文评价"}
+  ],
+  "logic_score": 70,
+  "clarity_score": 80,
+  "overall": 75,
+  "logic_issues": [
+    {"original": "原句", "issue_type": "自相矛盾/论据偏离/绝对化/因果跳跃/单一归因/其他", "explanation": "为什么错", "correction": "修改为"}
+  ],
+  "strengths": ["优点1（引用原文）"],
+  "weaknesses": ["不足1（引用原文）"],
+  "feedback": "总评（80-150字，不准写套话）",
+  "suggestions": ["建议1", "建议2"]
+}
+
+评分锚点：
+- logic_score：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+- overall = logic_score×0.35 + clarity_score×0.25 + key_points覆盖率×0.4
+- 发现逻辑问题必须填入logic_issues，不能只给低分
+[LLM监控] === prompt结束 ===
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] LLM返回 (长度=20)：
+{"feedback": "评语内容"}
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=789) ===
+你是通用学科的批改老师。按以下步骤批改。
+
+【题目】
+Q
+
+【参考答案】
+无
+
+【学生作答】
+A
+
+步骤：
+1. 从题目中提炼3-5个关键点，逐点判断学生是否覆盖、准确度如何
+2. 检查逻辑：前后观点有无矛盾？例子是否支撑论点？有无绝对化表述？有无单一归因？
+3. 检查表达：用词是否准确、有无歧义
+4. 综合评分
+
+输出JSON：
+{
+  "key_points": [
+    {"point": "关键点", "covered": true/false, "quality": "good/partial/missing", "comment": "引用原文评价"}
+  ],
+  "logic_score": 70,
+  "clarity_score": 80,
+  "overall": 75,
+  "logic_issues": [
+    {"original": "原句", "issue_type": "自相矛盾/论据偏离/绝对化/因果跳跃/单一归因/其他", "explanation": "为什么错", "correction": "修改为"}
+  ],
+  "strengths": ["优点1（引用原文）"],
+  "weaknesses": ["不足1（引用原文）"],
+  "feedback": "总评（80-150字，不准写套话）",
+  "suggestions": ["建议1", "建议2"]
+}
+
+评分锚点：
+- logic_score：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+- overall = logic_score×0.35 + clarity_score×0.25 + key_points覆盖率×0.4
+- 发现逻辑问题必须填入logic_issues，不能只给低分
+[LLM监控] === prompt结束 ===
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] LLM返回 (长度=8)：
+not json
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=961) ===
+你是一位资深英语教师。请依靠你的专业知识和教学经验，认真批改以下英语作文。
+
+⚠️ 重要：请优先使用你的英语教学专业知识来判断。如果下面的"参考信息"与题目不相关或与你的判断冲突，忽略它，以你的专业判断为准。
+
+## 题目要求
+Q
+
+## 学生作文
+A
+
+## 评分维度（每项0-100分）
+1. **grammar（语法准确性）**: 语法错误数量与严重程度
+2. **vocabulary（词汇多样性）**: 词汇丰富度、搭配准确度
+3. **sentence_complexity（句式复杂度）**: 句型多样性和衔接
+4. **content_relevance（内容切题度）**: 是否紧扣主题
+5. **overall（综合评分）**: = (grammar*0.35 + vocabulary*0.25 + complexity*0.2 + relevance*0.2)
+
+## 额外要求
+- 找出至少3处语法错误，标注位置并给出修改建议（highlight字段）
+- 给出逐句修改建议（corrections字段）
+- 给出3-5条提升建议（suggestions字段）
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "scores": {"grammar": 85, "vocabulary": 78, "sentence_complexity": 72, "content_relevance": 90, "overall": 82},
+    "highlights": [{"original": "...", "position": "第X句", "error_type": "grammar/vocabulary/logic", "correction": "...", "explanation": "..."}],
+    "corrections": [{"original_sentence": "...", "improved_sentence": "...", "comment": "修改理由"}],
+    "suggestions": ["建议1", "建议2", "建议3"],
+    "feedback": "总体评语（2-3句，要具体）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] LLM返回 (长度=186)：
+{"scores": {"grammar": 80, "vocabulary": 80, "sentence_complexity": 80, "content_relevance": 80, "overall": 80}, "highlights": [], "corrections": [], "suggestions": [], "feedback": "ok"}
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=1350) ===
+你是中考语文阅卷老师。批改以下议论文，从5个维度评分（每项0-100），并找出所有逻辑错误。
+
+【题目】
+Q
+
+【作文】
+A
+
+【年级】初中
+
+一、评分维度
+1. 立意（25%）：是否切题、观点明确、有深度
+2. 结构（20%）：开头-本论-结尾是否完整、层次清晰
+3. 语言（25%）：是否流畅、用词准确、有文采
+4. 素材（15%）：先数清楚文中用了哪些事例（人名、事件），再评价用得对不对、好不好。如果文中已有名人事例，不能写"缺乏名人事例"
+5. 逻辑（20%）：重点检查——
+   - 前后段落的观点有没有矛盾？（比如前面说"坚持必胜"，后面说"盲目坚持白费"）
+   - 例子是不是真的在证明论点？（比如讲"坚持"时扯到"速度"，跑偏了）
+   - 有没有"只要…就一定…""完全只靠…"这种绝对化说法？
+   - 有没有把复杂成功简单归因为单一因素？（比如"成功全靠坚持，跟天赋、团队无关"）
+
+二、评分锚点
+- 立意：跑题0-40 / 平淡40-60 / 正确60-80 / 有深度80-100
+- 结构：残缺0-40 / 勉强完整40-60 / 完整但衔接一般60-80 / 严谨80-100
+- 语言：多处语病0-40 / 通顺但平淡40-60 / 流畅60-80 / 有文采80-100
+- 素材：无事例0 / 有事例但用错20-40 / 准确但单一50-70 / 丰富贴切80-100
+- 逻辑：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+
+三、输出JSON（只输出JSON，不要任何其他文字）
+{
+  "content_inventory": {
+    "famous_examples": ["列出文中出现的人名"],
+    "life_examples": ["列出文中的生活事例"],
+    "paragraph_count": 5
+  },
+  "scores": {
+    "立意": 75, "结构": 70, "语言": 75, "素材": 65, "逻辑": 60,
+    "overall": 计算：(立意*25+结构*20+语言*25+素材*15+逻辑*20)/100 后四舍五入取整
+  },
+  "idea_analysis": "立意一句话评价",
+  "structure_evaluation": "结构一句话评价",
+  "logic_errors": [
+    {
+      "original": "有问题的原句（一字不差）",
+      "error_type": "自相矛盾/论据偏离/单一归因/绝对化/因果跳跃/其他",
+      "explanation": "为什么错",
+      "correction": "改写成正确的句子"
+    }
+  ],
+  "polish": [{"original": "原句", "improved": "润色后", "reason": "理由"}],
+  "suggestions": ["改进建议1", "改进建议2"],
+  "feedback": "总评（80-150字，引用文中具体句子，不准写套话）"
+}
+[LLM监控] === prompt结束 ===
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] LLM返回 (长度=222)：
+{"content_inventory": {}, "scores": {"立意": 70, "结构": 70, "语言": 70, "素材": 70, "逻辑": 70, "overall": 70}, "idea_analysis": "", "structure_evaluation": "", "logic_errors": [], "polish": [], "suggestions": [], "feedback": "ok"}
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=823) ===
+你是一位资深理科教师。请依靠你的学科专业知识和教学经验，按步骤批改以下理科大题。
+
+⚠️ 重要：请优先使用你的学科专业知识来判断。如果"参考答案"不存在或与题目不匹配，请根据你的专业知识自行拆解题目、设定关键步骤并评分。
+
+## 题目
+Q
+
+## 参考答案（如提供，仅供参考；如不匹配请忽略）
+
+
+## 学生作答
+A
+
+## 批改要求
+1. 将题目拆解为3-6个关键步骤（根据你的专业知识判断拆解是否合理）
+2. 每个步骤分配分数（总分100）
+3. 对比学生作答，逐步骤判定得分
+4. 标注每个失分点的错误类型（公式用错/计算失误/概念错误/步骤缺失/单位错误）
+5. 给出各步骤的正确解法
+6. 如果参考答案不存在或不匹配，完全依靠你的专业知识来设定正确步骤和判断
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "steps": [
+        {"step_num": 1, "description": "步骤描述", "max_score": 20, "student_score": 18,
+          "status": "correct/partial/wrong/missing",
+          "error_type": "公式用错/计算失误/概念错误/步骤缺失/单位错误/无",
+          "feedback": "该步骤评价",
+          "correct_solution": "该步骤的正确解法"}
+    ],
+    "total_score": 85,
+    "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 5}],
+    "suggestions": ["建议1", "建议2"],
+    "feedback": "总体评语（要具体，结合作答内容）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] LLM返回 (长度=249)：
+{"steps": [{"step_num": 1, "description": "解", "max_score": 100, "student_score": 90, "status": "correct", "error_type": "无", "feedback": "ok", "correct_solution": "x=1"}], "total_score": 90, "error_summary": [], "suggestions": [], "feedback": "ok"}
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=823) ===
+你是一位资深理科教师。请依靠你的学科专业知识和教学经验，按步骤批改以下理科大题。
+
+⚠️ 重要：请优先使用你的学科专业知识来判断。如果"参考答案"不存在或与题目不匹配，请根据你的专业知识自行拆解题目、设定关键步骤并评分。
+
+## 题目
+Q
+
+## 参考答案（如提供，仅供参考；如不匹配请忽略）
+
+
+## 学生作答
+A
+
+## 批改要求
+1. 将题目拆解为3-6个关键步骤（根据你的专业知识判断拆解是否合理）
+2. 每个步骤分配分数（总分100）
+3. 对比学生作答，逐步骤判定得分
+4. 标注每个失分点的错误类型（公式用错/计算失误/概念错误/步骤缺失/单位错误）
+5. 给出各步骤的正确解法
+6. 如果参考答案不存在或不匹配，完全依靠你的专业知识来设定正确步骤和判断
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "steps": [
+        {"step_num": 1, "description": "步骤描述", "max_score": 20, "student_score": 18,
+          "status": "correct/partial/wrong/missing",
+          "error_type": "公式用错/计算失误/概念错误/步骤缺失/单位错误/无",
+          "feedback": "该步骤评价",
+          "correct_solution": "该步骤的正确解法"}
+    ],
+    "total_score": 85,
+    "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 5}],
+    "suggestions": ["建议1", "建议2"],
+    "feedback": "总体评语（要具体，结合作答内容）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] LLM返回 (长度=250)：
+{"steps": [{"step_num": 1, "description": "解", "max_score": 100, "student_score": 80, "status": "correct", "error_type": "无", "feedback": "ok", "correct_solution": "F=ma"}], "total_score": 80, "error_summary": [], "suggestions": [], "feedback": "ok"}
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=791) ===
+你是未知学科学科的批改老师。按以下步骤批改。
+
+【题目】
+Q
+
+【参考答案】
+无
+
+【学生作答】
+A
+
+步骤：
+1. 从题目中提炼3-5个关键点，逐点判断学生是否覆盖、准确度如何
+2. 检查逻辑：前后观点有无矛盾？例子是否支撑论点？有无绝对化表述？有无单一归因？
+3. 检查表达：用词是否准确、有无歧义
+4. 综合评分
+
+输出JSON：
+{
+  "key_points": [
+    {"point": "关键点", "covered": true/false, "quality": "good/partial/missing", "comment": "引用原文评价"}
+  ],
+  "logic_score": 70,
+  "clarity_score": 80,
+  "overall": 75,
+  "logic_issues": [
+    {"original": "原句", "issue_type": "自相矛盾/论据偏离/绝对化/因果跳跃/单一归因/其他", "explanation": "为什么错", "correction": "修改为"}
+  ],
+  "strengths": ["优点1（引用原文）"],
+  "weaknesses": ["不足1（引用原文）"],
+  "feedback": "总评（80-150字，不准写套话）",
+  "suggestions": ["建议1", "建议2"]
+}
+
+评分锚点：
+- logic_score：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+- overall = logic_score×0.35 + clarity_score×0.25 + key_points覆盖率×0.4
+- 发现逻辑问题必须填入logic_issues，不能只给低分
+[LLM监控] === prompt结束 ===
+2026-06-16 01:45:43 - grading - INFO - [LLM监控] LLM返回 (长度=231)：
+{"key_points": [{"point": "p1", "covered": true, "quality": "good", "comment": ""}], "logic_score": 70, "clarity_score": 70, "overall": 70, "logic_issues": [], "strengths": [], "weaknesses": [], "feedback": "ok", "suggestions": []}
+2026-06-16 01:45:43 - graph_builder - INFO - 知识图谱已保存: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_save_and_load0\graph.json (2 实体, 1 关系)
+2026-06-16 01:45:43 - graph_builder - INFO - 知识图谱已加载: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_save_and_load0\graph.json (2 实体, 1 关系)
+2026-06-16 01:45:43 - graph_builder - INFO - 知识图谱已保存: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-15\test_get_stats_ready0\graph.json (1 实体, 0 关系)
+2026-06-16 01:45:43 - graph_builder - INFO - [GraphManager] 图谱缓存已失效
+2026-06-16 01:46:12 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 3 篇文档 → top 2 (0.00s)
+2026-06-16 01:46:12 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 1 篇文档 → top 1 (0.00s)
+2026-06-16 01:46:12 - reranker - ERROR - [云端Rerank] API调用失败: timeout
+2026-06-16 01:46:12 - reranker - ERROR - [云端Rerank] API调用失败: timeout
+2026-06-16 01:46:12 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 1 篇文档 → top 0 (0.00s)
+2026-06-16 01:46:12 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 3 篇文档 → top 3 (0.00s)
+2026-06-16 01:46:12 - reranker - INFO - 云端重排序完成: 3 -> 2
+2026-06-16 01:46:12 - reranker - ERROR - 云端重排序失败: API down，使用原始分数
+2026-06-16 01:46:12 - reranker - ERROR - 云端重排序失败: API down，使用原始分数
+2026-06-16 01:46:12 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 2 篇文档 → top 2 (0.00s)
+2026-06-16 01:46:12 - reranker - ERROR - Cross-encode失败: API error
+2026-06-16 01:46:12 - reranker - ERROR - Cross-encode失败: API error
+2026-06-16 01:46:12 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 2 篇文档 → top 2 (0.00s)
+2026-06-16 01:46:12 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 2 篇文档 → top 2 (0.00s)
+2026-06-16 01:46:12 - self_rag - INFO - Self-RAG评估: score=0.85, acceptable=True, hallucination=9
+2026-06-16 01:46:12 - self_rag - INFO - Self-RAG评估: score=0.70, acceptable=True, hallucination=7
+2026-06-16 01:46:12 - self_rag - WARNING - Self-RAG评估失败: LLM error
+2026-06-16 01:46:28 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_dispatches_to_txt0\test.txt
+2026-06-16 01:46:28 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_dispatches_to_csv0\test.csv
+2026-06-16 01:46:28 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_dispatches_to_json0\test.json
+2026-06-16 01:46:28 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_dispatches_to_pdf0\test.pdf
+2026-06-16 01:46:28 - document_loader - INFO - 加载PDF: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_dispatches_to_pdf0\test.pdf, 1页
+2026-06-16 01:46:28 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_dispatches_to_word0\test.docx
+2026-06-16 01:46:28 - document_loader - INFO - [原生] 加载 test.xyz
+2026-06-16 01:46:28 - document_loader - INFO - [LangChain] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_valid_ext_loads0\test.txt: 1 个文档
+2026-06-16 01:46:28 - document_loader - INFO - [原生] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_langchain_fallback_to_nat0\test.txt
+2026-06-16 01:46:28 - document_loader - INFO - [LangChain] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_load_directory0\a.txt: 1 个文档
+2026-06-16 01:46:28 - document_loader - INFO - 已加载: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_load_directory0\a.txt
+2026-06-16 01:46:28 - document_loader - INFO - [LangChain] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_load_directory0\b.txt: 1 个文档
+2026-06-16 01:46:28 - document_loader - INFO - 已加载: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_load_directory0\b.txt
+2026-06-16 01:46:28 - document_loader - INFO - 目录加载完成: 2 个文档
+2026-06-16 01:46:28 - document_loader - INFO - [LangChain] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_load_directory_filter_ext0\b.csv: 1 个文档
+2026-06-16 01:46:28 - document_loader - INFO - 已加载: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_load_directory_filter_ext0\b.csv
+2026-06-16 01:46:28 - document_loader - INFO - 目录加载完成: 1 个文档
+2026-06-16 01:46:28 - document_loader - INFO - [LangChain] 加载 C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_load_directory_skips_unsu0\a.txt: 1 个文档
+2026-06-16 01:46:28 - document_loader - INFO - 已加载: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_load_directory_skips_unsu0\a.txt
+2026-06-16 01:46:28 - document_loader - INFO - 目录加载完成: 1 个文档
+2026-06-16 01:46:29 - evaluator - INFO - 开始评估: 0 个样本
+2026-06-16 01:46:30 - evaluator - INFO - 评估完成: P=0.0000 R=0.0000 F1=0.0000 BLEU-1=0.0000 ROUGE-L=0.0000
+2026-06-16 01:46:30 - evaluator - INFO - 开始评估: 1 个样本
+2026-06-16 01:46:30 - evaluator - INFO - 评估样本 [1/1]: test query...
+2026-06-16 01:46:30 - evaluator - INFO - 评估完成: P=1.0000 R=0.5000 F1=0.6667 BLEU-1=0.0000 ROUGE-L=0.0000
+2026-06-16 01:46:30 - evaluator - INFO - 开始评估: 1 个样本
+2026-06-16 01:46:30 - evaluator - INFO - 评估样本 [1/1]: test query...
+2026-06-16 01:46:30 - evaluator - ERROR - 评估样本 0 失败: timeout
+2026-06-16 01:46:30 - evaluator - ERROR - 评估样本 0 失败: timeout
+2026-06-16 01:46:30 - evaluator - INFO - 评估完成: P=0.0000 R=0.0000 F1=0.0000 BLEU-1=0.0000 ROUGE-L=0.0000
+2026-06-16 01:46:30 - evaluator - INFO - 开始评估: 3 个样本
+2026-06-16 01:46:30 - evaluator - INFO - 评估样本 [1/3]: q0...
+2026-06-16 01:46:30 - evaluator - INFO - 评估样本 [2/3]: q1...
+2026-06-16 01:46:30 - evaluator - INFO - 评估样本 [3/3]: q2...
+2026-06-16 01:46:31 - evaluator - INFO - 评估完成: P=1.0000 R=0.5000 F1=0.6667 BLEU-1=0.6667 ROUGE-L=0.5000
+2026-06-16 01:46:31 - evaluator - INFO - 开始评估: 1 个样本
+2026-06-16 01:46:31 - evaluator - INFO - 评估样本 [1/1]: test query...
+2026-06-16 01:46:31 - evaluator - INFO - 评估完成: P=0.0000 R=0.0000 F1=0.0000 BLEU-1=0.0000 ROUGE-L=0.0000
+2026-06-16 01:46:31 - evaluator - INFO - 开始评估: 1 个样本
+2026-06-16 01:46:31 - evaluator - INFO - 评估样本 [1/1]: test query...
+2026-06-16 01:46:31 - evaluator - INFO - 评估完成: P=0.0000 R=0.0000 F1=0.0000 BLEU-1=0.1353 ROUGE-L=0.6667
+2026-06-16 01:46:31 - evaluator - INFO - 开始流式评估: 0 个样本
+2026-06-16 01:46:31 - evaluator - INFO - 流式评估完成: 0 个样本, 0.0s
+2026-06-16 01:46:31 - evaluator - INFO - 开始流式评估: 1 个样本
+2026-06-16 01:46:32 - evaluator - INFO - 流式评估完成: 1 个样本, 0.0s
+2026-06-16 01:46:32 - evaluator - INFO - 开始流式评估: 5 个样本
+2026-06-16 01:46:32 - evaluator - INFO - 评测已被用户取消
+2026-06-16 01:46:32 - evaluator - INFO - 开始流式评估: 1 个样本
+2026-06-16 01:46:32 - evaluator - ERROR - 评估样本 0 失败: fail
+2026-06-16 01:46:32 - evaluator - ERROR - 评估样本 0 失败: fail
+2026-06-16 01:46:32 - evaluator - INFO - 流式评估完成: 1 个样本, 0.0s
+2026-06-16 01:46:32 - evaluator - INFO - 开始流式评估: 1 个样本
+2026-06-16 01:46:32 - evaluator - INFO - 流式评估完成: 1 个样本, 0.0s
+2026-06-16 01:46:32 - evaluator - INFO - 开始流式评估: 1 个样本
+2026-06-16 01:46:32 - evaluator - INFO - 流式评估完成: 1 个样本, 0.0s
+2026-06-16 01:46:32 - evaluator - INFO - 开始流式评估: 1 个样本
+2026-06-16 01:46:33 - evaluator - INFO - 流式评估完成: 1 个样本, 0.0s
+2026-06-16 01:46:34 - grading - WARNING - LLMClient 初始化失败，批改将不可用: no config
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=11) ===
+test prompt
+[LLM监控] === prompt结束 ===
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] LLM返回 (长度=16)：
+{"result": "ok"}
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=4) ===
+test
+[LLM监控] === prompt结束 ===
+2026-06-16 01:46:34 - grading - ERROR - LLM调用失败: API error
+2026-06-16 01:46:34 - grading - ERROR - LLM调用失败: API error
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=984) ===
+你是一位资深英语教师。请依靠你的专业知识和教学经验，认真批改以下英语作文。
+
+⚠️ 重要：请优先使用你的英语教学专业知识来判断。如果下面的"参考信息"与题目不相关或与你的判断冲突，忽略它，以你的专业判断为准。
+
+## 题目要求
+Write about...
+
+## 学生作文
+My essay...
+
+## 评分维度（每项0-100分）
+1. **grammar（语法准确性）**: 语法错误数量与严重程度
+2. **vocabulary（词汇多样性）**: 词汇丰富度、搭配准确度
+3. **sentence_complexity（句式复杂度）**: 句型多样性和衔接
+4. **content_relevance（内容切题度）**: 是否紧扣主题
+5. **overall（综合评分）**: = (grammar*0.35 + vocabulary*0.25 + complexity*0.2 + relevance*0.2)
+
+## 额外要求
+- 找出至少3处语法错误，标注位置并给出修改建议（highlight字段）
+- 给出逐句修改建议（corrections字段）
+- 给出3-5条提升建议（suggestions字段）
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "scores": {"grammar": 85, "vocabulary": 78, "sentence_complexity": 72, "content_relevance": 90, "overall": 82},
+    "highlights": [{"original": "...", "position": "第X句", "error_type": "grammar/vocabulary/logic", "correction": "...", "explanation": "..."}],
+    "corrections": [{"original_sentence": "...", "improved_sentence": "...", "comment": "修改理由"}],
+    "suggestions": ["建议1", "建议2", "建议3"],
+    "feedback": "总体评语（2-3句，要具体）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] LLM返回 (长度=324)：
+{"scores": {"grammar": 85, "vocabulary": 78, "sentence_complexity": 72, "content_relevance": 90, "overall": 82}, "highlights": [{"original": "He go", "position": "第1句", "error_type": "grammar", "correction": "He goes", "explanation": "主谓一致"}], "corrections": [], "suggestions": ["多用复杂句", "注意时态"], "feedback": "整体不错，需注意语法细节"}
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=961) ===
+你是一位资深英语教师。请依靠你的专业知识和教学经验，认真批改以下英语作文。
+
+⚠️ 重要：请优先使用你的英语教学专业知识来判断。如果下面的"参考信息"与题目不相关或与你的判断冲突，忽略它，以你的专业判断为准。
+
+## 题目要求
+Q
+
+## 学生作文
+A
+
+## 评分维度（每项0-100分）
+1. **grammar（语法准确性）**: 语法错误数量与严重程度
+2. **vocabulary（词汇多样性）**: 词汇丰富度、搭配准确度
+3. **sentence_complexity（句式复杂度）**: 句型多样性和衔接
+4. **content_relevance（内容切题度）**: 是否紧扣主题
+5. **overall（综合评分）**: = (grammar*0.35 + vocabulary*0.25 + complexity*0.2 + relevance*0.2)
+
+## 额外要求
+- 找出至少3处语法错误，标注位置并给出修改建议（highlight字段）
+- 给出逐句修改建议（corrections字段）
+- 给出3-5条提升建议（suggestions字段）
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "scores": {"grammar": 85, "vocabulary": 78, "sentence_complexity": 72, "content_relevance": 90, "overall": 82},
+    "highlights": [{"original": "...", "position": "第X句", "error_type": "grammar/vocabulary/logic", "correction": "...", "explanation": "..."}],
+    "corrections": [{"original_sentence": "...", "improved_sentence": "...", "comment": "修改理由"}],
+    "suggestions": ["建议1", "建议2", "建议3"],
+    "feedback": "总体评语（2-3句，要具体）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] LLM返回 (长度=21)：
+not valid json at all
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=1354) ===
+你是中考语文阅卷老师。批改以下议论文，从5个维度评分（每项0-100），并找出所有逻辑错误。
+
+【题目】
+题目
+
+【作文】
+作文内容
+
+【年级】初中
+
+一、评分维度
+1. 立意（25%）：是否切题、观点明确、有深度
+2. 结构（20%）：开头-本论-结尾是否完整、层次清晰
+3. 语言（25%）：是否流畅、用词准确、有文采
+4. 素材（15%）：先数清楚文中用了哪些事例（人名、事件），再评价用得对不对、好不好。如果文中已有名人事例，不能写"缺乏名人事例"
+5. 逻辑（20%）：重点检查——
+   - 前后段落的观点有没有矛盾？（比如前面说"坚持必胜"，后面说"盲目坚持白费"）
+   - 例子是不是真的在证明论点？（比如讲"坚持"时扯到"速度"，跑偏了）
+   - 有没有"只要…就一定…""完全只靠…"这种绝对化说法？
+   - 有没有把复杂成功简单归因为单一因素？（比如"成功全靠坚持，跟天赋、团队无关"）
+
+二、评分锚点
+- 立意：跑题0-40 / 平淡40-60 / 正确60-80 / 有深度80-100
+- 结构：残缺0-40 / 勉强完整40-60 / 完整但衔接一般60-80 / 严谨80-100
+- 语言：多处语病0-40 / 通顺但平淡40-60 / 流畅60-80 / 有文采80-100
+- 素材：无事例0 / 有事例但用错20-40 / 准确但单一50-70 / 丰富贴切80-100
+- 逻辑：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+
+三、输出JSON（只输出JSON，不要任何其他文字）
+{
+  "content_inventory": {
+    "famous_examples": ["列出文中出现的人名"],
+    "life_examples": ["列出文中的生活事例"],
+    "paragraph_count": 5
+  },
+  "scores": {
+    "立意": 75, "结构": 70, "语言": 75, "素材": 65, "逻辑": 60,
+    "overall": 计算：(立意*25+结构*20+语言*25+素材*15+逻辑*20)/100 后四舍五入取整
+  },
+  "idea_analysis": "立意一句话评价",
+  "structure_evaluation": "结构一句话评价",
+  "logic_errors": [
+    {
+      "original": "有问题的原句（一字不差）",
+      "error_type": "自相矛盾/论据偏离/单一归因/绝对化/因果跳跃/其他",
+      "explanation": "为什么错",
+      "correction": "改写成正确的句子"
+    }
+  ],
+  "polish": [{"original": "原句", "improved": "润色后", "reason": "理由"}],
+  "suggestions": ["改进建议1", "改进建议2"],
+  "feedback": "总评（80-150字，引用文中具体句子，不准写套话）"
+}
+[LLM监控] === prompt结束 ===
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] LLM返回 (长度=465)：
+{"content_inventory": {"famous_examples": ["鲁迅"], "life_examples": [], "paragraph_count": 3}, "scores": {"立意": 75, "结构": 70, "语言": 75, "素材": 65, "逻辑": 60, "overall": 65}, "idea_analysis": "观点明确但不够深刻", "structure_evaluation": "结构完整", "logic_errors": [{"original": "只要坚持就能成功", "error_type": "绝对化", "explanation": "过于绝对", "correction": "坚持是成功的重要因素之一"}], "polish": [{"original": "很好", "improved": "表现出色", "reason": "用词更丰富"}], "suggestions": ["建议1"], "feedback": "总评内容"}
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=1350) ===
+你是中考语文阅卷老师。批改以下议论文，从5个维度评分（每项0-100），并找出所有逻辑错误。
+
+【题目】
+Q
+
+【作文】
+A
+
+【年级】初中
+
+一、评分维度
+1. 立意（25%）：是否切题、观点明确、有深度
+2. 结构（20%）：开头-本论-结尾是否完整、层次清晰
+3. 语言（25%）：是否流畅、用词准确、有文采
+4. 素材（15%）：先数清楚文中用了哪些事例（人名、事件），再评价用得对不对、好不好。如果文中已有名人事例，不能写"缺乏名人事例"
+5. 逻辑（20%）：重点检查——
+   - 前后段落的观点有没有矛盾？（比如前面说"坚持必胜"，后面说"盲目坚持白费"）
+   - 例子是不是真的在证明论点？（比如讲"坚持"时扯到"速度"，跑偏了）
+   - 有没有"只要…就一定…""完全只靠…"这种绝对化说法？
+   - 有没有把复杂成功简单归因为单一因素？（比如"成功全靠坚持，跟天赋、团队无关"）
+
+二、评分锚点
+- 立意：跑题0-40 / 平淡40-60 / 正确60-80 / 有深度80-100
+- 结构：残缺0-40 / 勉强完整40-60 / 完整但衔接一般60-80 / 严谨80-100
+- 语言：多处语病0-40 / 通顺但平淡40-60 / 流畅60-80 / 有文采80-100
+- 素材：无事例0 / 有事例但用错20-40 / 准确但单一50-70 / 丰富贴切80-100
+- 逻辑：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+
+三、输出JSON（只输出JSON，不要任何其他文字）
+{
+  "content_inventory": {
+    "famous_examples": ["列出文中出现的人名"],
+    "life_examples": ["列出文中的生活事例"],
+    "paragraph_count": 5
+  },
+  "scores": {
+    "立意": 75, "结构": 70, "语言": 75, "素材": 65, "逻辑": 60,
+    "overall": 计算：(立意*25+结构*20+语言*25+素材*15+逻辑*20)/100 后四舍五入取整
+  },
+  "idea_analysis": "立意一句话评价",
+  "structure_evaluation": "结构一句话评价",
+  "logic_errors": [
+    {
+      "original": "有问题的原句（一字不差）",
+      "error_type": "自相矛盾/论据偏离/单一归因/绝对化/因果跳跃/其他",
+      "explanation": "为什么错",
+      "correction": "改写成正确的句子"
+    }
+  ],
+  "polish": [{"original": "原句", "improved": "润色后", "reason": "理由"}],
+  "suggestions": ["改进建议1", "改进建议2"],
+  "feedback": "总评（80-150字，引用文中具体句子，不准写套话）"
+}
+[LLM监控] === prompt结束 ===
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] LLM返回 (长度=12)：
+invalid json
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=830) ===
+你是一位资深理科教师。请依靠你的学科专业知识和教学经验，按步骤批改以下理科大题。
+
+⚠️ 重要：请优先使用你的学科专业知识来判断。如果"参考答案"不存在或与题目不匹配，请根据你的专业知识自行拆解题目、设定关键步骤并评分。
+
+## 题目
+解方程
+
+## 参考答案（如提供，仅供参考；如不匹配请忽略）
+x=3
+
+## 学生作答
+x=3
+
+## 批改要求
+1. 将题目拆解为3-6个关键步骤（根据你的专业知识判断拆解是否合理）
+2. 每个步骤分配分数（总分100）
+3. 对比学生作答，逐步骤判定得分
+4. 标注每个失分点的错误类型（公式用错/计算失误/概念错误/步骤缺失/单位错误）
+5. 给出各步骤的正确解法
+6. 如果参考答案不存在或不匹配，完全依靠你的专业知识来设定正确步骤和判断
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "steps": [
+        {"step_num": 1, "description": "步骤描述", "max_score": 20, "student_score": 18,
+          "status": "correct/partial/wrong/missing",
+          "error_type": "公式用错/计算失误/概念错误/步骤缺失/单位错误/无",
+          "feedback": "该步骤评价",
+          "correct_solution": "该步骤的正确解法"}
+    ],
+    "total_score": 85,
+    "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 5}],
+    "suggestions": ["建议1", "建议2"],
+    "feedback": "总体评语（要具体，结合作答内容）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] LLM返回 (长度=644)：
+{"steps": [{"step_num": 1, "description": "审题", "max_score": 20, "student_score": 20, "status": "correct", "error_type": "无", "feedback": "正确", "correct_solution": "正确审题"}, {"step_num": 2, "description": "列方程", "max_score": 30, "student_score": 15, "status": "partial", "error_type": "公式用错", "feedback": "公式部分错误", "correct_solution": "x+2=5"}, {"step_num": 3, "description": "求解", "max_score": 50, "student_score": 50, "status": "correct", "error_type": "无", "feedback": "正确", "correct_solution": "x=3"}], "total_score": 85, "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 15}], "suggestions": ["注意公式记忆"], "feedback": "总体还可以"}
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=824) ===
+你是一位资深理科教师。请依靠你的学科专业知识和教学经验，按步骤批改以下理科大题。
+
+⚠️ 重要：请优先使用你的学科专业知识来判断。如果"参考答案"不存在或与题目不匹配，请根据你的专业知识自行拆解题目、设定关键步骤并评分。
+
+## 题目
+Q
+
+## 参考答案（如提供，仅供参考；如不匹配请忽略）
+R
+
+## 学生作答
+A
+
+## 批改要求
+1. 将题目拆解为3-6个关键步骤（根据你的专业知识判断拆解是否合理）
+2. 每个步骤分配分数（总分100）
+3. 对比学生作答，逐步骤判定得分
+4. 标注每个失分点的错误类型（公式用错/计算失误/概念错误/步骤缺失/单位错误）
+5. 给出各步骤的正确解法
+6. 如果参考答案不存在或不匹配，完全依靠你的专业知识来设定正确步骤和判断
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "steps": [
+        {"step_num": 1, "description": "步骤描述", "max_score": 20, "student_score": 18,
+          "status": "correct/partial/wrong/missing",
+          "error_type": "公式用错/计算失误/概念错误/步骤缺失/单位错误/无",
+          "feedback": "该步骤评价",
+          "correct_solution": "该步骤的正确解法"}
+    ],
+    "total_score": 85,
+    "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 5}],
+    "suggestions": ["建议1", "建议2"],
+    "feedback": "总体评语（要具体，结合作答内容）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] LLM返回 (长度=254)：
+{"steps": [{"step_num": 1, "description": "求解", "max_score": 100, "student_score": 100, "status": "correct", "error_type": "无", "feedback": "完全正确", "correct_solution": "x=2"}], "total_score": 100, "error_summary": [], "suggestions": [], "feedback": "完美"}
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=824) ===
+你是一位资深理科教师。请依靠你的学科专业知识和教学经验，按步骤批改以下理科大题。
+
+⚠️ 重要：请优先使用你的学科专业知识来判断。如果"参考答案"不存在或与题目不匹配，请根据你的专业知识自行拆解题目、设定关键步骤并评分。
+
+## 题目
+Q
+
+## 参考答案（如提供，仅供参考；如不匹配请忽略）
+R
+
+## 学生作答
+A
+
+## 批改要求
+1. 将题目拆解为3-6个关键步骤（根据你的专业知识判断拆解是否合理）
+2. 每个步骤分配分数（总分100）
+3. 对比学生作答，逐步骤判定得分
+4. 标注每个失分点的错误类型（公式用错/计算失误/概念错误/步骤缺失/单位错误）
+5. 给出各步骤的正确解法
+6. 如果参考答案不存在或不匹配，完全依靠你的专业知识来设定正确步骤和判断
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "steps": [
+        {"step_num": 1, "description": "步骤描述", "max_score": 20, "student_score": 18,
+          "status": "correct/partial/wrong/missing",
+          "error_type": "公式用错/计算失误/概念错误/步骤缺失/单位错误/无",
+          "feedback": "该步骤评价",
+          "correct_solution": "该步骤的正确解法"}
+    ],
+    "total_score": 85,
+    "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 5}],
+    "suggestions": ["建议1", "建议2"],
+    "feedback": "总体评语（要具体，结合作答内容）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] LLM返回 (长度=8)：
+not json
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=794) ===
+你是历史学科的批改老师。按以下步骤批改。
+
+【题目】
+题目
+
+【参考答案】
+参考答案
+
+【学生作答】
+作答
+
+步骤：
+1. 从题目中提炼3-5个关键点，逐点判断学生是否覆盖、准确度如何
+2. 检查逻辑：前后观点有无矛盾？例子是否支撑论点？有无绝对化表述？有无单一归因？
+3. 检查表达：用词是否准确、有无歧义
+4. 综合评分
+
+输出JSON：
+{
+  "key_points": [
+    {"point": "关键点", "covered": true/false, "quality": "good/partial/missing", "comment": "引用原文评价"}
+  ],
+  "logic_score": 70,
+  "clarity_score": 80,
+  "overall": 75,
+  "logic_issues": [
+    {"original": "原句", "issue_type": "自相矛盾/论据偏离/绝对化/因果跳跃/单一归因/其他", "explanation": "为什么错", "correction": "修改为"}
+  ],
+  "strengths": ["优点1（引用原文）"],
+  "weaknesses": ["不足1（引用原文）"],
+  "feedback": "总评（80-150字，不准写套话）",
+  "suggestions": ["建议1", "建议2"]
+}
+
+评分锚点：
+- logic_score：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+- overall = logic_score×0.35 + clarity_score×0.25 + key_points覆盖率×0.4
+- 发现逻辑问题必须填入logic_issues，不能只给低分
+[LLM监控] === prompt结束 ===
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] LLM返回 (长度=497)：
+{"key_points": [{"point": "要点1", "covered": true, "quality": "good", "comment": "正确覆盖"}, {"point": "要点2", "covered": true, "quality": "partial", "comment": "部分正确"}, {"point": "要点3", "covered": false, "quality": "missing", "comment": "未提及"}], "logic_score": 75, "clarity_score": 80, "overall": 70, "logic_issues": [{"original": "绝对化表述", "issue_type": "绝对化", "explanation": "太绝对", "correction": "改为..."}], "strengths": ["逻辑清晰"], "weaknesses": ["审题不够深入"], "feedback": "总体合格", "suggestions": ["改进建议"]}
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=789) ===
+你是通用学科的批改老师。按以下步骤批改。
+
+【题目】
+Q
+
+【参考答案】
+无
+
+【学生作答】
+A
+
+步骤：
+1. 从题目中提炼3-5个关键点，逐点判断学生是否覆盖、准确度如何
+2. 检查逻辑：前后观点有无矛盾？例子是否支撑论点？有无绝对化表述？有无单一归因？
+3. 检查表达：用词是否准确、有无歧义
+4. 综合评分
+
+输出JSON：
+{
+  "key_points": [
+    {"point": "关键点", "covered": true/false, "quality": "good/partial/missing", "comment": "引用原文评价"}
+  ],
+  "logic_score": 70,
+  "clarity_score": 80,
+  "overall": 75,
+  "logic_issues": [
+    {"original": "原句", "issue_type": "自相矛盾/论据偏离/绝对化/因果跳跃/单一归因/其他", "explanation": "为什么错", "correction": "修改为"}
+  ],
+  "strengths": ["优点1（引用原文）"],
+  "weaknesses": ["不足1（引用原文）"],
+  "feedback": "总评（80-150字，不准写套话）",
+  "suggestions": ["建议1", "建议2"]
+}
+
+评分锚点：
+- logic_score：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+- overall = logic_score×0.35 + clarity_score×0.25 + key_points覆盖率×0.4
+- 发现逻辑问题必须填入logic_issues，不能只给低分
+[LLM监控] === prompt结束 ===
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] LLM返回 (长度=20)：
+{"feedback": "评语内容"}
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=789) ===
+你是通用学科的批改老师。按以下步骤批改。
+
+【题目】
+Q
+
+【参考答案】
+无
+
+【学生作答】
+A
+
+步骤：
+1. 从题目中提炼3-5个关键点，逐点判断学生是否覆盖、准确度如何
+2. 检查逻辑：前后观点有无矛盾？例子是否支撑论点？有无绝对化表述？有无单一归因？
+3. 检查表达：用词是否准确、有无歧义
+4. 综合评分
+
+输出JSON：
+{
+  "key_points": [
+    {"point": "关键点", "covered": true/false, "quality": "good/partial/missing", "comment": "引用原文评价"}
+  ],
+  "logic_score": 70,
+  "clarity_score": 80,
+  "overall": 75,
+  "logic_issues": [
+    {"original": "原句", "issue_type": "自相矛盾/论据偏离/绝对化/因果跳跃/单一归因/其他", "explanation": "为什么错", "correction": "修改为"}
+  ],
+  "strengths": ["优点1（引用原文）"],
+  "weaknesses": ["不足1（引用原文）"],
+  "feedback": "总评（80-150字，不准写套话）",
+  "suggestions": ["建议1", "建议2"]
+}
+
+评分锚点：
+- logic_score：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+- overall = logic_score×0.35 + clarity_score×0.25 + key_points覆盖率×0.4
+- 发现逻辑问题必须填入logic_issues，不能只给低分
+[LLM监控] === prompt结束 ===
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] LLM返回 (长度=8)：
+not json
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=961) ===
+你是一位资深英语教师。请依靠你的专业知识和教学经验，认真批改以下英语作文。
+
+⚠️ 重要：请优先使用你的英语教学专业知识来判断。如果下面的"参考信息"与题目不相关或与你的判断冲突，忽略它，以你的专业判断为准。
+
+## 题目要求
+Q
+
+## 学生作文
+A
+
+## 评分维度（每项0-100分）
+1. **grammar（语法准确性）**: 语法错误数量与严重程度
+2. **vocabulary（词汇多样性）**: 词汇丰富度、搭配准确度
+3. **sentence_complexity（句式复杂度）**: 句型多样性和衔接
+4. **content_relevance（内容切题度）**: 是否紧扣主题
+5. **overall（综合评分）**: = (grammar*0.35 + vocabulary*0.25 + complexity*0.2 + relevance*0.2)
+
+## 额外要求
+- 找出至少3处语法错误，标注位置并给出修改建议（highlight字段）
+- 给出逐句修改建议（corrections字段）
+- 给出3-5条提升建议（suggestions字段）
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "scores": {"grammar": 85, "vocabulary": 78, "sentence_complexity": 72, "content_relevance": 90, "overall": 82},
+    "highlights": [{"original": "...", "position": "第X句", "error_type": "grammar/vocabulary/logic", "correction": "...", "explanation": "..."}],
+    "corrections": [{"original_sentence": "...", "improved_sentence": "...", "comment": "修改理由"}],
+    "suggestions": ["建议1", "建议2", "建议3"],
+    "feedback": "总体评语（2-3句，要具体）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] LLM返回 (长度=186)：
+{"scores": {"grammar": 80, "vocabulary": 80, "sentence_complexity": 80, "content_relevance": 80, "overall": 80}, "highlights": [], "corrections": [], "suggestions": [], "feedback": "ok"}
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=1350) ===
+你是中考语文阅卷老师。批改以下议论文，从5个维度评分（每项0-100），并找出所有逻辑错误。
+
+【题目】
+Q
+
+【作文】
+A
+
+【年级】初中
+
+一、评分维度
+1. 立意（25%）：是否切题、观点明确、有深度
+2. 结构（20%）：开头-本论-结尾是否完整、层次清晰
+3. 语言（25%）：是否流畅、用词准确、有文采
+4. 素材（15%）：先数清楚文中用了哪些事例（人名、事件），再评价用得对不对、好不好。如果文中已有名人事例，不能写"缺乏名人事例"
+5. 逻辑（20%）：重点检查——
+   - 前后段落的观点有没有矛盾？（比如前面说"坚持必胜"，后面说"盲目坚持白费"）
+   - 例子是不是真的在证明论点？（比如讲"坚持"时扯到"速度"，跑偏了）
+   - 有没有"只要…就一定…""完全只靠…"这种绝对化说法？
+   - 有没有把复杂成功简单归因为单一因素？（比如"成功全靠坚持，跟天赋、团队无关"）
+
+二、评分锚点
+- 立意：跑题0-40 / 平淡40-60 / 正确60-80 / 有深度80-100
+- 结构：残缺0-40 / 勉强完整40-60 / 完整但衔接一般60-80 / 严谨80-100
+- 语言：多处语病0-40 / 通顺但平淡40-60 / 流畅60-80 / 有文采80-100
+- 素材：无事例0 / 有事例但用错20-40 / 准确但单一50-70 / 丰富贴切80-100
+- 逻辑：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+
+三、输出JSON（只输出JSON，不要任何其他文字）
+{
+  "content_inventory": {
+    "famous_examples": ["列出文中出现的人名"],
+    "life_examples": ["列出文中的生活事例"],
+    "paragraph_count": 5
+  },
+  "scores": {
+    "立意": 75, "结构": 70, "语言": 75, "素材": 65, "逻辑": 60,
+    "overall": 计算：(立意*25+结构*20+语言*25+素材*15+逻辑*20)/100 后四舍五入取整
+  },
+  "idea_analysis": "立意一句话评价",
+  "structure_evaluation": "结构一句话评价",
+  "logic_errors": [
+    {
+      "original": "有问题的原句（一字不差）",
+      "error_type": "自相矛盾/论据偏离/单一归因/绝对化/因果跳跃/其他",
+      "explanation": "为什么错",
+      "correction": "改写成正确的句子"
+    }
+  ],
+  "polish": [{"original": "原句", "improved": "润色后", "reason": "理由"}],
+  "suggestions": ["改进建议1", "改进建议2"],
+  "feedback": "总评（80-150字，引用文中具体句子，不准写套话）"
+}
+[LLM监控] === prompt结束 ===
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] LLM返回 (长度=222)：
+{"content_inventory": {}, "scores": {"立意": 70, "结构": 70, "语言": 70, "素材": 70, "逻辑": 70, "overall": 70}, "idea_analysis": "", "structure_evaluation": "", "logic_errors": [], "polish": [], "suggestions": [], "feedback": "ok"}
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=823) ===
+你是一位资深理科教师。请依靠你的学科专业知识和教学经验，按步骤批改以下理科大题。
+
+⚠️ 重要：请优先使用你的学科专业知识来判断。如果"参考答案"不存在或与题目不匹配，请根据你的专业知识自行拆解题目、设定关键步骤并评分。
+
+## 题目
+Q
+
+## 参考答案（如提供，仅供参考；如不匹配请忽略）
+
+
+## 学生作答
+A
+
+## 批改要求
+1. 将题目拆解为3-6个关键步骤（根据你的专业知识判断拆解是否合理）
+2. 每个步骤分配分数（总分100）
+3. 对比学生作答，逐步骤判定得分
+4. 标注每个失分点的错误类型（公式用错/计算失误/概念错误/步骤缺失/单位错误）
+5. 给出各步骤的正确解法
+6. 如果参考答案不存在或不匹配，完全依靠你的专业知识来设定正确步骤和判断
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "steps": [
+        {"step_num": 1, "description": "步骤描述", "max_score": 20, "student_score": 18,
+          "status": "correct/partial/wrong/missing",
+          "error_type": "公式用错/计算失误/概念错误/步骤缺失/单位错误/无",
+          "feedback": "该步骤评价",
+          "correct_solution": "该步骤的正确解法"}
+    ],
+    "total_score": 85,
+    "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 5}],
+    "suggestions": ["建议1", "建议2"],
+    "feedback": "总体评语（要具体，结合作答内容）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] LLM返回 (长度=249)：
+{"steps": [{"step_num": 1, "description": "解", "max_score": 100, "student_score": 90, "status": "correct", "error_type": "无", "feedback": "ok", "correct_solution": "x=1"}], "total_score": 90, "error_summary": [], "suggestions": [], "feedback": "ok"}
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=823) ===
+你是一位资深理科教师。请依靠你的学科专业知识和教学经验，按步骤批改以下理科大题。
+
+⚠️ 重要：请优先使用你的学科专业知识来判断。如果"参考答案"不存在或与题目不匹配，请根据你的专业知识自行拆解题目、设定关键步骤并评分。
+
+## 题目
+Q
+
+## 参考答案（如提供，仅供参考；如不匹配请忽略）
+
+
+## 学生作答
+A
+
+## 批改要求
+1. 将题目拆解为3-6个关键步骤（根据你的专业知识判断拆解是否合理）
+2. 每个步骤分配分数（总分100）
+3. 对比学生作答，逐步骤判定得分
+4. 标注每个失分点的错误类型（公式用错/计算失误/概念错误/步骤缺失/单位错误）
+5. 给出各步骤的正确解法
+6. 如果参考答案不存在或不匹配，完全依靠你的专业知识来设定正确步骤和判断
+
+严格按JSON格式返回（不要markdown代码块）：
+{
+    "steps": [
+        {"step_num": 1, "description": "步骤描述", "max_score": 20, "student_score": 18,
+          "status": "correct/partial/wrong/missing",
+          "error_type": "公式用错/计算失误/概念错误/步骤缺失/单位错误/无",
+          "feedback": "该步骤评价",
+          "correct_solution": "该步骤的正确解法"}
+    ],
+    "total_score": 85,
+    "error_summary": [{"type": "公式用错", "count": 1, "total_deduction": 5}],
+    "suggestions": ["建议1", "建议2"],
+    "feedback": "总体评语（要具体，结合作答内容）"
+}
+
+[LLM监控] === prompt结束 ===
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] LLM返回 (长度=250)：
+{"steps": [{"step_num": 1, "description": "解", "max_score": 100, "student_score": 80, "status": "correct", "error_type": "无", "feedback": "ok", "correct_solution": "F=ma"}], "total_score": 80, "error_summary": [], "suggestions": [], "feedback": "ok"}
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] === 即将发送给LLM的prompt (长度=791) ===
+你是未知学科学科的批改老师。按以下步骤批改。
+
+【题目】
+Q
+
+【参考答案】
+无
+
+【学生作答】
+A
+
+步骤：
+1. 从题目中提炼3-5个关键点，逐点判断学生是否覆盖、准确度如何
+2. 检查逻辑：前后观点有无矛盾？例子是否支撑论点？有无绝对化表述？有无单一归因？
+3. 检查表达：用词是否准确、有无歧义
+4. 综合评分
+
+输出JSON：
+{
+  "key_points": [
+    {"point": "关键点", "covered": true/false, "quality": "good/partial/missing", "comment": "引用原文评价"}
+  ],
+  "logic_score": 70,
+  "clarity_score": 80,
+  "overall": 75,
+  "logic_issues": [
+    {"original": "原句", "issue_type": "自相矛盾/论据偏离/绝对化/因果跳跃/单一归因/其他", "explanation": "为什么错", "correction": "修改为"}
+  ],
+  "strengths": ["优点1（引用原文）"],
+  "weaknesses": ["不足1（引用原文）"],
+  "feedback": "总评（80-150字，不准写套话）",
+  "suggestions": ["建议1", "建议2"]
+}
+
+评分锚点：
+- logic_score：多处严重错误0-40 / 1-2处漏洞40-60 / 基本通顺60-80 / 严密80-100
+- overall = logic_score×0.35 + clarity_score×0.25 + key_points覆盖率×0.4
+- 发现逻辑问题必须填入logic_issues，不能只给低分
+[LLM监控] === prompt结束 ===
+2026-06-16 01:46:34 - grading - INFO - [LLM监控] LLM返回 (长度=231)：
+{"key_points": [{"point": "p1", "covered": true, "quality": "good", "comment": ""}], "logic_score": 70, "clarity_score": 70, "overall": 70, "logic_issues": [], "strengths": [], "weaknesses": [], "feedback": "ok", "suggestions": []}
+2026-06-16 01:46:34 - graph_builder - INFO - 知识图谱已保存: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_save_and_load0\graph.json (2 实体, 1 关系)
+2026-06-16 01:46:34 - graph_builder - INFO - 知识图谱已加载: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_save_and_load0\graph.json (2 实体, 1 关系)
+2026-06-16 01:46:34 - graph_builder - INFO - 知识图谱已保存: C:\Users\86187\AppData\Local\Temp\pytest-of-86187\pytest-16\test_get_stats_ready0\graph.json (1 实体, 0 关系)
+2026-06-16 01:46:34 - graph_builder - INFO - [GraphManager] 图谱缓存已失效
+2026-06-16 01:47:04 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 3 篇文档 → top 2 (0.00s)
+2026-06-16 01:47:04 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 1 篇文档 → top 1 (0.00s)
+2026-06-16 01:47:04 - reranker - ERROR - [云端Rerank] API调用失败: timeout
+2026-06-16 01:47:04 - reranker - ERROR - [云端Rerank] API调用失败: timeout
+2026-06-16 01:47:04 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 1 篇文档 → top 0 (0.00s)
+2026-06-16 01:47:04 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 3 篇文档 → top 3 (0.00s)
+2026-06-16 01:47:04 - reranker - INFO - 云端重排序完成: 3 -> 2
+2026-06-16 01:47:04 - reranker - ERROR - 云端重排序失败: API down，使用原始分数
+2026-06-16 01:47:04 - reranker - ERROR - 云端重排序失败: API down，使用原始分数
+2026-06-16 01:47:04 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 2 篇文档 → top 2 (0.00s)
+2026-06-16 01:47:04 - reranker - ERROR - Cross-encode失败: API error
+2026-06-16 01:47:04 - reranker - ERROR - Cross-encode失败: API error
+2026-06-16 01:47:04 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 2 篇文档 → top 2 (0.00s)
+2026-06-16 01:47:04 - reranker - INFO - [云端Rerank] qwen3-rerank 完成: 2 篇文档 → top 2 (0.00s)
+2026-06-16 01:47:04 - self_rag - INFO - Self-RAG评估: score=0.85, acceptable=True, hallucination=9
+2026-06-16 01:47:04 - self_rag - INFO - Self-RAG评估: score=0.70, acceptable=True, hallucination=7
+2026-06-16 01:47:04 - self_rag - WARNING - Self-RAG评估失败: LLM error
+2026-06-16 02:02:26 - student_routes - ERROR - 创建对话失败: DB down
+2026-06-16 02:02:26 - student_routes - ERROR - 创建对话失败: DB down
+2026-06-16 02:02:26 - student_routes - ERROR - 获取对话失败: fail
+2026-06-16 02:02:26 - student_routes - ERROR - 获取对话失败: fail
+2026-06-16 02:02:26 - student_routes - ERROR - 列出对话失败: fail
+2026-06-16 02:02:26 - student_routes - ERROR - 列出对话失败: fail
+2026-06-16 02:02:26 - student_routes - ERROR - 删除对话失败: fail
+2026-06-16 02:02:26 - student_routes - ERROR - 删除对话失败: fail
+2026-06-16 02:02:26 - student_routes - ERROR - 置顶对话失败: fail
+2026-06-16 02:02:26 - student_routes - ERROR - 置顶对话失败: fail
+2026-06-16 02:02:26 - student_routes - ERROR - 多模态上传失败: parse error
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 261, in student_multimodal_upload
+    chunks = loader.load_document(temp_path)
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: parse error
+2026-06-16 02:02:26 - student_routes - ERROR - 多模态上传失败: parse error
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 261, in student_multimodal_upload
+    chunks = loader.load_document(temp_path)
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: parse error
+2026-06-16 02:02:26 - student_routes - INFO - [photo-search] 收到请求: file=None, query长度=0
+2026-06-16 02:02:26 - student_routes - INFO - [photo-search] OCR阶段完成, 耗时0.0s
+2026-06-16 02:02:26 - student_routes - INFO - [photo-search] 搜索文本: extracted_text长度=0, query长度=0, 最终search_text长度=0
+2026-06-16 02:02:26 - student_routes - INFO - [photo-search] 收到请求: file=None, query长度=5
+2026-06-16 02:02:26 - student_routes - INFO - [photo-search] OCR阶段完成, 耗时0.0s
+2026-06-16 02:02:26 - student_routes - INFO - [photo-search] 搜索文本: extracted_text长度=0, query长度=5, 最终search_text长度=5
+2026-06-16 02:02:26 - student_routes - INFO - [photo-search] 联网搜索成功: 1 条结果, 耗时0.0s
+2026-06-16 02:02:26 - student_routes - INFO - [photo-search] LLM解析完成, 耗时0.0s
+2026-06-16 02:02:26 - student_routes - INFO - [photo-search] 总耗时: 0.0s (OCR+Tavily+LLM)
+2026-06-16 02:02:26 - student_routes - INFO - [photo-search] 收到请求: file=test.svg, query长度=0
+2026-06-16 02:02:26 - student_routes - INFO - [photo-search] 收到请求: file=test.png, query长度=0
+2026-06-16 02:02:26 - student_routes - INFO - [photo-search] 收到请求: file=test.png, query长度=0
+2026-06-16 02:02:26 - student_routes - ERROR - [photo-search] 图片处理失败: ocr fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 332, in student_photo_search
+    ocr_client = get_ocr_client()
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: ocr fail
+2026-06-16 02:02:26 - student_routes - ERROR - [photo-search] 图片处理失败: ocr fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 332, in student_photo_search
+    ocr_client = get_ocr_client()
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: ocr fail
+2026-06-16 02:02:27 - student_routes - ERROR - 学生Agent查询失败: agent crash
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 507, in student_agent_query
+    result = await agent.ainvoke({"messages": [HumanMessage(content=request.query)]})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EduRAG智慧问答系统\tests\test_student_routes.py", line 410, in mock_ainvoke
+    raise RuntimeError("agent crash")
+RuntimeError: agent crash
+2026-06-16 02:02:27 - student_routes - ERROR - 学生Agent查询失败: agent crash
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 507, in student_agent_query
+    result = await agent.ainvoke({"messages": [HumanMessage(content=request.query)]})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EduRAG智慧问答系统\tests\test_student_routes.py", line 410, in mock_ainvoke
+    raise RuntimeError("agent crash")
+RuntimeError: agent crash
+2026-06-16 02:02:27 - student_routes - INFO - [LangGraph批改] 完成: tools=['grade_execute'], steps=3
+2026-06-16 02:02:27 - student_routes - WARNING - 刷新用户画像失败: division by zero
+2026-06-16 02:02:27 - student_routes - WARNING - Agent批改失败，回退到直接批改: agent failed
+2026-06-16 02:02:27 - student_routes - ERROR - 批改失败: cannot access local variable 'result' where it is not associated with a value
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 921, in student_grade
+    "graded_by": "langgraph" if result.get("tools_used") else "direct",
+                                ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+2026-06-16 02:02:27 - student_routes - ERROR - 批改失败: cannot access local variable 'result' where it is not associated with a value
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 921, in student_grade
+    "graded_by": "langgraph" if result.get("tools_used") else "direct",
+                                ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+2026-06-16 02:02:27 - student_routes - INFO - [LangGraph批改] 完成: tools=['grade_execute'], steps=2
+2026-06-16 02:02:27 - student_routes - WARNING - 刷新用户画像失败: division by zero
+2026-06-16 02:02:27 - student_routes - WARNING - Agent批改失败，回退到直接批改: agent crash
+2026-06-16 02:02:27 - student_routes - ERROR - 批改失败: total fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 856, in student_grade
+    result = await agent.ainvoke(initial_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EduRAG智慧问答系统\tests\test_student_routes.py", line 552, in mock_ainvoke
+    raise RuntimeError("agent crash")
+RuntimeError: agent crash
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 884, in student_grade
+    grading_data = _direct_grade(request)
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 1082, in _direct_grade
+    grader = UnifiedGrader()
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: total fail
+2026-06-16 02:02:27 - student_routes - ERROR - 批改失败: total fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 856, in student_grade
+    result = await agent.ainvoke(initial_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EduRAG智慧问答系统\tests\test_student_routes.py", line 552, in mock_ainvoke
+    raise RuntimeError("agent crash")
+RuntimeError: agent crash
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 884, in student_grade
+    grading_data = _direct_grade(request)
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 1082, in _direct_grade
+    grader = UnifiedGrader()
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: total fail
+2026-06-16 02:02:27 - student_routes - ERROR - 举一反三生成失败: fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 1157, in generate_analogy
+    row = db.get_wrong_book_by_id(wb_id)
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: fail
+2026-06-16 02:02:27 - student_routes - ERROR - 举一反三生成失败: fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 1157, in generate_analogy
+    row = db.get_wrong_book_by_id(wb_id)
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: fail
+2026-06-16 02:02:27 - student_routes - ERROR - 获取知识图谱数据失败: fail
+2026-06-16 02:02:27 - student_routes - ERROR - 获取知识图谱数据失败: fail
+2026-06-16 02:02:27 - student_routes - ERROR - 获取知识图谱统计失败: fail
+2026-06-16 02:02:27 - student_routes - ERROR - 获取知识图谱统计失败: fail
+2026-06-16 02:02:28 - student_routes - ERROR - 获取实体详情失败: fail
+2026-06-16 02:02:28 - student_routes - ERROR - 获取实体详情失败: fail
+2026-06-16 02:04:56 - student_routes - ERROR - 创建对话失败: DB down
+2026-06-16 02:04:56 - student_routes - ERROR - 创建对话失败: DB down
+2026-06-16 02:04:56 - student_routes - ERROR - 获取对话失败: fail
+2026-06-16 02:04:56 - student_routes - ERROR - 获取对话失败: fail
+2026-06-16 02:04:56 - student_routes - ERROR - 列出对话失败: fail
+2026-06-16 02:04:56 - student_routes - ERROR - 列出对话失败: fail
+2026-06-16 02:04:56 - student_routes - ERROR - 删除对话失败: fail
+2026-06-16 02:04:56 - student_routes - ERROR - 删除对话失败: fail
+2026-06-16 02:04:56 - student_routes - ERROR - 置顶对话失败: fail
+2026-06-16 02:04:56 - student_routes - ERROR - 置顶对话失败: fail
+2026-06-16 02:04:56 - student_routes - ERROR - 多模态上传失败: parse error
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 261, in student_multimodal_upload
+    chunks = loader.load_document(temp_path)
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: parse error
+2026-06-16 02:04:56 - student_routes - ERROR - 多模态上传失败: parse error
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 261, in student_multimodal_upload
+    chunks = loader.load_document(temp_path)
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: parse error
+2026-06-16 02:04:56 - student_routes - INFO - [photo-search] 收到请求: file=None, query长度=0
+2026-06-16 02:04:56 - student_routes - INFO - [photo-search] OCR阶段完成, 耗时0.0s
+2026-06-16 02:04:56 - student_routes - INFO - [photo-search] 搜索文本: extracted_text长度=0, query长度=0, 最终search_text长度=0
+2026-06-16 02:04:56 - student_routes - INFO - [photo-search] 收到请求: file=None, query长度=5
+2026-06-16 02:04:56 - student_routes - INFO - [photo-search] OCR阶段完成, 耗时0.0s
+2026-06-16 02:04:56 - student_routes - INFO - [photo-search] 搜索文本: extracted_text长度=0, query长度=5, 最终search_text长度=5
+2026-06-16 02:04:56 - student_routes - INFO - [photo-search] 联网搜索成功: 1 条结果, 耗时0.0s
+2026-06-16 02:04:56 - student_routes - INFO - [photo-search] LLM解析完成, 耗时0.0s
+2026-06-16 02:04:56 - student_routes - INFO - [photo-search] 总耗时: 0.0s (OCR+Tavily+LLM)
+2026-06-16 02:04:56 - student_routes - INFO - [photo-search] 收到请求: file=test.svg, query长度=0
+2026-06-16 02:04:56 - student_routes - INFO - [photo-search] 收到请求: file=test.png, query长度=0
+2026-06-16 02:04:56 - student_routes - INFO - [photo-search] 收到请求: file=test.png, query长度=0
+2026-06-16 02:04:56 - student_routes - ERROR - [photo-search] 图片处理失败: ocr fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 332, in student_photo_search
+    ocr_client = get_ocr_client()
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: ocr fail
+2026-06-16 02:04:56 - student_routes - ERROR - [photo-search] 图片处理失败: ocr fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 332, in student_photo_search
+    ocr_client = get_ocr_client()
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: ocr fail
+2026-06-16 02:04:56 - student_routes - ERROR - 学生Agent查询失败: agent crash
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 507, in student_agent_query
+    result = await agent.ainvoke({"messages": [HumanMessage(content=request.query)]})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EduRAG智慧问答系统\tests\test_student_routes.py", line 410, in mock_ainvoke
+    raise RuntimeError("agent crash")
+RuntimeError: agent crash
+2026-06-16 02:04:56 - student_routes - ERROR - 学生Agent查询失败: agent crash
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 507, in student_agent_query
+    result = await agent.ainvoke({"messages": [HumanMessage(content=request.query)]})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EduRAG智慧问答系统\tests\test_student_routes.py", line 410, in mock_ainvoke
+    raise RuntimeError("agent crash")
+RuntimeError: agent crash
+2026-06-16 02:04:57 - student_routes - INFO - [LangGraph批改] 完成: tools=['grade_execute'], steps=3
+2026-06-16 02:04:57 - student_routes - WARNING - 刷新用户画像失败: division by zero
+2026-06-16 02:04:57 - student_routes - WARNING - Agent批改失败，回退到直接批改: agent failed
+2026-06-16 02:04:57 - student_routes - ERROR - 批改失败: cannot access local variable 'result' where it is not associated with a value
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 921, in student_grade
+    "graded_by": "langgraph" if result.get("tools_used") else "direct",
+                                ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+2026-06-16 02:04:57 - student_routes - ERROR - 批改失败: cannot access local variable 'result' where it is not associated with a value
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 921, in student_grade
+    "graded_by": "langgraph" if result.get("tools_used") else "direct",
+                                ^^^^^^
+UnboundLocalError: cannot access local variable 'result' where it is not associated with a value
+2026-06-16 02:04:57 - student_routes - INFO - [LangGraph批改] 完成: tools=['grade_execute'], steps=2
+2026-06-16 02:04:57 - student_routes - WARNING - 刷新用户画像失败: division by zero
+2026-06-16 02:04:57 - student_routes - WARNING - Agent批改失败，回退到直接批改: agent crash
+2026-06-16 02:04:57 - student_routes - ERROR - 批改失败: total fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 856, in student_grade
+    result = await agent.ainvoke(initial_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EduRAG智慧问答系统\tests\test_student_routes.py", line 552, in mock_ainvoke
+    raise RuntimeError("agent crash")
+RuntimeError: agent crash
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 884, in student_grade
+    grading_data = _direct_grade(request)
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 1082, in _direct_grade
+    grader = UnifiedGrader()
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: total fail
+2026-06-16 02:04:57 - student_routes - ERROR - 批改失败: total fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 856, in student_grade
+    result = await agent.ainvoke(initial_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EduRAG智慧问答系统\tests\test_student_routes.py", line 552, in mock_ainvoke
+    raise RuntimeError("agent crash")
+RuntimeError: agent crash
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 884, in student_grade
+    grading_data = _direct_grade(request)
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 1082, in _direct_grade
+    grader = UnifiedGrader()
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: total fail
+2026-06-16 02:04:57 - student_routes - ERROR - 举一反三生成失败: fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 1157, in generate_analogy
+    row = db.get_wrong_book_by_id(wb_id)
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: fail
+2026-06-16 02:04:57 - student_routes - ERROR - 举一反三生成失败: fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 1157, in generate_analogy
+    row = db.get_wrong_book_by_id(wb_id)
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: fail
+2026-06-16 02:04:57 - student_routes - ERROR - 获取知识图谱数据失败: fail
+2026-06-16 02:04:57 - student_routes - ERROR - 获取知识图谱数据失败: fail
+2026-06-16 02:04:57 - student_routes - ERROR - 获取知识图谱统计失败: fail
+2026-06-16 02:04:57 - student_routes - ERROR - 获取知识图谱统计失败: fail
+2026-06-16 02:04:57 - student_routes - ERROR - 获取实体详情失败: fail
+2026-06-16 02:04:57 - student_routes - ERROR - 获取实体详情失败: fail
+2026-06-16 02:13:00 - student_routes - ERROR - 创建对话失败: DB down
+2026-06-16 02:13:00 - student_routes - ERROR - 创建对话失败: DB down
+2026-06-16 02:13:00 - student_routes - ERROR - 获取对话失败: fail
+2026-06-16 02:13:00 - student_routes - ERROR - 获取对话失败: fail
+2026-06-16 02:13:00 - student_routes - ERROR - 列出对话失败: fail
+2026-06-16 02:13:00 - student_routes - ERROR - 列出对话失败: fail
+2026-06-16 02:13:01 - student_routes - ERROR - 删除对话失败: fail
+2026-06-16 02:13:01 - student_routes - ERROR - 删除对话失败: fail
+2026-06-16 02:13:01 - student_routes - ERROR - 置顶对话失败: fail
+2026-06-16 02:13:01 - student_routes - ERROR - 置顶对话失败: fail
+2026-06-16 02:13:01 - student_routes - ERROR - 多模态上传失败: parse error
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 261, in student_multimodal_upload
+    chunks = loader.load_document(temp_path)
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: parse error
+2026-06-16 02:13:01 - student_routes - ERROR - 多模态上传失败: parse error
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 261, in student_multimodal_upload
+    chunks = loader.load_document(temp_path)
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: parse error
+2026-06-16 02:13:01 - student_routes - INFO - [photo-search] 收到请求: file=None, query长度=0
+2026-06-16 02:13:01 - student_routes - INFO - [photo-search] OCR阶段完成, 耗时0.0s
+2026-06-16 02:13:01 - student_routes - INFO - [photo-search] 搜索文本: extracted_text长度=0, query长度=0, 最终search_text长度=0
+2026-06-16 02:13:01 - student_routes - INFO - [photo-search] 收到请求: file=None, query长度=5
+2026-06-16 02:13:01 - student_routes - INFO - [photo-search] OCR阶段完成, 耗时0.0s
+2026-06-16 02:13:01 - student_routes - INFO - [photo-search] 搜索文本: extracted_text长度=0, query长度=5, 最终search_text长度=5
+2026-06-16 02:13:01 - student_routes - INFO - [photo-search] 联网搜索成功: 1 条结果, 耗时0.0s
+2026-06-16 02:13:01 - student_routes - INFO - [photo-search] LLM解析完成, 耗时0.0s
+2026-06-16 02:13:01 - student_routes - INFO - [photo-search] 总耗时: 0.0s (OCR+Tavily+LLM)
+2026-06-16 02:13:01 - student_routes - INFO - [photo-search] 收到请求: file=test.svg, query长度=0
+2026-06-16 02:13:01 - student_routes - INFO - [photo-search] 收到请求: file=test.png, query长度=0
+2026-06-16 02:13:01 - student_routes - INFO - [photo-search] 收到请求: file=test.png, query长度=0
+2026-06-16 02:13:01 - student_routes - ERROR - [photo-search] 图片处理失败: ocr fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 332, in student_photo_search
+    ocr_client = get_ocr_client()
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: ocr fail
+2026-06-16 02:13:01 - student_routes - ERROR - [photo-search] 图片处理失败: ocr fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 332, in student_photo_search
+    ocr_client = get_ocr_client()
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: ocr fail
+2026-06-16 02:13:01 - student_routes - ERROR - 学生Agent查询失败: agent crash
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 507, in student_agent_query
+    result = await agent.ainvoke({"messages": [HumanMessage(content=request.query)]})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EduRAG智慧问答系统\tests\test_student_routes.py", line 410, in mock_ainvoke
+    raise RuntimeError("agent crash")
+RuntimeError: agent crash
+2026-06-16 02:13:01 - student_routes - ERROR - 学生Agent查询失败: agent crash
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 507, in student_agent_query
+    result = await agent.ainvoke({"messages": [HumanMessage(content=request.query)]})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EduRAG智慧问答系统\tests\test_student_routes.py", line 410, in mock_ainvoke
+    raise RuntimeError("agent crash")
+RuntimeError: agent crash
+2026-06-16 02:13:02 - student_routes - INFO - [LangGraph批改] 完成: tools=['grade_execute'], steps=3
+2026-06-16 02:13:02 - student_routes - WARNING - 刷新用户画像失败: division by zero
+2026-06-16 02:13:02 - student_routes - WARNING - Agent批改失败，回退到直接批改: agent failed
+2026-06-16 02:13:02 - student_routes - INFO - [LangGraph批改] 完成: tools=['grade_execute'], steps=2
+2026-06-16 02:13:02 - student_routes - WARNING - 刷新用户画像失败: division by zero
+2026-06-16 02:13:02 - student_routes - WARNING - Agent批改失败，回退到直接批改: agent crash
+2026-06-16 02:13:02 - student_routes - ERROR - 批改失败: total fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 856, in student_grade
+    result = await agent.ainvoke(initial_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EduRAG智慧问答系统\tests\test_student_routes.py", line 553, in mock_ainvoke
+    raise RuntimeError("agent crash")
+RuntimeError: agent crash
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 884, in student_grade
+    grading_data = _direct_grade(request)
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 1082, in _direct_grade
+    grader = UnifiedGrader()
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: total fail
+2026-06-16 02:13:02 - student_routes - ERROR - 批改失败: total fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 856, in student_grade
+    result = await agent.ainvoke(initial_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EduRAG智慧问答系统\tests\test_student_routes.py", line 553, in mock_ainvoke
+    raise RuntimeError("agent crash")
+RuntimeError: agent crash
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 884, in student_grade
+    grading_data = _direct_grade(request)
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 1082, in _direct_grade
+    grader = UnifiedGrader()
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: total fail
+2026-06-16 02:13:02 - student_routes - ERROR - 举一反三生成失败: fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 1157, in generate_analogy
+    row = db.get_wrong_book_by_id(wb_id)
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: fail
+2026-06-16 02:13:02 - student_routes - ERROR - 举一反三生成失败: fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 1157, in generate_analogy
+    row = db.get_wrong_book_by_id(wb_id)
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: fail
+2026-06-16 02:13:02 - student_routes - ERROR - 获取知识图谱数据失败: fail
+2026-06-16 02:13:02 - student_routes - ERROR - 获取知识图谱数据失败: fail
+2026-06-16 02:13:02 - student_routes - ERROR - 获取知识图谱统计失败: fail
+2026-06-16 02:13:02 - student_routes - ERROR - 获取知识图谱统计失败: fail
+2026-06-16 02:13:02 - student_routes - ERROR - 获取实体详情失败: fail
+2026-06-16 02:13:02 - student_routes - ERROR - 获取实体详情失败: fail
+2026-06-16 02:37:13 - student_routes - ERROR - 创建对话失败: DB down
+2026-06-16 02:37:13 - student_routes - ERROR - 创建对话失败: DB down
+2026-06-16 02:37:13 - student_routes - ERROR - 获取对话失败: fail
+2026-06-16 02:37:13 - student_routes - ERROR - 获取对话失败: fail
+2026-06-16 02:37:13 - student_routes - ERROR - 列出对话失败: fail
+2026-06-16 02:37:13 - student_routes - ERROR - 列出对话失败: fail
+2026-06-16 02:37:13 - student_routes - ERROR - 删除对话失败: fail
+2026-06-16 02:37:13 - student_routes - ERROR - 删除对话失败: fail
+2026-06-16 02:37:14 - student_routes - ERROR - 置顶对话失败: fail
+2026-06-16 02:37:14 - student_routes - ERROR - 置顶对话失败: fail
+2026-06-16 02:37:14 - student_routes - ERROR - 多模态上传失败: parse error
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 261, in student_multimodal_upload
+    chunks = loader.load_document(temp_path)
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: parse error
+2026-06-16 02:37:14 - student_routes - ERROR - 多模态上传失败: parse error
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 261, in student_multimodal_upload
+    chunks = loader.load_document(temp_path)
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: parse error
+2026-06-16 02:37:14 - student_routes - INFO - [photo-search] 收到请求: file=None, query长度=0
+2026-06-16 02:37:14 - student_routes - INFO - [photo-search] OCR阶段完成, 耗时0.0s
+2026-06-16 02:37:14 - student_routes - INFO - [photo-search] 搜索文本: extracted_text长度=0, query长度=0, 最终search_text长度=0
+2026-06-16 02:37:14 - student_routes - INFO - [photo-search] 收到请求: file=None, query长度=5
+2026-06-16 02:37:14 - student_routes - INFO - [photo-search] OCR阶段完成, 耗时0.0s
+2026-06-16 02:37:14 - student_routes - INFO - [photo-search] 搜索文本: extracted_text长度=0, query长度=5, 最终search_text长度=5
+2026-06-16 02:37:14 - student_routes - INFO - [photo-search] 联网搜索成功: 1 条结果, 耗时0.0s
+2026-06-16 02:37:14 - student_routes - INFO - [photo-search] LLM解析完成, 耗时0.0s
+2026-06-16 02:37:14 - student_routes - INFO - [photo-search] 总耗时: 0.0s (OCR+Tavily+LLM)
+2026-06-16 02:37:14 - student_routes - INFO - [photo-search] 收到请求: file=test.svg, query长度=0
+2026-06-16 02:37:14 - student_routes - INFO - [photo-search] 收到请求: file=test.png, query长度=0
+2026-06-16 02:37:14 - student_routes - INFO - [photo-search] 收到请求: file=test.png, query长度=0
+2026-06-16 02:37:14 - student_routes - ERROR - [photo-search] 图片处理失败: ocr fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 332, in student_photo_search
+    ocr_client = get_ocr_client()
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: ocr fail
+2026-06-16 02:37:14 - student_routes - ERROR - [photo-search] 图片处理失败: ocr fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 332, in student_photo_search
+    ocr_client = get_ocr_client()
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: ocr fail
+2026-06-16 02:37:14 - student_routes - ERROR - 学生Agent查询失败: agent crash
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 507, in student_agent_query
+    result = await agent.ainvoke({"messages": [HumanMessage(content=request.query)]})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EduRAG智慧问答系统\tests\test_student_routes.py", line 410, in mock_ainvoke
+    raise RuntimeError("agent crash")
+RuntimeError: agent crash
+2026-06-16 02:37:14 - student_routes - ERROR - 学生Agent查询失败: agent crash
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 507, in student_agent_query
+    result = await agent.ainvoke({"messages": [HumanMessage(content=request.query)]})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EduRAG智慧问答系统\tests\test_student_routes.py", line 410, in mock_ainvoke
+    raise RuntimeError("agent crash")
+RuntimeError: agent crash
+2026-06-16 02:37:14 - student_routes - INFO - [LangGraph批改] 完成: tools=['grade_execute'], steps=3
+2026-06-16 02:37:14 - student_routes - WARNING - 刷新用户画像失败: division by zero
+2026-06-16 02:37:14 - student_routes - WARNING - Agent批改失败，回退到直接批改: agent failed
+2026-06-16 02:37:14 - student_routes - INFO - [LangGraph批改] 完成: tools=['grade_execute'], steps=2
+2026-06-16 02:37:14 - student_routes - WARNING - 刷新用户画像失败: division by zero
+2026-06-16 02:37:14 - student_routes - WARNING - Agent批改失败，回退到直接批改: agent crash
+2026-06-16 02:37:14 - student_routes - ERROR - 批改失败: total fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 856, in student_grade
+    result = await agent.ainvoke(initial_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EduRAG智慧问答系统\tests\test_student_routes.py", line 553, in mock_ainvoke
+    raise RuntimeError("agent crash")
+RuntimeError: agent crash
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 884, in student_grade
+    grading_data = _direct_grade(request)
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 1082, in _direct_grade
+    grader = UnifiedGrader()
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: total fail
+2026-06-16 02:37:14 - student_routes - ERROR - 批改失败: total fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 856, in student_grade
+    result = await agent.ainvoke(initial_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\EduRAG智慧问答系统\tests\test_student_routes.py", line 553, in mock_ainvoke
+    raise RuntimeError("agent crash")
+RuntimeError: agent crash
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 884, in student_grade
+    grading_data = _direct_grade(request)
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 1082, in _direct_grade
+    grader = UnifiedGrader()
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: total fail
+2026-06-16 02:37:15 - student_routes - ERROR - 举一反三生成失败: fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 1157, in generate_analogy
+    row = db.get_wrong_book_by_id(wb_id)
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: fail
+2026-06-16 02:37:15 - student_routes - ERROR - 举一反三生成失败: fail
+Traceback (most recent call last):
+  File "D:\EduRAG智慧问答系统\api\student_routes.py", line 1157, in generate_analogy
+    row = db.get_wrong_book_by_id(wb_id)
+  File "F:\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+Exception: fail
+2026-06-16 02:37:15 - student_routes - ERROR - 获取知识图谱数据失败: fail
+2026-06-16 02:37:15 - student_routes - ERROR - 获取知识图谱数据失败: fail
+2026-06-16 02:37:15 - student_routes - ERROR - 获取知识图谱统计失败: fail
+2026-06-16 02:37:15 - student_routes - ERROR - 获取知识图谱统计失败: fail
+2026-06-16 02:37:15 - student_routes - ERROR - 获取实体详情失败: fail
+2026-06-16 02:37:15 - student_routes - ERROR - 获取实体详情失败: fail

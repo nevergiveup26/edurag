@@ -1,0 +1,206 @@
+/* ================================================================
+   EduRAG 主样式文件 — 高端极简现代风
+   布局 / 页面标题 / 统计卡片 / 聊天 / 响应式
+   ================================================================ */
+
+@import './design-tokens.css';
+
+/* ===== 布局 ===== */
+.layout-sidebar {
+  height: 100vh;
+  background: linear-gradient(175deg, #0B0D1E 0%, #131536 50%, #0D0F24 100%) !important;
+  position: relative;
+  overflow: hidden;
+}
+.layout-main {
+  height: 100vh;
+  overflow-y: auto;
+  padding: var(--space-6) var(--space-8);
+  background: var(--color-bg-page);
+}
+
+/* ===== 统计卡片 ===== */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+.stat-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6) var(--space-5);
+  box-shadow: var(--shadow-card);
+  text-align: center;
+  border: 1px solid var(--color-border);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.stat-card:hover {
+  box-shadow: var(--shadow-floating);
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+}
+.stat-card .stat-value {
+  font-size: 38px;
+  font-weight: var(--font-extrabold);
+  margin: var(--space-2) 0;
+  color: var(--color-primary);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.02em;
+}
+.stat-card .stat-label {
+  font-size: var(--text-sm);
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: var(--font-semibold);
+}
+
+/* ===== 聊天区域 ===== */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 120px);
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border);
+}
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-5);
+}
+.chat-input-area {
+  padding: var(--space-4);
+  border-top: 1px solid var(--color-divider);
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-end;
+  background: var(--color-surface-secondary);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+.message-bubble {
+  max-width: 78%;
+  padding: 14px 18px;
+  border-radius: 18px;
+  margin-bottom: 14px;
+  line-height: var(--leading-relaxed);
+  word-break: break-word;
+  font-size: var(--text-base);
+}
+.message-user {
+  background: var(--color-primary-light);
+  margin-left: auto;
+  border-bottom-right-radius: 6px;
+  color: var(--color-text-primary);
+}
+.message-assistant {
+  background: var(--color-surface-secondary);
+  border-bottom-left-radius: 6px;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border-light);
+}
+.message-assistant pre {
+  background: #1C1A2E;
+  color: #D0CFE0;
+  padding: 14px;
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  margin: 10px 0;
+  font-size: var(--text-sm);
+}
+.message-assistant code {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+}
+
+/* 来源卡片 */
+.source-item {
+  padding: 10px 14px;
+  margin: 6px 0;
+  background: var(--color-surface-secondary);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--color-primary);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+/* ===== 页面标题 ===== */
+.page-title {
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--space-6);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-primary);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-divider);
+  position: relative;
+  letter-spacing: -0.01em;
+}
+.page-title::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 48px;
+  height: 3px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary-gradient);
+}
+
+/* ===== 页面头部（带标签） ===== */
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+/* ===== 卡片通用 ===== */
+.card {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  background: var(--color-surface);
+  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card:hover { box-shadow: var(--shadow-floating); }
+
+/* ===== 分割线 ===== */
+.el-divider__text {
+  background: var(--color-surface);
+  color: var(--color-text-tertiary);
+  font-weight: var(--font-medium);
+}
+
+/* ===== 响应式 ===== */
+@media (max-width: 768px) {
+  .stat-grid { grid-template-columns: repeat(2, 1fr); }
+  .layout-main { padding: var(--space-4); }
+}
+
+/* ===== 暗黑模式 ===== */
+html.dark .message-assistant {
+  background: var(--color-surface-secondary);
+  border-color: var(--color-border);
+}
+html.dark .message-assistant pre {
+  background: #121117;
+  color: #C8C6D8;
+}
+html.dark .source-item {
+  background: var(--color-surface-secondary);
+}
+html.dark .chat-container {
+  background: var(--color-surface);
+}
+html.dark .chat-input-area {
+  background: var(--color-surface-secondary);
+  border-color: var(--color-divider);
+}
+html.dark .page-title::after {
+  background: var(--color-primary-gradient);
+}

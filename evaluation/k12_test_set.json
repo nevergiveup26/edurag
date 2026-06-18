@@ -1,0 +1,855 @@
+[
+  {
+    "query": "给加点的多音字选择正确的读音，用“√”表示。\n\n农民把\\dot{种}（zhǒng zhòng）子\\dot{种}（zhǒng zhòng）到地里。",
+    "expected_answer": "zhǒng;zhòng\n本题考查学生对多音字读音的掌握。种读“zhǒng”时，组词种子、人种、工种等；种读“zhòng”时，表示种植。",
+    "expected_keywords": [
+      "字",
+      "字音",
+      "多音字"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-语文",
+    "metadata": {
+      "grade": "小学",
+      "subject": "语文",
+      "task_type": "填空",
+      "difficulty": "易",
+      "knowledge_tree": "字-字音-多音字"
+    }
+  },
+  {
+    "query": "以下书写完全正确的一项是\nA.叱咤风云     暴露无遗     别出心裁     崩裂 B.华灯璀璨     振天动地     千钧一发     围歼 C.鏖战犹酣     沧海一栗     念念有辞     揭开 D.虎视眈眈     死而后以     全神贯注     干燥",
+    "expected_answer": "A\n本题考查学生对词语的积累和汉字的正确书写。A选项正确；B选项中错误的是“振天动地”，正确写法为“震天动地”；C选项中错误的是“沧海一栗”“念念有辞”，正确写法为“沧海一粟”“念念有词”；D选项中错误的是“死而后以”，正确写法为“死而后已”。故选择A项。",
+    "expected_keywords": [
+      "字",
+      "字音",
+      "同音字"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-语文",
+    "metadata": {
+      "grade": "小学",
+      "subject": "语文",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "字-字音-同音字"
+    }
+  },
+  {
+    "query": "判断。\n1.“我读得很快，囫囵吞枣，大有‘不求甚解'的味道。”这句话中“囫囵吞枣”与“不求甚解”意思一样，都指读书不做细致分析，略知大意即可。",
+    "expected_answer": "T\n囫囵吞枣：把枣儿整个吞下去，比喻读书等不加分析地笼统接受。不求甚解：意思是指只领会全文大意不在字句上过分追究。结合原句句意，此说法正确。",
+    "expected_keywords": [
+      "理解"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-语文",
+    "metadata": {
+      "grade": "小学",
+      "subject": "语文",
+      "task_type": "判断",
+      "difficulty": "较易",
+      "knowledge_tree": "理解"
+    }
+  },
+  {
+    "query": "涵涵不爱读书，读书总是断断续续的，不能持之以恒，我会用格言“ \\underline{} ”来提醒她。舒舒学习怕辛苦，总想走捷径，我会用“ \\underline{} ”来劝告她。\nA.少年不知勤学苦，老来方知读书迟 B.一日读书一日功，一日不读十日空 C.学习不怕根底浅，只要迈步总不迟 D.书山有路勤为径，学海无涯苦作舟",
+    "expected_answer": "BD\n本题考查诗句的运用。答题时先要理解诗句的意思，然后抓住关键词来选择。如从“涵涵不爱读书”“不能持之以恒”可知要填的句子跟坚持读书有关，A项虽然有“读书”二字，但主要是告诫年轻人抓住好时光好好读书，不要等老了再后悔；B项表示读书是一个连续的过程，天天都要读书，所以第一空选B。",
+    "expected_keywords": [
+      "表达应用"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-语文",
+    "metadata": {
+      "grade": "小学",
+      "subject": "语文",
+      "task_type": "多选",
+      "difficulty": "较易",
+      "knowledge_tree": "表达应用"
+    }
+  },
+  {
+    "query": "下列说法中有误的一项是\nA.《观潮》按照潮来前、潮来时、潮头过后的顺序，描绘了壮观的钱塘江大潮。 B.《走月亮》描写了“我”和阿妈在月下散步的情景，表现了“我”走月亮时的幸福感。 C.我们可以按照“惩治巫婆和官绅→摸清底细→兴修水利”的顺序，来复述《西门豹治邺》这篇课文的内容。",
+    "expected_answer": "C\n本题考查学生对课内文章的掌握情况，学生应在大纲要求下对课内文章熟练掌握，了解故事内容、主要人物以及作者等相关知识。C的顺序应该是先摸清底细、惩治巫婆和官绅、兴修水利。",
+    "expected_keywords": [
+      "分析综合"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-语文",
+    "metadata": {
+      "grade": "小学",
+      "subject": "语文",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "分析综合"
+    }
+  },
+  {
+    "query": "下列朗读节奏划分正确的一项是\nA.方鼓琴/而志/在太山。 B.善哉/乎鼓琴，巍巍乎/若太山。 C.好/书画，所宝/以百数。 D.以为/世无足/复为/鼓琴者。",
+    "expected_answer": "C\n本题考查文言文朗读节奏的划分。完成本题要在整体理解句意的基础上，通过实际朗读体会节奏。A项的意思是：伯牙正弹奏到意在描绘大山的乐曲。“志在太山”应为一个整体，本句的朗读节奏是：方鼓琴/而/志在太山。B项的意思是：弹得真好啊！我好像看到了巍峨的大山！这里的“乎”属于词语的后缀，所以“善哉乎”是一个整体，本句的朗读节奏是：善哉乎/鼓琴，巍巍乎/若太山。C项的意思是：（杜处士）爱好书画，他珍藏的书画作品数以百计。C项的朗读节奏划分正确。D项的意思是：认为世上再没有值得他为之弹琴的人了。本句的朗读节奏可以是：以为/世无足复为鼓琴者。",
+    "expected_keywords": [
+      "文言文阅读",
+      "文言文断句题"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-语文",
+    "metadata": {
+      "grade": "小学",
+      "subject": "语文",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "文言文阅读-「文言文」断句题"
+    }
+  },
+  {
+    "query": "下面诗句判断季节有误的是\nA.未觉池塘春草梦，阶前梧叶已秋声。（秋） B.树阴满地日当午，梦觉流莺时一声。（夏） C.六出飞花入户时，坐看青竹变琼枝。（冬） D.一年好景君须记，正是橙黄橘绿时。（秋）",
+    "expected_answer": "A\n本题考查对古诗词的理解。A句出自朱熹的《偶成》，这句诗的意思：没等池塘生春草的美梦醒来，台阶前的梧桐树叶就已经在秋风里沙沙作响了。这两句的意思是诗人感叹时间飞逝如梭，用池塘春草梦未觉，阶前梧桐已秋声来比喻。所以这首诗不是描写季节的。其他三句正确。",
+    "expected_keywords": [
+      "理解"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-语文",
+    "metadata": {
+      "grade": "小学",
+      "subject": "语文",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "理解"
+    }
+  },
+  {
+    "query": "李然同学的积累本中有几组词语。其中\\dot{不}\\dot{是}一类的一项是\nA.层林尽染    一本正经    滴水成冰（表示季节的） B.百依百顺    七嘴八舌    四面八方（含有数字的） C.手忙脚乱    披头散发    口干舌燥（含有身体部位名称的）",
+    "expected_answer": "A\n本题考查学生对于词语的运用。A中“层林尽染”：意思是山上一层层的树林经霜打变红，像染过一样；“一本正经”形容庄重，规矩，非常认真（有时带有讽刺的意味）；“滴水成冰”是指水一滴下来就冻成冰，形容天气十分寒冷。所以“一本正经”不是表示季节的词语。B中“百依百顺”形容在一切事情上都很顺从；“七嘴八舌”指人多口杂，你一言，我一语，说个不停；“四面八方”意思是指各个方面或各个地方。本组中都是含有数字的。C中“手忙脚乱是一个汉语成语，指慌乱，形容遇事慌张，不知如何是好;“披头散发”形容头发长而散乱；“口干舌燥”指口舌都干了。形容说话太多。本组中都是含有身体部位名称。",
+    "expected_keywords": [
+      "理解"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-语文",
+    "metadata": {
+      "grade": "小学",
+      "subject": "语文",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "理解"
+    }
+  },
+  {
+    "query": "判断题。正确的回答正确，错误的回答错误。\n1.狗的家叫“窝”，猪的家叫“圈”。 2.“人非生而知之者，孰能无惑？”这句话说的没错。 3.《精卫填海》中精卫，长衔西山之木石，以堙于东海。 4.做事遭到拒绝或者受到挫折时，可以用“破天荒”这个词语形容。 5.《西门豹治邺》中事实上是没有河伯的，都是官绅和巫婆合伙骗人的。 6.“眉清目秀”“明眸皓齿”“相貌堂堂”“慈眉善目”都可以用来形容老爷爷。 7.为了讲好历史人物故事，我们可以把重要信息写在小卡片上，帮助记忆。",
+    "expected_answer": "TTTFTFT",
+    "expected_keywords": [
+      "基础知识",
+      "常识",
+      "判断题"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-语文",
+    "metadata": {
+      "grade": "小学",
+      "subject": "语文",
+      "task_type": "判断",
+      "difficulty": "较易",
+      "knowledge_tree": "基础知识-常识-判断题"
+    }
+  },
+  {
+    "query": "理清文章结构\n\n①爷爷说：那原始森林是我们祖先的摇篮。\n\n②啊！苍苍茫茫的原始森林，我们祖先的摇篮！\n\n这篇课文的总起句是 \\underline{} ，总结句是 \\underline{} 。文章结构是 \\underline{} 。\n\nA．总分\n\nB．分总\n\nC．总分总",
+    "expected_answer": "①;②;C",
+    "expected_keywords": [
+      "文学类文本阅读",
+      "文学文本概括梳理题",
+      "文学文本概括梳理内容"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-语文",
+    "metadata": {
+      "grade": "小学",
+      "subject": "语文",
+      "task_type": "填空",
+      "difficulty": "易",
+      "knowledge_tree": "文学类文本阅读-「文学文本」概括梳理题-「文学文本」概括梳理内容"
+    }
+  },
+  {
+    "query": "某电脑用户计划使用不超过500元的资金购买单价分别为60元、70元的单片软件和盒装磁盘，根据需要，软件至少买3片，磁盘至少买2盒，则不同的选购方式的种数有（   ）．\nA.5 B.6 C.7 D.8",
+    "expected_answer": "C\n设购买A，B类软件分别为x，y片，\n\n根据题意得：\\begin{cases} 60x+70y \\leqslant  500 \\\\ x \\geqslant  3 \\\\ y \\geqslant 2 \\\\ \\end{cases}，\n\n∴3\\leqslant x\\leqslant 6，2\\leqslant y\\leqslant \\frac{32}{7}，\n\n∴当x=3，y=2时，60x+70y=320，\n\n当x=3，y=3时，60x+70y=390，\n\n当x=3，y=4时，60x+70y=460，\n\n当x=4，y=2时，60x+70y=380，\n\n当x=4，y=3时，60x+70y=450，\n\n当x=4，y=4时，60x+70y=520（舍去），\n\n当x=5，y=2时，60x+70y=440，\n\n当x=5，y=3时，60x+70y=510（舍去），\n\n当x=5，y=4时，60x+70y=580（舍去），\n\n当x=6，y=2时，60x+70y=500，\n\n当x=6，y=3时，60x+70y=570（舍去），\n\n当x=6，y=4时，60x+70y=640（舍去），\n\n∴不同的选购方式共有7种．",
+    "expected_keywords": [
+      "运算求解"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-数学",
+    "metadata": {
+      "grade": "小学",
+      "subject": "数学",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "运算求解"
+    }
+  },
+  {
+    "query": "张叔叔把一根木料锯成6段用3分钟，如果他锯同种木料用了6分钟，那么这根木料被锯成了 \\underline{} 段．",
+    "expected_answer": "11\n主要考查植树问题的变型题目，锯成6段实际上是锯了5下，\n\n所以是锯5下用3分钟，\n\n\\frac{3}{5}=0.6分钟，\n\n所以锯一下用0.6分钟，\n\n\\frac{6}{0.6}=10下，\n\n所以6分钟锯10下就锯成了11段．",
+    "expected_keywords": [
+      "对应思想"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-数学",
+    "metadata": {
+      "grade": "小学",
+      "subject": "数学",
+      "task_type": "填空",
+      "difficulty": "较易",
+      "knowledge_tree": "对应思想"
+    }
+  },
+  {
+    "query": "A，B两地相距1000米，熊大和熊二分别同时从A，B两地出发，相向而行，已知熊大速度8米每秒，熊二速度2米每秒，相遇时熊大距离出发点A（    ）米．\nA.200 B.400 C.600 D.800",
+    "expected_answer": "D\n1000\\div \\left( 8+2 \\right)=100秒，8\\times 100=800米．",
+    "expected_keywords": [
+      "构造模型",
+      "模型思想"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-数学",
+    "metadata": {
+      "grade": "小学",
+      "subject": "数学",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "构造模型-模型思想"
+    }
+  },
+  {
+    "query": "判断：\n1.在含盐率40\\%的盐水中加入14克盐和21克水，此时含盐率仍然为40\\%．",
+    "expected_answer": "T\n14克盐和21克水混合成的盐水浓度恰为14\\div （14+21）\\times 100\\%=40\\%．",
+    "expected_keywords": [
+      "转化与化归的思想"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-数学",
+    "metadata": {
+      "grade": "小学",
+      "subject": "数学",
+      "task_type": "判断",
+      "difficulty": "较易",
+      "knowledge_tree": "转化与化归的思想"
+    }
+  },
+  {
+    "query": "判断：\n1.买50本故事书用了b元，每本故事书的价钱是\\left( b\\div 50 \\right)元．（   ）",
+    "expected_answer": "T\n买50本故事书用了b元，每本故事书的价钱是\\left( b\\div 50 \\right)元．",
+    "expected_keywords": [
+      "应用题模块",
+      "归一归总问题",
+      "单归一问题"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-数学",
+    "metadata": {
+      "grade": "小学",
+      "subject": "数学",
+      "task_type": "判断",
+      "difficulty": "较易",
+      "knowledge_tree": "应用题模块-归一归总问题-单归一问题"
+    }
+  },
+  {
+    "query": "把甲班人数的\\frac{1}{8}调入乙班后，两班人数相等，原来甲乙两班人数的比是(  )．\nA.8:7 B.7:8 C.3:4 D.4:3",
+    "expected_answer": "D\n1:\\left(1-\\frac{1}{8}\\times 2\\right)，\n\n=1:\\frac{3}{4}，\n\n=(1\\times 4):\\left( \\frac{3}{4}\\times 4\\right)，\n\n=4:3；\n\n故选{D}．",
+    "expected_keywords": [
+      "运算求解"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-数学",
+    "metadata": {
+      "grade": "小学",
+      "subject": "数学",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "运算求解"
+    }
+  },
+  {
+    "query": "能与\\frac{1}{5}:\\frac{1}{8}组成比例的是（   ）．\nA.8:5 B.\\frac{1}{8}:\\frac{1}{5} C.5:8 D.\\frac{1}{8}:5",
+    "expected_answer": "A\n表示两个比相等的式子叫做比例；判断两个比能不能组成比例，要看它们的比值是不是相等，比值相等就能组成比例，据此解答．\n\n\\frac{1}{5}:\\frac{1}{8} = \\frac{1}{5} \\div \\frac{1}{8} = \\frac{8}{5}，\n\n{A}．8:5 = 8 \\div 5 = \\frac{8}{5}，\n\n{B}．\\frac{1}{8}:\\frac{1}{5} = \\frac{1}{8} \\div \\frac{1}{5} = \\frac{5}{8}，\n\n{C}．5:8 = 5 \\div 8 = \\frac{5}{8}，\n\n{D}．\\frac{1}{8}:5 = \\frac{1}{8} \\div 5 = \\frac{1}{{40}}，\n\n所以\\frac{1}{5}:\\frac{1}{8} = 8:5，\n\n故选：{A}．",
+    "expected_keywords": [
+      "对应思想"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-数学",
+    "metadata": {
+      "grade": "小学",
+      "subject": "数学",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "对应思想"
+    }
+  },
+  {
+    "query": "一个装满油的油罐重1吨，用去一半油后重600千克，油罐重（   ）千克．\nA.600 B.400 C.200",
+    "expected_answer": "C\n1吨=1000千克，一半的油重1000-600=400（千克），油罐重600-400=200（千克）．",
+    "expected_keywords": [
+      "常见的量",
+      "克、千克、吨",
+      "克、千克、吨单位换算"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-数学",
+    "metadata": {
+      "grade": "小学",
+      "subject": "数学",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "常见的量-克、千克、吨-克、千克、吨单位换算"
+    }
+  },
+  {
+    "query": "2米和200克相比（   ）．\nA.2米大 B.200克大 C.无法比较",
+    "expected_answer": "C",
+    "expected_keywords": [
+      "数与代数"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-数学",
+    "metadata": {
+      "grade": "小学",
+      "subject": "数学",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "数与代数"
+    }
+  },
+  {
+    "query": "丁丁的妈妈在银行存了15000元，定期三年，年利率为2.75\\%．到期后丁丁妈妈从银行能取回 \\underline{} 元．",
+    "expected_answer": "16237.5",
+    "expected_keywords": [
+      "数的运算",
+      "分数四则",
+      "百分数四则运算",
+      "百分数四则混合运算"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-数学",
+    "metadata": {
+      "grade": "小学",
+      "subject": "数学",
+      "task_type": "填空",
+      "difficulty": "较易",
+      "knowledge_tree": "数的运算-分数四则-百分数四则运算-百分数四则混合运算"
+    }
+  },
+  {
+    "query": "—Is this your \\underline{} bag? \n\n—Yes, it is.\nA.friend B.friends C.friend's D.friends'",
+    "expected_answer": "C\n考查词汇缩写辨析。有句意可知，题目中所指的是 \"朋友的包\" ，由于包是单数，所以朋友也应是单数，故选C。",
+    "expected_keywords": [
+      "friend"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-英语",
+    "metadata": {
+      "grade": "小学",
+      "subject": "英语",
+      "task_type": "单选",
+      "difficulty": "易",
+      "knowledge_tree": "friend"
+    }
+  },
+  {
+    "query": "你的朋友问你现在的时间，你一看手表是9:00，你说：\n\n \\underline{} nine \\underline{} .",
+    "expected_answer": "It's;o'clock\n考查固定表达。句意：现在是九点钟。结合语境可知，现在是九点整。常用 \"钟点（基数词）+o'clock\" 表示整点。故答案为It's; o'clock。",
+    "expected_keywords": [
+      "语言知识运用"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-英语",
+    "metadata": {
+      "grade": "小学",
+      "subject": "英语",
+      "task_type": "填空",
+      "difficulty": "较易",
+      "knowledge_tree": "语言知识运用"
+    }
+  },
+  {
+    "query": "There \\underline{} a pair of shoes under the bed.\nA.is B.are C.have D.am",
+    "expected_answer": "A\n考查there be句型。句意：床下有一双鞋子。there be句型中，there是引导词，本身没有词义，be后面所接的才是真正的主语，be动词的单复数应该由其后的主语决定。并且当shoes由a pair of修饰时，谓语动词的单复数应该与pair的单复数保持一致。故选：A",
+    "expected_keywords": [
+      "单项选择"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-英语",
+    "metadata": {
+      "grade": "小学",
+      "subject": "英语",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "单项选择"
+    }
+  },
+  {
+    "query": "将下列句子重新排列，组成完整的对话。\nA.How nice! B.Good afternoon, Su Hai. Look at my new skirt. C.Thank you. D.Good afternoon, Yang Ling.",
+    "expected_answer": "DBAC\nA.多漂亮啊！B.下午好，苏海。看看我的新裙子。C.谢谢。D.下午好，杨凌。\n\n根据行为逻辑和句意理解，故排序为：D.Good afternoon, Yang Ling. B.Good afternoon, Su Hai. Look at my new skirt. A .How nice!C.Thank you. 符合语境。故答案为：DBAC。",
+    "expected_keywords": [
+      "排序题"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-英语",
+    "metadata": {
+      "grade": "小学",
+      "subject": "英语",
+      "task_type": "排序",
+      "difficulty": "较易",
+      "knowledge_tree": "排序题"
+    }
+  },
+  {
+    "query": "cut（现在分词） \\underline{}",
+    "expected_answer": "cutting\n考查现在分词。以辅音字母结尾，双写最后一个字母。故答案为cutting。",
+    "expected_keywords": [
+      "语言知识运用"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-英语",
+    "metadata": {
+      "grade": "小学",
+      "subject": "英语",
+      "task_type": "填空",
+      "difficulty": "易",
+      "knowledge_tree": "语言知识运用"
+    }
+  },
+  {
+    "query": "— \\underline{} （do）you have a sports meeting? \n\n—Yes, we did.",
+    "expected_answer": "Did\n考查一般过去时。根据回复中did，可知对话的时态为一般过去时，故疑问句的句首词为Did。句意：—你们开了运动会吗？—是的，我们开过了。故答案为：Did。",
+    "expected_keywords": [
+      "填空题",
+      "单题填空"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-英语",
+    "metadata": {
+      "grade": "小学",
+      "subject": "英语",
+      "task_type": "填空",
+      "difficulty": "易",
+      "knowledge_tree": "填空题-单题填空"
+    }
+  },
+  {
+    "query": "You must stop and wait \\underline{} a read right.\nA.on B.in C.at",
+    "expected_answer": "C\n考查介词辨析。A. on，在…….上面；B. in，在……里面；C. at，在…… 句意：你必须在红灯的时候停下来等待。故选：C。",
+    "expected_keywords": [
+      "单项选择"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-英语",
+    "metadata": {
+      "grade": "小学",
+      "subject": "英语",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "单项选择"
+    }
+  },
+  {
+    "query": "请写出以下字母的左邻右舍吧。\n\n \\underline{} Hh  \\underline{}  \\underline{} Ww \\underline{}",
+    "expected_answer": "Gg;Ii;Vv;Xx\n考查英文字母顺序及大小写。根据字母表顺序可知，Hh前后字母应为：Gg, Hh, Ii；Ww前后字母应为：Vv, Ww, Xx。故答案为：Gg, Ii, Vv, Xx。",
+    "expected_keywords": [
+      "填空题",
+      "语法填空"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-英语",
+    "metadata": {
+      "grade": "小学",
+      "subject": "英语",
+      "task_type": "填空",
+      "difficulty": "较易",
+      "knowledge_tree": "填空题-语法填空"
+    }
+  },
+  {
+    "query": "Hello! My name is Jack. Last Sunday, my parents ( 1 ) me to Guangzhou. In the morning, we ( 2 ) a science museum. In the afternoon, we ( 3 ) shopping in a big supermarket. There ( 4 ) a lot ( 5 ) people there. I was excited because there were so ( 6 ) toys. Could I ( 7 ) anything I like? My parents ",
+    "expected_answer": "CCABAAACBB",
+    "expected_keywords": [
+      "记叙文"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-英语",
+    "metadata": {
+      "grade": "小学",
+      "subject": "英语",
+      "task_type": "完形填空",
+      "difficulty": "中档",
+      "knowledge_tree": "记叙文"
+    }
+  },
+  {
+    "query": "—ls that your p \\underline{} ？\n\n— \\underline{} ，it is．",
+    "expected_answer": "pen;Yes",
+    "expected_keywords": [
+      "语言知识运用"
+    ],
+    "relevant_doc_ids": [],
+    "category": "小学-英语",
+    "metadata": {
+      "grade": "小学",
+      "subject": "英语",
+      "task_type": "填空",
+      "difficulty": "易",
+      "knowledge_tree": "语言知识运用"
+    }
+  },
+  {
+    "query": "阅读下面的文字，完成下列问题。\n\n\\centerline{你了解瘙痒吗}centerlineendflag\\centerline{祝叶华}centerlineendflag\n\n瘙痒有许多的原因和机制，其中有不少尚不清楚。科学家们正在解析其生物学基础，希望能找到更好的治疗方法。\n\n一、痒与疼并非相伴相生\n\n2007年发表在《自然》上的一篇论文报道了第一种专门的瘙痒受体——中枢神经系统神经细胞上的一种蛋白质，它专门对瘙痒做出反应，但对疼痛无感。经过基因改造而缺乏这种受体的老鼠在接受瘙痒实验中，仍然能感觉到疼痛但几乎感觉不到痒，这表明这种感觉可能会通过它自己的单独通道进入大脑，自此，瘙痒的感觉终于从",
+    "expected_answer": "FTFT\n1.根据原文“2007年发表在《自然》上的一篇论文报道了第一种专门的瘙痒受体”可知，本题中“首次证实”的说法错误；故错误。\n\n2.根据原文“2019年4月《免疫学》杂志上发表的一篇文章就揭示了非组胺途径引发的过敏瘙痒杋制，这就解释了抗组胺剂为何不能总是有效地治疗过敏”可知，本题说法正确；故正确。\n\n3.根据原文“目前湿疹最常见的治疗方法是抑制免疫系统疗法，但并不是所有患者都能得到缓解”可知，题干中“因此所有人类湿疹患者的症状都将得到缓解”的说法错误，太绝对了；故错误。\n\n4.根据原文“瘙痒有许多的原因和机制，其中有不少尚不清楚。科学家们正在解析其生物学基础，希望能找到更好的治疗方法”可知，题干说法正确。",
+    "expected_keywords": [
+      "实用类文本阅读",
+      "说明文",
+      "事理性说明文"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-语文",
+    "metadata": {
+      "grade": "初中",
+      "subject": "语文",
+      "task_type": "判断",
+      "difficulty": "中档",
+      "knowledge_tree": "实用类文本阅读-说明文-事理性说明文"
+    }
+  },
+  {
+    "query": "阅读下面古诗，完成小题。\n\n【甲】\n\n\\centerline{饮酒（其五）}centerlineendflag\\centerline{陶渊明}centerlineendflag\n\n\\centerline{结庐在人境，而无车马喧。}centerlineendflag\\centerline{问君何能尔？心远地自偏。}centerlineendflag\n\n\\centerline{采菊东篱下，悠然见南山。}centerlineendflag\\centerline{山气日夕佳，飞鸟相与还。}centerlineendflag\n\n\\centerline{此中有真意，欲辨已忘言。}centerlineend",
+    "expected_answer": "D\n本题考查诗歌鉴赏。D.“两首诗都表达了作者对官场的厌恶”错误。甲诗“采菊东篱下，悠然见南山。山气日夕佳，飞鸟相与还”通过写诗人于劳动之余，饮酒至醉之后，在晚霞的辉映之下，在山岚的笼罩之中，采菊东篱，遥望南山，表现了作者悠闲自得的心境和对宁静自由的田园生活的热爱，对黑暗官场的鄙弃和厌恶；乙诗前两联选取了“晚照”“乔木”“前村”“夕烟”“棋声”“虚阁”“早霜”等意象，描写了一幅宁静淡雅的画面，衬托出诗人平静自足的心情；后两联写诗人被贬远地却不怨恨，因为这并不意外。这里风景优美，如同家乡蜀地，在这里可以找到家乡的感觉，充分体现了诗人的乐观旷达；故选D。",
+    "expected_keywords": [
+      "诗歌鉴赏"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-语文",
+    "metadata": {
+      "grade": "初中",
+      "subject": "语文",
+      "task_type": "单选",
+      "difficulty": "中档",
+      "knowledge_tree": "诗歌鉴赏"
+    }
+  },
+  {
+    "query": "根据课本，下列诗歌默写正确的两项是\nA.桃花近日随流水，洞在清溪何处边。 B.当窗理云鬂，对镜帖花黄。 C.月落乌啼霜满天，江风渔火对愁眠。 D.谁家玉笛暗飞声，散入春风满洛城。 E.春潮带雨晚来急，野度无人舟自横。 F.草木知春不久归，百般红紫斗芳菲。",
+    "expected_answer": "BD\n本题考查名句识记。\n\nA．“近”应为“尽”；\n\nC．“风”应为“枫”；\n\nE．“度”应为“渡”；\n\nF．“木”应为 “树”。\n\n故选BD。",
+    "expected_keywords": [
+      "识记"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-语文",
+    "metadata": {
+      "grade": "初中",
+      "subject": "语文",
+      "task_type": "多选",
+      "difficulty": "较易",
+      "knowledge_tree": "识记"
+    }
+  },
+  {
+    "query": "阅读下面的诗歌，完成题目。\n\n\\centerline{莫笑农家腊酒浑，丰年留客足鸡豚。山重水复疑无路，柳暗花明又一村。}centerlineendflag\\centerline{箫鼓追随春社近，衣冠简朴古风存。从今若许闲乘月，拄杖无时夜叩门。}centerlineendflag\n\n选出下面对陆游的《游山西村》赏析\\dot{有误}的一项\nA.首联写农民虽然生活贫苦，但遇丰年也邀客共庆，表现了农家淳厚的乡风。 B.颔联描绘了乡村明媚绚丽、变化万千的自然风光。“又一村”写出了诗人的欣喜之情。 C.颈联“箫鼓追随春社近”写出村民们在田间劳动，吹箫打鼓自娱自乐的热闹场面。 D.尾联中诗人渴望乘着月色随时",
+    "expected_answer": "C\n本题考查对诗歌内容的理解分析。C.“箫鼓追随春社近”意思是：吹着箫打起鼓春社的日子已经接近。箫鼓：吹箫打鼓。春社：古代把立春后第五个戊日做为春社日，拜祭社公和五谷神，祈求丰收。社，土地神。这一句表现了农家祭社祈年，满着丰收的期待。选项中“写出村民们在田间劳动，吹箫打鼓自娱自乐的热闹场面”理解错误；故选C。",
+    "expected_keywords": [
+      "中国",
+      "宋代",
+      "陆游",
+      "《游山西村》（莫笑农家腊酒浑）"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-语文",
+    "metadata": {
+      "grade": "初中",
+      "subject": "语文",
+      "task_type": "单选",
+      "difficulty": "中档",
+      "knowledge_tree": "中国-宋代-陆游-《游山西村》（莫笑农家腊酒浑）"
+    }
+  },
+  {
+    "query": "对《天上的街市》赏析不当的一项是\nA.第一节诗人远望街灯若隐若现，和天上闪闪烁烁的明星很相似，由此而产生想象。“街灯”代表天上美景；后三句，诗人凭借对现实的认识构建出一个美丽的“天上街市”，鲜明地表达了改造现实的愿望。 B.第二节描写的天上的街市是繁荣、光明、富裕，而现实荒凉、黑暗、贫穷，形成对比；反映了作者对现实的不满，对美好生活的向往。 C.文中，“定然有美丽的街市”“定然是世上没有的珍奇”“定然是不甚宽广”“定然在天街闲游”都用“定然”这个词，表达作者坚信这样的世界是存在的，对美好的未来充满了信心。 D.“不信，请看那朵流星，是他们提着灯笼在走。”“朵”作为流星的量词，本来形容花，这里形",
+    "expected_answer": "A\n后三句非鲜明表达改造事实的愿望，而是委婉含蓄。",
+    "expected_keywords": [
+      "诗歌鉴赏",
+      "诗歌筛选整合辨析题（选择）"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-语文",
+    "metadata": {
+      "grade": "初中",
+      "subject": "语文",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "诗歌鉴赏-「诗歌」筛选整合辨析题（选择）"
+    }
+  },
+  {
+    "query": "在-(-4)、{{(-2)}^{2}}、-|-1|、-{{3}^{3}}四个数中，负数的个数是（   ）．\nA.1 B.2 C.3 D.4",
+    "expected_answer": "B\n-(-4)=4，(-2)^2=4，-|-1|=-1，-3^3=-27，\n\n负数有2个．\n\n故选{B}．",
+    "expected_keywords": [
+      "数",
+      "有理数",
+      "有理数基础运算",
+      "有理数乘方",
+      "有理数乘方运算"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-数学",
+    "metadata": {
+      "grade": "初中",
+      "subject": "数学",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "数-有理数-有理数基础运算-有理数乘方-有理数乘方运算"
+    }
+  },
+  {
+    "query": "梯形的上底为a，下底为b，高为h，则梯形的面积S可表示为（   ）．\nA.S=\\left( a+b \\right)h B.S=a+b+h C.S=\\frac{1}{2}\\left( a+b \\right)h D.S=2\\left( a+b \\right)h",
+    "expected_answer": "C\n梯形的面积=（上底+下底）\\times 高\\div 2．\n\n故选{C}．",
+    "expected_keywords": [
+      "四边形",
+      "梯形中的辅助线"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-数学",
+    "metadata": {
+      "grade": "初中",
+      "subject": "数学",
+      "task_type": "单选",
+      "difficulty": "易",
+      "knowledge_tree": "四边形-梯形中的辅助线"
+    }
+  },
+  {
+    "query": "在{Rt}\\triangle ABC中，有两边的长分别是2和4，则第三边的长为（  ）．\nA.2\\sqrt{3} B.2\\sqrt{5} C.2\\sqrt{3}或6 D.2\\sqrt{3}或2\\sqrt{5}",
+    "expected_answer": "D\n若这两边为直角边，则第三边=\\sqrt{{{2}^{2}}+{{4}^{2}}}=2\\sqrt{5}，\n 若4为斜边，则第三边长=\\sqrt{{{4}^{2}}-{{2}^{2}}}=2\\sqrt{3}．",
+    "expected_keywords": [
+      "三角形",
+      "勾股定理及应用",
+      "勾股定理基础",
+      "已知两边求第三边",
+      "分类讨论"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-数学",
+    "metadata": {
+      "grade": "初中",
+      "subject": "数学",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "三角形-勾股定理及应用-勾股定理基础-已知两边求第三边-分类讨论"
+    }
+  },
+  {
+    "query": "下面数列的每一项用3个数组成的数组表示，它们依次是：(1,4,9)，(2,8,18)，(3,12,27)，那么第15个数组内三个数是15， \\underline{} ， \\underline{} ．",
+    "expected_answer": "60;135\n第二个数组中的三个数分别是它对应的第一个数组中三个数的2倍，第三个数组中的三个数分别是它对应的第一个数组中三个数的3倍，则第n个数组中的三个数就是它对应的第一个数组中三个数的n倍，所以第15个数组的第二个数与第三个数是4\\times 15=60和9\\times 15=135，即(15,60,135)．",
+    "expected_keywords": [
+      "计算模块",
+      "定义新运算"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-数学",
+    "metadata": {
+      "grade": "初中",
+      "subject": "数学",
+      "task_type": "填空",
+      "difficulty": "较易",
+      "knowledge_tree": "计算模块-定义新运算"
+    }
+  },
+  {
+    "query": "下列选项不能判定\\triangle ABC是直角三角形的是（   ）．\nA.\\angle A=\\angle C=45{}^\\circ B.B{{C}^{2}}+A{{C}^{2}}=A{{B}^{2}} C.\\angle A:\\angle B:\\angle C=3:4:5 D.a:b:c=3:4:5",
+    "expected_answer": "C",
+    "expected_keywords": [
+      "推理论证能力"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-数学",
+    "metadata": {
+      "grade": "初中",
+      "subject": "数学",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "推理论证能力"
+    }
+  },
+  {
+    "query": "已知透镜的焦距是f，要想得到把物体放大4倍的倒立像，则物距应满足的关系是（    ）\nA.u>4f B.u>f C.2f>u>f D.u=4f",
+    "expected_answer": "C\n物体放大四倍且是倒立，相当于是成倒立放大的像，则物距在一焦距和二倍焦距之间．\n\n故选C．",
+    "expected_keywords": [
+      "光学",
+      "透镜及其应用",
+      "凸透镜成像",
+      "凸透镜成像的规律",
+      "凸透镜成像像物大小和位置变化关系\n（动态变化问题）"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-物理",
+    "metadata": {
+      "grade": "初中",
+      "subject": "物理",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "光学-透镜及其应用-凸透镜成像-凸透镜成像的规律-凸透镜成像像物大小和位置变化关系\n（动态变化问题）"
+    }
+  },
+  {
+    "query": "平静的水面能清晰地映出岸上的景物，俗称“倒影”，此倒影是（   ）\nA.正立的实像 B.正立的虚像 C.倒立的实像 D.倒立的虚像",
+    "expected_answer": "B\n平静的湖面相当于一面平面镜，所以成的像是正立等大的虚像．\n\n故选B．",
+    "expected_keywords": [
+      "光学",
+      "光现象",
+      "平面镜成像",
+      "平面镜成像的特点",
+      "平面镜成像特点"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-物理",
+    "metadata": {
+      "grade": "初中",
+      "subject": "物理",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "光学-光现象-平面镜成像-平面镜成像的特点-平面镜成像特点"
+    }
+  },
+  {
+    "query": "2018年8月，俄罗斯“联盟号”飞船发生漏气现象．为查明泄漏点，两名宇航员分别在飞船内外合作完成，此过程中他们通过 \\underline{} （选填“声波”或“电磁波”）传递信息．检查发现，漏气点是飞船舱壁面积为5{m}{{{m}}^{2}}的小孔，用胶塞即可封堵，设飞船内气压为1\\times {{10}^{5}}{Pa}．飞船外接近真空，胶塞受到舱内气体压力为 \\underline{} {N}．该小孔是在飞船制造过程中使用电钻误操作而成，为此，建议增加超声波探伤环节，人耳听不到超声波是因为其频率 \\underline{} （填“小于”、“等于”或“大于”）20000{Hz}．",
+    "expected_answer": "电磁波;0.5;大于\n两名宇航员分别在飞船内外合作完成的任务的过程中，由于太空是真空环境，因此他们通过电磁波传递信息．\n\n漏气点是飞船舱壁面积为5{m}{{{m}}^{2}}的小孔，飞船内气压为1\\times {{10}^{5}}{Pa}，飞船外接近真空，内外气压差为1\\times {{10}^{5}}{Pa}，因此用胶塞即封堵的时候，胶塞受到舱内气体压力为：F=\\Delta pS=1\\times {{10}^{5}}{Pa}\\times 5\\times {{10}^{-6}}{{{m}}^{2}}=0.5{N}．\n\n人耳的听声范围是：20{Hz}\\sim 20000{Hz}，超声波的频率高于20000{Hz}，因此人耳听不到超声波是因为其频率大于20000{Hz}．",
+    "expected_keywords": [
+      "力学",
+      "压力、压强",
+      "压力",
+      "压力的定义",
+      "压力的简单计算"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-物理",
+    "metadata": {
+      "grade": "初中",
+      "subject": "物理",
+      "task_type": "填空",
+      "difficulty": "较易",
+      "knowledge_tree": "力学-压力、压强-压力-压力的定义-压力的简单计算"
+    }
+  },
+  {
+    "query": "下列成语所描述的情景中，属于光的折射现象的是（    ）\nA.镜花水月 B.海市蜃楼 C.坐井观天 D.立竿见影",
+    "expected_answer": "B\nA．镜花水月是指花在镜子中成像，月亮在水中成像，都属于平面镜成像，是光的反射造成的，故A不符合题意；\n\nB．海市蜃楼是光在不均匀的大气中传播形成的光的折射现象，故B符合题意；\n\nC．坐井观天指在井中看到的天空只有井口那么大，这是光的直线传播造成的，故C不符合题意；\n\nD．立竿见影指在地上树立一个竿子就可以看到它的影子，这是光沿直线传播形成的，故D不符合题意．\n\n故选B．",
+    "expected_keywords": [
+      "光学",
+      "光现象",
+      "光的折射",
+      "光的折射现象",
+      "光的折射现象及其应用"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-物理",
+    "metadata": {
+      "grade": "初中",
+      "subject": "物理",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "光学-光现象-光的折射-光的折射现象-光的折射现象及其应用"
+    }
+  },
+  {
+    "query": "关于密度，下列说法正确的是（    ）\nA.氧气瓶里的氧气，被用去了1/3，则剩余的氧气密度是原来氧气密度的2/3 B.铁的密度比铝的密度大，表示铁的质量大于铝的质量 C.根据密度公式\\rho =\\frac{m}{V}可知，当物体的质量发生改变时一定会引起物质密度的改变 D.铜的密度是8.9\\times {10}^{3}{kg/m}^{3}，表示1{m}^{3}铜的质量为8.9\\times {10}^{3}{kg}",
+    "expected_answer": "AD",
+    "expected_keywords": [
+      "物理观念",
+      "物质观念"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-物理",
+    "metadata": {
+      "grade": "初中",
+      "subject": "物理",
+      "task_type": "多选",
+      "difficulty": "中档",
+      "knowledge_tree": "物理观念-物质观念"
+    }
+  },
+  {
+    "query": "有关 t\\ {}^\\circ {C} 时 30\\% 的硝酸钾溶液，说法正确的是（    ）\nA.均一、稳定、透明 B.每 100\\ {g} 水中溶解了 30\\ {g} 硝酸钾 C.一定条件下，可以转化为悬浊液 D.加入 30\\ {g} 硝酸钾，得到 60\\% 的硝酸钾溶液",
+    "expected_answer": "AC\n一种或几种物质均一地分散到另一种物质中，形成均一、稳定的混合物，叫做溶液：\n\nA选项：溶液具有均一性、稳定性，则 t\\ {}^\\circ {C} 时 30\\% 的硝酸钾溶液是均一、稳定、透明的混合物，故A正确；\n\nB选项：由溶质质量分数 =\\frac{溶质质量}{溶液质量}\\times 100\\%，可知 t\\ {}^\\circ {C} 时 30\\% 的硝酸钾溶液表示 100\\ {g} 该硝酸钾溶液中含有硝酸钾 30\\ {g}，故B错误；\n\nC选项：t\\ {}^\\circ {C} 时 30\\% 的硝酸钾溶液，一定条件下，可以转化为悬浊液，如某种条件下，加入难溶于水的物质，转化为悬浊液等，故C正确；\n\nD选项：t\\ {}^\\circ {C} 时 30\\% 的硝酸钾溶液，可表示为 t\\ {}^\\circ {C} 时 30\\% 的硝酸钾溶液表示 100\\ {g} 该硝酸钾溶液中含有硝酸钾 30\\ {g}，则加入 30\\ {g} 硝酸钾，得到硝酸钾溶液的溶质质量分数为 \\frac{30\\ {g}+30\\ {g}}{100\\ {g}+30\\ {g}}\\times 100\\%<{}60\\%，故",
+    "expected_keywords": [
+      "证据推理与模型认知"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-化学",
+    "metadata": {
+      "grade": "初中",
+      "subject": "化学",
+      "task_type": "多选",
+      "difficulty": "较易",
+      "knowledge_tree": "证据推理与模型认知"
+    }
+  },
+  {
+    "query": "一位科学家分析测定了取自三个不同地方的铜和硫化合物的样品，获得了如下表所示的数据。根据表中数据，能得出的结论是（    ）\n $#table{|\\centerline{样品}centerlineendflag|\\centerline{样品质量/克}centerlineendflag|\\centerline{铜元素的质量/克}centerlineendflag|\\centerline{硫元素的质量/克}centerlineendflag|\n|\\centerline{1}centerlineendflag|\\centerline{5.02}centerlineendflag|\\centerline",
+    "expected_answer": "A\n\\rm A．样品 \\rm 1  中铜元素和硫元素的质量比是：\\rm 3.35~g~ :\\rm 1.67~g~\\approx 2 :\\rm 1 ，样品 \\rm 2  中铜元素和硫元素的质量比是：\\rm 6.71~g~ :\\rm 3.34~g~\\approx 2 :\\rm 1 ，样品 \\rm 3  中铜元素和硫元素的质量比是：\\rm 66.4~g~ :\\rm 33.2~g~=2 :\\rm 1 ，由于所测得的，铜元素和硫元素的质量比相同，所以三种样品可能属于同种物质，故 \\rm A 正确；\n\n\\rm B．样品 \\rm 1  中铜元素的质量为 \\rm 3.35~g，所以其中铜元素的质量分数为： \\rm \\dfrac{3.35\\ g}{5.02\\ g}\\times 100\\% \\approx 66.7\\% ，故 \\rm B 错误；\n\n\\rm C．\\rm Cu_2S  中铜元素和硫元素的质量比是：（\\rm 64\\times 2) :\\rm 32=4 :\\rm 1 ，与 \\rm A  中分析的样品 \\rm 2  中两种元素的质量比是 \\rm 2 :\\rm 1  不相吻合，故 \\rm C 错误；\n",
+    "expected_keywords": [
+      "结构与性质、性质与用途的辩证思想"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-化学",
+    "metadata": {
+      "grade": "初中",
+      "subject": "化学",
+      "task_type": "单选",
+      "difficulty": "中档",
+      "knowledge_tree": "结构与性质、性质与用途的辩证思想"
+    }
+  },
+  {
+    "query": "现有下列物质：①洁净的空气、②蒸馏水、③稀有气体、④冰水混合物、⑤矿泉水、⑥五氧化二磷、⑦澄清石灰水、⑧液态的氯气，请用序号填空：属于混合物的是： \\underline{} ；属于纯净物的是 \\underline{} 。",
+    "expected_answer": "①③⑤⑦;②④⑥⑧\n①洁净的空气中含有氧气、氮气等，属于混合物；\n\n②蒸馏水只含有水一种物质，属于纯净物；\n\n③稀有气体含有氦气、氖气等，属于混合物；\n\n④冰水混合物只含有水一种物质，属于纯净物；\n\n⑤矿泉水中含有矿物质、水，属于混合物；\n\n⑥五氧化二磷只含有一种物质，属于纯净物；\n\n⑦澄清石灰水中含有氢氧化钙、水，属于混合物；\n\n⑧液态的氯气只含有一种物质，属于纯净物；\n\n属于混合物的是：①③⑤⑦，属于纯净物的是②④⑥⑧。",
+    "expected_keywords": [
+      "生活现象解释"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-化学",
+    "metadata": {
+      "grade": "初中",
+      "subject": "化学",
+      "task_type": "填空",
+      "difficulty": "较易",
+      "knowledge_tree": "生活现象解释"
+    }
+  },
+  {
+    "query": "密闭容器内有 {A}、{B}、{C}、{D} 四种物质，在一定条件下充分反应，测得反应前后各物质的质量如下：下列说法正确的是（    ）\n\n\n$#table{|物 质|{A}|{B}|{C}|{D}|\n|反应前质量 {/g}|19.7|8.7|31.6|0.4|\n|反应后质量 {/g}|待测|17.4|0|3.6|}#$\nA.物质 {D} 一定是化合物，物质 {C} 可能是单质 B.反应后密闭容器中 {A} 的质量为 \\rm 19.7\\ g C.反应过程中，物质 {B} 与物质 {D} 变化的质量比为 \\rm 87：36 D.若物质 {A} 与物质 {C} 的相对分子质量之比为 \\rm 197",
+    "expected_answer": "D\n由表中数据分析可知，反应前后，{B} 的质量增加了 \\rm 17.4\\ g-8.7\\ g=8.7\\ g，故 {B} 是生成物，生成的 {B} 的质量为 \\rm 8.7 g；同理可以确定 {C} 是反应物，参加反应的 {C} 的质量为 \\rm 31.6\\ g-0\\ g=31.6\\ g；{D} 为生成物，生成 {D} 的质量为 \\rm 3.6 g-0.4 g=3.2 g；由质量守恒定律，{A} 应是生成物，且生成的 {A} 的质量为 \\rm 31.6\\ g-8.7\\ g-3.2\\ g=19.7\\ g。\n\n{A}．该反应的反应物为 {C}，生成物是 {A}、{B}、{D}，符合“一变多”的特征，属于分解反应，则物质 {C} 一定是化合物，物质 {D} 可能是单质，故 {A} 错误；\n\n{B}．由质量守恒定律，{A} 应是生成物，且生成的 {A} 的质量为 \\rm 31.6\\ g-8.7\\ g-3.2\\ g=19.7\\ g，故待测的数值为 \\rm 19.7\\ g+19.7\\ g=39.4\\ g，故 {B} 错误；\n\n{C}．反应过程中，物质 {B} 与物质 {D} 变化的质量比为 \\rm ",
+    "expected_keywords": [
+      "推断题",
+      "表格型推断"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-化学",
+    "metadata": {
+      "grade": "初中",
+      "subject": "化学",
+      "task_type": "单选",
+      "difficulty": "中档",
+      "knowledge_tree": "推断题-表格型推断"
+    }
+  },
+  {
+    "query": "下列物质属于纯净物的是（    ）\nA.海水 B.稀盐酸 C.洁净的空气 D.冰水的混合物",
+    "expected_answer": "D",
+    "expected_keywords": [
+      "宏观辨识与微观探析"
+    ],
+    "relevant_doc_ids": [],
+    "category": "初中-化学",
+    "metadata": {
+      "grade": "初中",
+      "subject": "化学",
+      "task_type": "单选",
+      "difficulty": "较易",
+      "knowledge_tree": "宏观辨识与微观探析"
+    }
+  }
+]

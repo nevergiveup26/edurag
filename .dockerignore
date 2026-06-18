@@ -1,0 +1,66 @@
+# Python virtual environment (pip install runs inside image)
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# IDE & tools
+.idea/
+.vscode/
+.pytest_cache/
+.browsers/
+
+# Git
+.git/
+.gitignore
+
+# Environment & secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Runtime data (mounted as volumes at runtime)
+.uploads/
+logs/
+sample_data/
+
+# Docker data (volume mounts)
+docker/
+
+# Frontend (built separately)
+frontend/node_modules/
+
+# Tests (not needed in production image)
+tests/
+
+# Documentation
+docs/
+*.md
+
+# Scripts (one-off utilities)
+scripts/
+
+# Performance testing
+k6-master/
+
+# Claude Code config
+.claude/
+
+# Browser automation cache
+.browsers/
+
+# Code review artifacts
+code-review/
+
+# Standalone Milvus
+milvus/
+
+# CI/CD
+.github/
+
+tutorial/*.md

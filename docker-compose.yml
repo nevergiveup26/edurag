@@ -1,0 +1,178 @@
+# EduRAG智慧问答系统 Docker 部署
+# 使用: docker-compose up -d
+
+version: '3.8'
+
+services:
+  # ===================== MySQL 数据库 =====================
+  mysql:
+    image: mysql:8.0
+    container_name: edurag_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: edurag123
+      MYSQL_DATABASE: edurag_db
+      MYSQL_CHARSET: utf8mb4
+      MYSQL_COLLATION: utf8mb4_unicode_ci
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./docker/mysql_data:/var/lib/mysql
+      - ./docker/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-pedurag123"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+
+  # ===================== Milvus 向量数据库 =====================
+  etcd:
+    image: quay.io/coreos/etcd:v3.5.5
+    container_name: edurag_etcd
+    restart: unless-stopped
+    environment:
+      - ETCD_AUTO_COMPACTION_MODE=revision
+      - ETCD_AUTO_COMPACTION_RETENTION=1000
+      - ETCD_QUOTA_BACKEND_BYTES=4294967296
+      - ETCD_SNAPSHOT_COUNT=50000
+    volumes:
+      - etcd_data:/etcd
+    command: etcd -advertise-client-urls=http://127.0.0.1:2379 -listen-client-urls http://0.0.0.0:2379 --data-dir /etcd
+
+  minio:
+    image: minio/minio:RELEASE.2023-03-20T20-16-18Z
+    container_name: edurag_minio
+    restart: unless-stopped
+    environment:
+      MINIO_ACCESS_KEY: minioadmin
+      MINIO_SECRET_KEY: minioadmin
+    volumes:
+      - minio_data:/minio_data
+    command: minio server /minio_data --console-address ":9001"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  milvus:
+    image: milvusdb/milvus:v2.3.3
+    container_name: edurag_milvus
+    restart: unless-stopped
+    depends_on:
+      - etcd
+      - minio
+    environment:
+      ETCD_ENDPOINTS: etcd:2379
+      MINIO_ADDRESS: minio:9000
+      MINIO_ACCESS_KEY_ID: minioadmin
+      MINIO_SECRET_ACCESS_KEY: minioadmin
+    ports:
+      - "19530:19530"
+      - "9091:9091"
+    volumes:
+      - milvus_data:/var/lib/milvus
+    command: milvus run standalone
+
+  # ===================== Redis 缓存 =====================
+  redis:
+    image: redis:7-alpine
+    container_name: edurag_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ===================== LangFuse 可观测性 =====================
+  langfuse-postgres:
+    image: postgres:15-alpine
+    container_name: edurag_langfuse_postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=langfuse
+      - POSTGRES_PASSWORD=edurag_langfuse_2024
+      - POSTGRES_DB=langfuse
+    ports:
+      - "5433:5432"
+    volumes:
+      - langfuse_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U langfuse"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  langfuse-server:
+    image: ghcr.io/langfuse/langfuse:2
+    container_name: edurag_langfuse
+    restart: unless-stopped
+    depends_on:
+      langfuse-postgres:
+        condition: service_healthy
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgresql://langfuse:edurag_langfuse_2024@langfuse-postgres:5432/langfuse
+      - NEXTAUTH_SECRET=edurag-langfuse-nextauth-secret-change-me-in-production
+      - NEXTAUTH_URL=http://localhost:3000
+      - SALT=edurag-langfuse-salt
+      - ENCRYPTION_KEY=a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2
+      - TELEMETRY_ENABLED=false
+      - LANGFUSE_ENABLE_EXPERIMENTAL_FEATURES=true
+    volumes:
+      - langfuse_data:/app/data
+
+  # ===================== EduRAG 应用 =====================
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: edurag_app
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    ports:
+      - "8000:8000"   # FastAPI
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_PORT=3306
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=edurag123
+      - MYSQL_DATABASE=edurag_db
+      - MILVUS_HOST=milvus
+      - MILVUS_PORT=19530
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      # 云端 API 配置（DashScope 通义千问）
+      - DASHSCOPE_API_KEY=${DASHSCOPE_API_KEY}
+      - LLM_API_KEY=${DASHSCOPE_API_KEY}
+      - LLM_API_BASE=https://dashscope.aliyuncs.com/compatible-mode/v1
+      - LLM_MODEL_NAME=qwen-max
+      # 可选：Tavily 搜索 & Langfuse 追踪
+      - TAVILY_API_KEY=${TAVILY_API_KEY:-}
+      - LANGFUSE_PUBLIC_KEY=${LANGFUSE_PUBLIC_KEY:-}
+      - LANGFUSE_SECRET_KEY=${LANGFUSE_SECRET_KEY:-}
+      - LANGFUSE_HOST=${LANGFUSE_HOST:-https://us.cloud.langfuse.com}
+      - LANGFUSE_ENABLED=true
+    command: python run.py --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - .:/app
+      - ./logs:/app/logs
+      - ./sample_data:/app/sample_data
+
+volumes:
+  etcd_data:
+  minio_data:
+  milvus_data:
+  redis_data:
+  langfuse_postgres_data:
+  langfuse_data:

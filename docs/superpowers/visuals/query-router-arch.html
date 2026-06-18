@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>智能查询路由 — 三层架构设计</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #222533;
+    --border: #2a2d3a;
+    --text: #e1e4ed;
+    --text2: #9498a8;
+    --accent: #6366f1;
+    --accent2: #a78bfa;
+    --green: #34d399;
+    --amber: #fbbf24;
+    --red: #f87171;
+    --cyan: #22d3ee;
+    --font-display: 'Georgia', 'Noto Serif SC', serif;
+    --font-body: 'Segoe UI', 'Noto Sans SC', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Cascadia Code', 'Consolas', monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 60px 40px; }
+
+  /* Header */
+  .header { text-align: center; margin-bottom: 60px; }
+  .header h1 {
+    font-family: var(--font-display);
+    font-size: 2.6rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent2), var(--cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+  }
+  .header .sub {
+    color: var(--text2);
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+  }
+
+  /* Flow container */
+  .flow { position: relative; margin: 40px 0 80px; }
+
+  /* Query entry */
+  .query-entry {
+    background: linear-gradient(135deg, var(--accent), #4f46e5);
+    color: #fff;
+    padding: 22px 36px;
+    border-radius: 16px;
+    text-align: center;
+    margin: 0 auto 30px;
+    max-width: 500px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    box-shadow: 0 8px 32px rgba(99,102,241,0.25);
+    position: relative;
+  }
+  .query-entry::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background: var(--border);
+  }
+
+  /* Three layers */
+  .layers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 30px 0;
+  }
+  .layer-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px 22px;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .layer-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+  }
+  .layer-num {
+    font-family: var(--font-display);
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: rgba(255,255,255,0.04);
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    line-height: 1;
+  }
+  .layer-card.l1 { border-top: 3px solid var(--green); }
+  .layer-card.l2 { border-top: 3px solid var(--amber); }
+  .layer-card.l3 { border-top: 3px solid var(--accent2); }
+  .layer-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+  .layer-card .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .l1 .badge { background: rgba(52,211,153,0.15); color: var(--green); }
+  .l2 .badge { background: rgba(251,191,36,0.15); color: var(--amber); }
+  .l3 .badge { background: rgba(167,139,250,0.15); color: var(--accent2); }
+  .layer-card .cost {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text2);
+    margin-bottom: 10px;
+  }
+  .layer-card .detail {
+    font-size: 0.88rem;
+    color: var(--text2);
+    line-height: 1.6;
+  }
+  .layer-card .detail strong {
+    color: var(--text);
+  }
+
+  /* Decision arrows */
+  .decision-layer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 20px 0 30px;
+    font-size: 0.85rem;
+    color: var(--text2);
+  }
+  .decision-node {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--cyan);
+  }
+  .decision-arrow {
+    color: var(--text2);
+    font-size: 1.2rem;
+  }
+
+  /* Strategy destinations */
+  .strategies {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-top: 50px;
+  }
+  .strategy-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 16px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  .strategy-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+  }
+  .strategy-card .icon {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  .strategy-card h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .strategy-card p {
+    font-size: 0.78rem;
+    color: var(--text2);
+    line-height: 1.4;
+  }
+
+  /* Flow arrows between layers */
+  .flow-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 8px 0;
+  }
+  .flow-arrow-label {
+    font-size: 0.75rem;
+    color: var(--text2);
+    text-align: center;
+    padding: 4px 10px;
+    background: var(--surface2);
+    border-radius: 6px;
+  }
+
+  /* Data flow diagram */
+  .pipeline {
+    margin-top: 70px;
+    padding: 36px 28px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+  }
+  .pipeline h2 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    margin-bottom: 28px;
+    color: var(--text);
+  }
+  .pipe-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  .pipe-step {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 20px;
+    text-align: center;
+    min-width: 130px;
+  }
+  .pipe-step .step-num {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .pipe-step .step-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  .pipe-arrow {
+    font-size: 1.5rem;
+    color: var(--border);
+    margin: 0 8px;
+    flex-shrink: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .layers { grid-template-columns: 1fr; }
+    .strategies { grid-template-columns: 1fr 1fr; }
+    .pipe-steps { flex-direction: column; gap: 8px; }
+    .pipe-arrow { transform: rotate(90deg); }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>智能查询路由 — 三层架构</h1>
+    <p class="sub">规则匹配 → 相似度路由 → LLM 推理，逐层递进，精准分发</p>
+  </div>
+
+  <!-- Query Entry -->
+  <div class="flow">
+    <div class="query-entry">🔍 用户查询："请帮我用勾股定理解这道题"</div>
+  </div>
+
+  <!-- Three Layers -->
+  <div class="layers">
+    <div class="layer-card l1">
+      <div class="layer-num">1</div>
+      <h3>规则路由</h3>
+      <div class="badge">⚡ 0ms · 零成本</div>
+      <div class="cost">命中率 ~60%</div>
+      <div class="detail">
+        <strong>关键词 + 正则匹配</strong><br>
+        问候语 → 直接回复<br>
+        "批改"/"打分" → 批改模式<br>
+        "拍照"/"这道题" → 多模态<br>
+        "查"/"什么是" → 知识库检索<br>
+        短查询 + 事实类 → 直接检索
+      </div>
+    </div>
+
+    <div class="layer-card l2">
+      <div class="layer-num">2</div>
+      <h3>相似度路由</h3>
+      <div class="badge">🕐 ~50ms · 低成本</div>
+      <div class="cost">命中率 ~30%（累计 90%）</div>
+      <div class="detail">
+        <strong>向量相似度匹配</strong><br>
+        将查询向量化后与历史查询库比对<br>
+        匹配到相似查询 → 复用其策略<br>
+        使用 embedding 模型做语义匹配<br>
+        缓存高频查询的路由结果
+      </div>
+    </div>
+
+    <div class="layer-card l3">
+      <div class="layer-num">3</div>
+      <h3>LLM 路由</h3>
+      <div class="badge">🧠 ~500ms · 有成本</div>
+      <div class="cost">命中率 100%（兜底）</div>
+      <div class="detail">
+        <strong>轻量级 LLM 意图分类</strong><br>
+        使用 fast-llm（qwen-turbo）做分类<br>
+        支持 5-8 种策略分类输出<br>
+        结构化 JSON 输出（含置信度）<br>
+        复杂/模糊查询的最后保障
+      </div>
+    </div>
+  </div>
+
+  <!-- Decision Path -->
+  <div class="decision-layer">
+    <span>Layer 1</span>
+    <span class="decision-arrow">→</span>
+    <div class="decision-node">命中？</div>
+    <span class="decision-arrow">→ 否 →</span>
+    <span>Layer 2</span>
+    <span class="decision-arrow">→</span>
+    <div class="decision-node">命中？</div>
+    <span class="decision-arrow">→ 否 →</span>
+    <span>Layer 3</span>
+    <span class="decision-arrow">→</span>
+    <div class="decision-node">分类</div>
+  </div>
+
+  <!-- Strategy Destinations -->
+  <div class="strategies">
+    <div class="strategy-card">
+      <div class="icon">📖</div>
+      <h4>直接检索</h4>
+      <p>直接向量检索知识库<br>适用简单事实查询</p>
+    </div>
+    <div class="strategy-card">
+      <div class="icon">💡</div>
+      <h4>HyDE 检索</h4>
+      <p>生成假设文档再检索<br>适用概念性问题</p>
+    </div>
+    <div class="strategy-card">
+      <div class="icon">🔀</div>
+      <h4>子查询分解</h4>
+      <p>拆分子问题分别检索<br>适用复合/多步问题</p>
+    </div>
+    <div class="strategy-card">
+      <div class="icon">🔄</div>
+      <h4>回溯检索</h4>
+      <p>多轮检索+质量评估<br>适用需要深度搜索的问题</p>
+    </div>
+  </div>
+
+  <!-- Pipeline -->
+  <div class="pipeline">
+    <h2>📐 数据流：查询 → 路由 → 策略 → 回答</h2>
+    <div class="pipe-steps">
+      <div class="pipe-step">
+        <div class="step-num">STEP 1</div>
+        <div class="step-name">用户查询</div>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step">
+        <div class="step-num">STEP 2</div>
+        <div class="step-name">预处理<br>（改写/扩展）</div>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step">
+        <div class="step-num">STEP 3</div>
+        <div class="step-name">三层路由<br>分类决策</div>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step">
+        <div class="step-num">STEP 4</div>
+        <div class="step-name">策略执行<br>检索+生成</div>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step">
+        <div class="step-num">STEP 5</div>
+        <div class="step-name">回答输出<br>+ 缓存</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

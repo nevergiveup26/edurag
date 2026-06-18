@@ -1,0 +1,1614 @@
+{
+  "sample_count": 200,
+  "top_k": 5,
+  "hit_rate": 0.985,
+  "mrr": 0.9654,
+  "precision": 0.197,
+  "recall": 0.985,
+  "ndcg": 0.9704,
+  "f1": 0.3283,
+  "total_time_s": 64.14,
+  "avg_time_ms": 320.7,
+  "per_sample": [
+    {
+      "index": 0,
+      "query": "《战国无双3》是由哪两个公司合作开发的？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 4178.8
+    },
+    {
+      "index": 1,
+      "query": "男女主角亦有专属声优这一模式是由谁改编的？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 291.0
+    },
+    {
+      "index": 2,
+      "query": "战国史模式主打哪两个模式？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 287.7
+    },
+    {
+      "index": 3,
+      "query": "锣鼓经是什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 300.1
+    },
+    {
+      "index": 4,
+      "query": "锣鼓经常用的节奏型称为什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 287.9
+    },
+    {
+      "index": 5,
+      "query": "锣鼓经运用的程式是什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 273.9
+    },
+    {
+      "index": 6,
+      "query": "戏曲锣鼓所运用的敲击乐器主要有什么类型？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 288.4
+    },
+    {
+      "index": 7,
+      "query": "广茂铁路全长多少公里？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 322.0
+    },
+    {
+      "index": 8,
+      "query": "广茂铁路由哪家公司管理运营？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 322.2
+    },
+    {
+      "index": 9,
+      "query": "广三铁路在哪年建成？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 298.7
+    },
+    {
+      "index": 10,
+      "query": "大莱龙铁路位于哪里？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 271.1
+    },
+    {
+      "index": 11,
+      "query": "大莱龙铁路一共投资多少亿元？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 303.9
+    },
+    {
+      "index": 12,
+      "query": "大莱龙铁路有什么重要作用？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 323.1
+    },
+    {
+      "index": 13,
+      "query": "铁路沿线设有哪些站点？",
+      "hit": true,
+      "rank": 2,
+      "rr": 0.5,
+      "time_ms": 307.1
+    },
+    {
+      "index": 14,
+      "query": "莱昂德罗·内托的国籍是哪个国家？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 315.9
+    },
+    {
+      "index": 15,
+      "query": "莱昂德罗·内托的职业是什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 354.2
+    },
+    {
+      "index": 16,
+      "query": "莱昂德罗·内托曾效力过哪些球队？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 321.0
+    },
+    {
+      "index": 17,
+      "query": "赵鹏的职业是什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 294.6
+    },
+    {
+      "index": 18,
+      "query": "赵鹏在2014年下半赛季没有出场的原因是什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 321.0
+    },
+    {
+      "index": 19,
+      "query": "赵鹏在哪年入选国家队？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 299.8
+    },
+    {
+      "index": 20,
+      "query": "邹游的职业是什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 267.4
+    },
+    {
+      "index": 21,
+      "query": "他司职什么位置？",
+      "hit": false,
+      "rank": 0,
+      "rr": 0.0,
+      "time_ms": 287.1
+    },
+    {
+      "index": 22,
+      "query": "邹游为什么被河南建业挂牌？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 320.4
+    },
+    {
+      "index": 23,
+      "query": "邹游效力抚顺新野球队期间身披几号球衣？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 278.9
+    },
+    {
+      "index": 24,
+      "query": "张世昌的职业是什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 302.5
+    },
+    {
+      "index": 25,
+      "query": "张世昌出名的原因是什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 343.9
+    },
+    {
+      "index": 26,
+      "query": "张世昌为什么能在2009年中超最后一轮做客深圳时出场？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 332.6
+    },
+    {
+      "index": 27,
+      "query": "于乐的职业是什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 269.7
+    },
+    {
+      "index": 28,
+      "query": "于乐在哪里出身？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 269.2
+    },
+    {
+      "index": 29,
+      "query": "于乐在哪一场比赛中一战成名？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 334.1
+    },
+    {
+      "index": 30,
+      "query": "2013年于乐状态有了什么变化？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 304.7
+    },
+    {
+      "index": 31,
+      "query": "2012年于乐以什么方式加盟深圳红钻？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 291.3
+    },
+    {
+      "index": 32,
+      "query": "尚恩·菲南是哪个组合的主音？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 309.0
+    },
+    {
+      "index": 33,
+      "query": "尚恩·菲南在校时为什么会有“矮冬瓜”这个绰号？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 294.2
+    },
+    {
+      "index": 34,
+      "query": "尚恩最早的音乐影响来自于谁？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 294.5
+    },
+    {
+      "index": 35,
+      "query": "尚恩什么时候决定当一个演艺人员？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 310.0
+    },
+    {
+      "index": 36,
+      "query": "尚恩有什么爱好？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 303.4
+    },
+    {
+      "index": 37,
+      "query": "苏镜宇的原名叫什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 315.5
+    },
+    {
+      "index": 38,
+      "query": "苏博为什么改名成苏镜宇？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 307.7
+    },
+    {
+      "index": 39,
+      "query": "苏镜宇什么时候首次登上中超赛场？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 281.9
+    },
+    {
+      "index": 40,
+      "query": "徐晓飞是什么职业？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 338.7
+    },
+    {
+      "index": 41,
+      "query": "徐晓飞为什么中途退役过？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 318.2
+    },
+    {
+      "index": 42,
+      "query": "徐晓飞现在效力于哪个球队？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 349.7
+    },
+    {
+      "index": 43,
+      "query": "武藏浦和站隶属于什么公司？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 420.4
+    },
+    {
+      "index": 44,
+      "query": "武藏浦和站位于哪里？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 322.9
+    },
+    {
+      "index": 45,
+      "query": "武藏浦和站可分为几个部分？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 283.3
+    },
+    {
+      "index": 46,
+      "query": "白岳峰是哪一个少数民族的？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 284.6
+    },
+    {
+      "index": 47,
+      "query": "白岳峰打什么位置？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 298.2
+    },
+    {
+      "index": 48,
+      "query": "白岳峰现效力于哪支球队？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 300.9
+    },
+    {
+      "index": 49,
+      "query": "莱索托为什么没有港口和海港？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 275.5
+    },
+    {
+      "index": 50,
+      "query": "莱索托哪一年独立？",
+      "hit": true,
+      "rank": 2,
+      "rr": 0.5,
+      "time_ms": 288.3
+    },
+    {
+      "index": 51,
+      "query": "莱索托有几个国际机场？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 292.4
+    },
+    {
+      "index": 52,
+      "query": "最近莱索托的主要港口是哪一个？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 316.1
+    },
+    {
+      "index": 53,
+      "query": "五羊新城又称什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 308.7
+    },
+    {
+      "index": 54,
+      "query": "五羊新城四周有什么建筑？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 283.6
+    },
+    {
+      "index": 55,
+      "query": "五羊新城由哪个公司开发？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 347.0
+    },
+    {
+      "index": 56,
+      "query": "五羊新城有什么地理优势？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 326.6
+    },
+    {
+      "index": 57,
+      "query": "楼曾瑞的祖籍是哪里?",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 320.8
+    },
+    {
+      "index": 58,
+      "query": "楼曾瑞现在担任了哪些职位？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 337.1
+    },
+    {
+      "index": 59,
+      "query": "楼曾瑞在接受《明报》访问时表达了什么观点？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 346.4
+    },
+    {
+      "index": 60,
+      "query": "楼曾瑞毕业于哪个大学？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 291.4
+    },
+    {
+      "index": 61,
+      "query": "德龙烟铁路是什么的统称？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 284.1
+    },
+    {
+      "index": 62,
+      "query": "德龙烟铁路经过哪些地方？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 311.0
+    },
+    {
+      "index": 63,
+      "query": "德龙烟铁路全长多少公里？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 248.0
+    },
+    {
+      "index": 64,
+      "query": "龙烟铁路位于哪里？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 311.1
+    },
+    {
+      "index": 65,
+      "query": "龙烟铁路是哪条铁路的重要组成部分？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 309.2
+    },
+    {
+      "index": 66,
+      "query": "龙烟铁路项目工程投资总额约为多少？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 304.6
+    },
+    {
+      "index": 67,
+      "query": "龙烟铁路项目是哪两个公司出资做的？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 299.9
+    },
+    {
+      "index": 68,
+      "query": "龙烟铁路什么时候开通运营？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 345.2
+    },
+    {
+      "index": 69,
+      "query": "环氧氯丙烷有什么特性？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 329.2
+    },
+    {
+      "index": 70,
+      "query": "环氧氯丙烷有什么用途？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 340.7
+    },
+    {
+      "index": 71,
+      "query": "环氧氯丙烷的制备过程是什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 297.9
+    },
+    {
+      "index": 72,
+      "query": "环氧氯丙烷主要被转化成了什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 307.7
+    },
+    {
+      "index": 73,
+      "query": "环氧氯丙烷是制作什么的重要材料？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 292.9
+    },
+    {
+      "index": 74,
+      "query": "舜天是哪个王朝的建立者？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 318.4
+    },
+    {
+      "index": 75,
+      "query": "舜天的神号是什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 289.1
+    },
+    {
+      "index": 76,
+      "query": "舜天是怎么当上国王的？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 276.2
+    },
+    {
+      "index": 77,
+      "query": "津蓟铁路沿线设置了哪几个站点？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 311.1
+    },
+    {
+      "index": 78,
+      "query": "津蓟铁路的线路是怎样的？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 304.6
+    },
+    {
+      "index": 79,
+      "query": "津蓟铁路主要是什么用途？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 317.4
+    },
+    {
+      "index": 80,
+      "query": "司马晏是谁的儿子呀？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 303.3
+    },
+    {
+      "index": 81,
+      "query": "谁杀了司马晏？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 297.3
+    },
+    {
+      "index": 82,
+      "query": "司马晏为什么被抓？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 296.5
+    },
+    {
+      "index": 83,
+      "query": "司马晏为什么没被杀害？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 304.3
+    },
+    {
+      "index": 84,
+      "query": "当惹雍错又叫什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 335.7
+    },
+    {
+      "index": 85,
+      "query": "当惹雍错位于哪里？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 309.9
+    },
+    {
+      "index": 86,
+      "query": "当惹雍错对苯教徒有什么意义？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 279.0
+    },
+    {
+      "index": 87,
+      "query": "余蔚是哪国国王？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 293.7
+    },
+    {
+      "index": 88,
+      "query": "前燕是怎么灭亡的？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 278.4
+    },
+    {
+      "index": 89,
+      "query": "前秦对前燕发动的灭国战争是谁主导的？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 272.5
+    },
+    {
+      "index": 90,
+      "query": "余蔚在什么时候被任命当了太傅？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 285.7
+    },
+    {
+      "index": 91,
+      "query": "额亦都是哪个国家的开国大臣？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 364.1
+    },
+    {
+      "index": 92,
+      "query": "额亦都是在哪一年去世的？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 340.0
+    },
+    {
+      "index": 93,
+      "query": "额亦都一生有几位妻子？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 275.5
+    },
+    {
+      "index": 94,
+      "query": "沼鹿又叫什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 273.2
+    },
+    {
+      "index": 95,
+      "query": "雄鹿的鹿角有什么特点？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 316.7
+    },
+    {
+      "index": 96,
+      "query": "沼鹿的生活习性是什么样的？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 258.9
+    },
+    {
+      "index": 97,
+      "query": "沼鹿消失的原因是什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 270.7
+    },
+    {
+      "index": 98,
+      "query": "魏斯可金融公司是什么类型的企业？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 335.1
+    },
+    {
+      "index": 99,
+      "query": "魏斯可金融公司总部位于哪里？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 268.1
+    },
+    {
+      "index": 100,
+      "query": "魏斯可的主席、董事长以及行政总裁查理·芒格会和谁商讨公司事宜？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 263.2
+    },
+    {
+      "index": 101,
+      "query": "魏斯可金融公司的主营业务有几项？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 312.6
+    },
+    {
+      "index": 102,
+      "query": "这次选举被视为对马其顿共和国什么的考验？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 271.0
+    },
+    {
+      "index": 103,
+      "query": "在这次选举中处于领先地位的两位候选人分别是谁？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 286.5
+    },
+    {
+      "index": 104,
+      "query": "马其顿即将离任的总统是谁？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 297.0
+    },
+    {
+      "index": 105,
+      "query": "在选举中最终获胜的是谁？",
+      "hit": true,
+      "rank": 2,
+      "rr": 0.5,
+      "time_ms": 266.0
+    },
+    {
+      "index": 106,
+      "query": "底特律圣保罗座堂在哪里？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 293.3
+    },
+    {
+      "index": 107,
+      "query": "圣保罗堂区成立于哪年？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 286.3
+    },
+    {
+      "index": 108,
+      "query": "教堂的建筑有什么特点？",
+      "hit": true,
+      "rank": 3,
+      "rr": 0.3333,
+      "time_ms": 384.6
+    },
+    {
+      "index": 109,
+      "query": "圣保罗座堂是20世纪初后期什么建筑的最佳实例之一？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 316.1
+    },
+    {
+      "index": 110,
+      "query": "美国建筑师是怎样创造维多利亚哥特式建筑的？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 320.8
+    },
+    {
+      "index": 111,
+      "query": "圣体主教座堂是什么教的主教座堂？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 299.0
+    },
+    {
+      "index": 112,
+      "query": "圣体主教座堂在哪里？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 291.0
+    },
+    {
+      "index": 113,
+      "query": "圣体堂区成立于哪年？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 269.2
+    },
+    {
+      "index": 114,
+      "query": "谁设计了该教堂？",
+      "hit": true,
+      "rank": 2,
+      "rr": 0.5,
+      "time_ms": 303.5
+    },
+    {
+      "index": 115,
+      "query": "固始站隶属于什么公司？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 295.1
+    },
+    {
+      "index": 116,
+      "query": "固始站位于哪里？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 290.7
+    },
+    {
+      "index": 117,
+      "query": "固始站可以办理什么业务？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 326.0
+    },
+    {
+      "index": 118,
+      "query": "固始站的年发送、到达旅客可以达到多少人次？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 262.6
+    },
+    {
+      "index": 119,
+      "query": "客运方面，固始站现有多少趟列车停车办客？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 281.7
+    },
+    {
+      "index": 120,
+      "query": "赫姓分为哪两种？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 312.9
+    },
+    {
+      "index": 121,
+      "query": "赫姓可以追溯到什么时候？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 297.2
+    },
+    {
+      "index": 122,
+      "query": "索尼的父亲和叔父受谁重用过？",
+      "hit": false,
+      "rank": 0,
+      "rr": 0.0,
+      "time_ms": 274.0
+    },
+    {
+      "index": 123,
+      "query": "毒马案发生在什么时候？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 314.1
+    },
+    {
+      "index": 124,
+      "query": "毒马案是怎样被揭发的？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 296.0
+    },
+    {
+      "index": 125,
+      "query": "毒马案对香港赛马事业产生了什么影响？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 303.0
+    },
+    {
+      "index": 126,
+      "query": "最后马会采取了什么措施？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 305.1
+    },
+    {
+      "index": 127,
+      "query": "宗座华盖以前有过什么用途？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 271.1
+    },
+    {
+      "index": 128,
+      "query": "宗座华盖在现代是什么的标志？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 267.8
+    },
+    {
+      "index": 129,
+      "query": "宗座华盖的形状有啥特征？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 265.2
+    },
+    {
+      "index": 130,
+      "query": "第一位使用宗座华盖作为教宗世俗权力标志的教宗是谁？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 290.9
+    },
+    {
+      "index": 131,
+      "query": "路德维希·普朗特卒于哪年？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 288.4
+    },
+    {
+      "index": 132,
+      "query": "路德维希·普朗特是怎么发现气流分离问题的？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 337.7
+    },
+    {
+      "index": 133,
+      "query": "他在汉诺威大学任教授时提出了什么理论？",
+      "hit": true,
+      "rank": 2,
+      "rr": 0.5,
+      "time_ms": 304.1
+    },
+    {
+      "index": 134,
+      "query": "普朗特培养了哪些国际知名的力学家？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 274.9
+    },
+    {
+      "index": 135,
+      "query": "河茂铁路全长有多少公里？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 272.2
+    },
+    {
+      "index": 136,
+      "query": "河茂铁路共设置了几座车站？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 305.0
+    },
+    {
+      "index": 137,
+      "query": "河茂铁路营运初期是为什么服务的？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 275.1
+    },
+    {
+      "index": 138,
+      "query": "河茂铁路沿线在地理位置有什么特点？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 344.8
+    },
+    {
+      "index": 139,
+      "query": "河茂铁路电气化改造后可实现什么功能？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 260.5
+    },
+    {
+      "index": 140,
+      "query": "吴淞路闸桥原来的地址在哪里？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 258.2
+    },
+    {
+      "index": 141,
+      "query": "为什么要修建吴淞路闸桥？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 324.0
+    },
+    {
+      "index": 142,
+      "query": "吴淞路闸桥起到了什么作用？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 301.9
+    },
+    {
+      "index": 143,
+      "query": "吴淞路闸桥拆除后它的运输功能由什么代替？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 308.6
+    },
+    {
+      "index": 144,
+      "query": "克什米尔马鹿分布在哪些地方？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 281.6
+    },
+    {
+      "index": 145,
+      "query": "克什米尔马鹿在外形上有什么特征？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 271.8
+    },
+    {
+      "index": 146,
+      "query": "克什米尔马鹿的生存会受到什么威胁？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 291.8
+    },
+    {
+      "index": 147,
+      "query": "1970年前克什米尔马鹿只剩下多少头？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 294.9
+    },
+    {
+      "index": 148,
+      "query": "武穴酥糖原名是什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 279.4
+    },
+    {
+      "index": 149,
+      "query": "阻碍武穴酥糖产业发展的原因是什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 297.6
+    },
+    {
+      "index": 150,
+      "query": "武穴酥糖一般只在什么时候生产销售？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 266.7
+    },
+    {
+      "index": 151,
+      "query": "1983年9月武穴酥糖获得了什么奖？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 274.3
+    },
+    {
+      "index": 152,
+      "query": "卫视卡式台为哪个公司拥有？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 286.5
+    },
+    {
+      "index": 153,
+      "query": "卫视卡式台是一条以什么语言广播的电影频道？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 270.1
+    },
+    {
+      "index": 154,
+      "query": "该频道每日以播放什么剧为主？",
+      "hit": true,
+      "rank": 4,
+      "rr": 0.25,
+      "time_ms": 274.1
+    },
+    {
+      "index": 155,
+      "query": "卫视卡式台共分为几个地区播放版本？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 284.2
+    },
+    {
+      "index": 156,
+      "query": "美洲版本在哪两国收看？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 300.3
+    },
+    {
+      "index": 157,
+      "query": "班杰的本名叫什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 322.4
+    },
+    {
+      "index": 158,
+      "query": "班杰是什么职业呀？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 341.1
+    },
+    {
+      "index": 159,
+      "query": "班杰在哪里出生？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 329.9
+    },
+    {
+      "index": 160,
+      "query": "班杰的兴趣爱好是什么？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 290.1
+    },
+    {
+      "index": 161,
+      "query": "2015年，班杰获得了什么奖？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 298.3
+    },
+    {
+      "index": 162,
+      "query": "底特律圣公会三一堂在哪里？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 274.8
+    },
+    {
+      "index": 163,
+      "query": "底特律圣公会三一堂哪一年成立？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 285.2
+    },
+    {
+      "index": 164,
+      "query": "2006年底特律圣公会三一堂与哪个教会合并？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 258.9
+    },
+    {
+      "index": 165,
+      "query": "底特律第二浸信会教堂在哪里？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 278.4
+    },
+    {
+      "index": 166,
+      "query": "底特律第二浸信会是由谁成立的？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 288.1
+    },
+    {
+      "index": 167,
+      "query": "底特律第二浸信会为什么很快就负担起帮助解放奴隶的使命？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 275.7
+    },
+    {
+      "index": 168,
+      "query": "第一位获得诺贝尔和平奖的美国黑人是谁？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 285.8
+    },
+    {
+      "index": 169,
+      "query": "底特律第二浸信会教堂哪一年被烧毁？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 291.2
+    },
+    {
+      "index": 170,
+      "query": "广东广播电视台珠江频道是一条什么性质的频道？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 274.9
+    },
+    {
+      "index": 171,
+      "query": "广东广播电视台珠江频道以什么语言为主？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 350.0
+    },
+    {
+      "index": 172,
+      "query": "广东广播电视台珠江频道哪年正式开播？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 330.1
+    },
+    {
+      "index": 173,
+      "query": "2012年10月18日，珠江台为什么被广电总局勒令在梧州市所有有线电视网络停止播送？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 304.2
+    },
+    {
+      "index": 174,
+      "query": "陈荣捷是哪里人？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 448.1
+    },
+    {
+      "index": 175,
+      "query": "1929年，陈荣捷在哈佛大学获得什么学位？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 313.8
+    },
+    {
+      "index": 176,
+      "query": "陈荣捷的主要著作有哪些？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 312.6
+    },
+    {
+      "index": 177,
+      "query": "陈荣捷卒于哪一年？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 310.7
+    },
+    {
+      "index": 178,
+      "query": "文周王是百济第多少代国王？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 303.7
+    },
+    {
+      "index": 179,
+      "query": "文周王是哪年到哪年在位？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 287.9
+    },
+    {
+      "index": 180,
+      "query": "嘉善南站由哪个公司管辖？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 311.2
+    },
+    {
+      "index": 181,
+      "query": "沪昆铁路嘉善站的客运功能日益萎缩是受什么影响？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 264.3
+    },
+    {
+      "index": 182,
+      "query": "嘉兴市政府为什么会在嘉善设立站点？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 331.5
+    },
+    {
+      "index": 183,
+      "query": "嘉善南站站房面积有多少平方米？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 304.7
+    },
+    {
+      "index": 184,
+      "query": "嘉兴南站是哪个铁路线路中的一站？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 283.6
+    },
+    {
+      "index": 185,
+      "query": "嘉兴南站建筑总面积为多少平方米？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 289.9
+    },
+    {
+      "index": 186,
+      "query": "嘉兴南站由哪几个部分组成？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 255.7
+    },
+    {
+      "index": 187,
+      "query": "嘉兴南站有几条线？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 318.8
+    },
+    {
+      "index": 188,
+      "query": "海宁西站位于哪里？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 270.5
+    },
+    {
+      "index": 189,
+      "query": "海宁西站哪一年启用？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 290.6
+    },
+    {
+      "index": 190,
+      "query": "海宁西站总建筑面积有多少平方米？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 268.2
+    },
+    {
+      "index": 191,
+      "query": "海宁西站由哪个公司建设？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 280.7
+    },
+    {
+      "index": 192,
+      "query": "什么原因导致了前往杭州的海宁市民出行不便？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 366.7
+    },
+    {
+      "index": 193,
+      "query": "余杭站位于哪里？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 296.8
+    },
+    {
+      "index": 194,
+      "query": "余杭站的建筑有什么特点？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 295.1
+    },
+    {
+      "index": 195,
+      "query": "余杭站南侧广场包括哪几个部分？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 320.7
+    },
+    {
+      "index": 196,
+      "query": "广场面积有多少平方米？",
+      "hit": false,
+      "rank": 0,
+      "rr": 0.0,
+      "time_ms": 282.7
+    },
+    {
+      "index": 197,
+      "query": "哪几路公交车在余杭站北侧始发？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 306.2
+    },
+    {
+      "index": 198,
+      "query": "艾蒂安·保罗·马利·拉莫特的出生地是哪里？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 350.8
+    },
+    {
+      "index": 199,
+      "query": "1953年，艾蒂安·保罗·马利·拉莫特获得了什么奖？",
+      "hit": true,
+      "rank": 1,
+      "rr": 1.0,
+      "time_ms": 370.2
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Environment & secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Uploads & runtime data
+.uploads/
+logs/
+sample_data/
+
+# Docker data volumes
+docker/mysql_data/
+docker/*.sql
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Performance testing
+k6-master/
+
+# Claude Code
+.claude/
+
+# Browser automation cache
+.browsers/
+
+# Code review artifacts
+code-review/
+
+# Standalone Milvus (project uses root docker-compose.yml)
+milvus/
+
+# Frontend E2E tests
+frontend/e2e/
+frontend/test-results/
+
+# Jupyter
+.ipynb_checkpoints/
+
+tutorial/*.md
+
+# Data index files (too large, keep local)
+data/chunks_index.json*
+data/chunks/
