@@ -35,7 +35,7 @@ class Vectorizer:
         """初始化云端嵌入模式（DashScope / OpenAI 兼容 API）"""
         self._provider = "dashscope"
         self._model_name = config.get("embedding", "cloud_model", _CLOUD_DEFAULTS["model"])
-        self.embedding_dim = int(config.get("embedding", "dimensions", _CLOUD_DEFAULTS["dimensions"]))
+        self.embedding_dim = int(config.get("embedding", "embedding_dim", _CLOUD_DEFAULTS["dimensions"]))
         self._batch_size = int(config.get("embedding", "batch_size", _CLOUD_DEFAULTS["batch_size"]))
 
         # API 配置：embedding section 优先，fallback 到 llm section
@@ -119,6 +119,18 @@ class Vectorizer:
                         dimensions=self.embedding_dim,
                     )
                     batch_embeddings = [d.embedding for d in resp.data]
+                    # 校验每个 embedding 非空且维度正确
+                    for i, emb in enumerate(batch_embeddings):
+                        if not emb or len(emb) == 0:
+                            raise ValueError(
+                                f"API 返回空 embedding (批次 {batch_start}-{batch_end}, "
+                                f"第{i}个, 文本前50字: {batch[i][:50]})"
+                            )
+                        if len(emb) != self.embedding_dim:
+                            raise ValueError(
+                                f"API 返回 embedding 维度异常: 期望 {self.embedding_dim}维, "
+                                f"实际 {len(emb)}维 (批次 {batch_start}-{batch_end}, 第{i}个)"
+                            )
                     all_embeddings.extend(batch_embeddings)
                     break
                 except Exception as e:
@@ -134,6 +146,10 @@ class Vectorizer:
             if batch_end < total:
                 logger.debug(f"云端嵌入进度: {batch_end}/{total}")
 
+        if len(all_embeddings) != total:
+            raise RuntimeError(
+                f"嵌入向量数量不匹配: 期望 {total}, 实际 {len(all_embeddings)}"
+            )
         return all_embeddings
 
     # ======================== 工具方法 ========================
@@ -143,10 +159,15 @@ class Vectorizer:
         v1 = np.array(vec1, dtype=np.float32)
         v2 = np.array(vec2, dtype=np.float32)
 
-        # 维度校验：0 维或标量 embedding 直接返回 0
-        if v1.ndim == 0 or v2.ndim == 0:
-            return 0.0
+        # 维度校验：0 维或空 embedding 表示上游异常，必须抛异常暴露问题
+        if v1.ndim == 0 or v2.ndim == 0 or v1.shape[0] == 0 or v2.shape[0] == 0:
+            raise ValueError(
+                f"cosine_similarity 收到无效向量: v1.shape={v1.shape}, v2.shape={v2.shape}"
+            )
         if v1.shape[0] != v2.shape[0]:
+            logger.warning(
+                f"cosine_similarity 维度不匹配: v1={v1.shape[0]}维, v2={v2.shape[0]}维"
+            )
             return 0.0
 
         norm1 = np.linalg.norm(v1)

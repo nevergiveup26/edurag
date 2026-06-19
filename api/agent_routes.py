@@ -43,6 +43,31 @@ async def agent_query(request: QueryRequestModel):
         elif h.get("role") == "assistant":
             agent_messages.append(AIMessage(content=h.get("content", "")))
     query_text = request.query
+
+    # FAQ 匹配拦截：命中则直接返回（跳过策略路由和 Agent）
+    from evaluation.faq_matcher import get_faq_matcher
+    faq_matcher = get_faq_matcher()
+    if faq_matcher and faq_matcher.is_ready:
+        faq_match = faq_matcher.match(request.query)
+        if faq_match:
+            logger.info(f"[AgentQuery] FAQ命中: similarity={faq_match['similarity']:.4f} "
+                        f"question='{faq_match['question'][:50]}'")
+            faq_answer = faq_match["answer"]
+            save_conversation_message(conversation_id, "assistant", faq_answer)
+            return QueryResponseModel(
+                answer=faq_answer,
+                sources=[SourceItem(
+                    content=faq_match["question"],
+                    score=faq_match["similarity"],
+                    source="faq",
+                    metadata={"faq_id": faq_match["id"], "category": faq_match["category"]},
+                )],
+                strategy_used="faq",
+                router_used="faq",
+                execution_time=time.time() - start_time,
+                conversation_id=conversation_id,
+            )
+
     # 智能路由：确定检索策略
     from router.query_router import get_query_router
     router = get_query_router()
@@ -170,6 +195,35 @@ async def agent_query_stream(request: QueryRequestModel):
     model = create_chat_model()
 
     save_conversation_message(conversation_id, "user", request.query)
+
+    # FAQ 匹配拦截：命中则 SSE 流式返回，跳过后续所有流程
+    from evaluation.faq_matcher import get_faq_matcher
+    faq_matcher = get_faq_matcher()
+    if faq_matcher and faq_matcher.is_ready:
+        faq_match = faq_matcher.match(request.query)
+        if faq_match:
+            logger.info(f"[AgentStream] FAQ命中: similarity={faq_match['similarity']:.4f} "
+                        f"question='{faq_match['question'][:50]}'")
+
+            async def faq_event_stream():
+                faq_answer = faq_match["answer"]
+                # 模拟 token 事件流，前端无需改动
+                yield f"data: {json.dumps({'type': 'token', 'content': faq_answer}, ensure_ascii=False)}\n\n"
+                yield f"data: {json.dumps({'type': 'done', 'session_id': conversation_id, 'conversation_id': conversation_id, 'source': 'faq', 'faq_id': faq_match['id']}, ensure_ascii=False)}\n\n"
+
+                save_conversation_message(conversation_id, "assistant", faq_answer)
+
+                yield "data: [DONE]\n\n"
+
+            return StreamingResponse(
+                faq_event_stream(),
+                media_type="text/event-stream",
+                headers={
+                    "Cache-Control": "no-cache",
+                    "Connection": "keep-alive",
+                    "X-Accel-Buffering": "no",
+                },
+            )
 
     # 智能路由
     from router.query_router import get_query_router

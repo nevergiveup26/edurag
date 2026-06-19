@@ -51,6 +51,14 @@ async def lifespan(app: FastAPI):
     from langgraph_agent.model import create_chat_model
     _ = create_chat_agent(model=create_chat_model())
     logger.info("✓ LangGraph Agent 已预热")
+
+    # 初始化 FAQ 匹配器
+    try:
+        from evaluation.faq_matcher import init_faq_matcher
+        init_faq_matcher()
+        logger.info("✓ FAQ 匹配器已初始化")
+    except Exception as e:
+        logger.warning(f"⚠ FAQ 匹配器初始化失败 (系统仍可运行): {e}")
     
     # 初始化默认知识库（数学/语文/英语）
     try:

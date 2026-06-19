@@ -394,16 +394,54 @@ class EvalRequest(BaseModel):
 
 
 def _load_builtin_samples() -> List[dict]:
-    """加载内置测试样本"""
-    test_set_path = os.path.join(
-        os.path.dirname(os.path.dirname(__file__)),
-        "evaluation", "k12_test_set.json"
-    )
-    if os.path.exists(test_set_path):
-        import json
-        with open(test_set_path, "r", encoding="utf-8") as f:
-            raw = json.load(f)
+    """加载内置测试样本，优先使用增强版（含 reference_answer 和 relevant_doc_ids）"""
+    import json
+    base_dir = os.path.dirname(os.path.dirname(__file__))
+
+    # 优先加载增强版测试集
+    enriched_path = os.path.join(base_dir, "evaluation", "k12_test_set_enriched.json")
+    test_set_path = os.path.join(base_dir, "evaluation", "k12_test_set.json")
+
+    # 选择可用文件
+    if os.path.exists(enriched_path):
+        load_path = enriched_path
+        is_enriched = True
+    elif os.path.exists(test_set_path):
+        load_path = test_set_path
+        is_enriched = False
+    else:
+        logger.warning("未找到测试集文件，使用内置默认样本")
         return [
+            {"question": "什么是素质教育？",
+             "ground_truth": "素质教育是注重学生全面发展的教育理念，强调德智体美劳全面发展。",
+             "expected_answer": "素质教育是注重学生全面发展的教育理念，强调德智体美劳全面发展。"},
+            {"question": "如何提高学生的学习兴趣？",
+             "ground_truth": "通过多样化教学方式、创设情境、激发好奇心等方法提高学习兴趣。",
+             "expected_answer": "通过多样化教学方式、创设情境、激发好奇心等方法提高学习兴趣。"},
+            {"question": "在线教育的优缺点是什么？",
+             "ground_truth": "在线教育的优点包括灵活便捷、资源丰富；缺点包括缺乏互动、自律要求高。",
+             "expected_answer": "在线教育的优点包括灵活便捷、资源丰富；缺点包括缺乏互动、自律要求高。"},
+        ]
+
+    with open(load_path, "r", encoding="utf-8") as f:
+        raw = json.load(f)
+
+    if is_enriched:
+        # 增强版：用 reference_answer 作为 ground_truth，有 relevant_doc_ids
+        result = [
+            {
+                "question": item["query"],
+                "ground_truth": item.get("reference_answer", item.get("expected_answer", "")),
+                "expected_answer": item.get("expected_answer", ""),
+                "expected_keywords": item.get("expected_keywords", []),
+                "relevant_doc_ids": item.get("relevant_doc_ids", []),
+            }
+            for item in raw
+        ]
+        logger.info(f"已加载增强版测试集 ({len(result)} 条样本)")
+    else:
+        # 原始版：用 expected_answer 作为 ground_truth，无 relevant_doc_ids
+        result = [
             {
                 "question": item["query"],
                 "ground_truth": item.get("expected_answer", ""),
@@ -413,19 +451,9 @@ def _load_builtin_samples() -> List[dict]:
             }
             for item in raw
         ]
+        logger.info(f"已加载原始测试集 ({len(result)} 条样本，无文档标注)")
 
-    # 回退：内置默认样本
-    return [
-        {"question": "什么是素质教育？",
-         "ground_truth": "素质教育是注重学生全面发展的教育理念，强调德智体美劳全面发展。",
-         "expected_answer": "素质教育是注重学生全面发展的教育理念，强调德智体美劳全面发展。"},
-        {"question": "如何提高学生的学习兴趣？",
-         "ground_truth": "通过多样化教学方式、创设情境、激发好奇心等方法提高学习兴趣。",
-         "expected_answer": "通过多样化教学方式、创设情境、激发好奇心等方法提高学习兴趣。"},
-        {"question": "在线教育的优缺点是什么？",
-         "ground_truth": "在线教育的优点包括灵活便捷、资源丰富；缺点包括缺乏互动、自律要求高。",
-         "expected_answer": "在线教育的优点包括灵活便捷、资源丰富；缺点包括缺乏互动、自律要求高。"},
-    ]
+    return result
 
 
 @admin_router.post("/evaluate/run")

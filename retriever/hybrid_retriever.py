@@ -72,6 +72,13 @@ class HybridRetriever:
             vector_results = self.vector_retriever.search(query, top_k=top_k * 2, metadata_filter=metadata_filter)
         except Exception as e:
             logger.warning(f"[Hybrid] 向量检索完全失败，降级到纯BM25: {type(e).__name__}: {e}")
+
+        # 检测向量检索结果是否全为0分（embedding 异常导致静默失效）
+        if vector_results and all(r.score == 0.0 for r in vector_results):
+            logger.warning(
+                "[Hybrid] 向量检索结果全为0分，向量embedding可能异常，"
+                "向量权重实际失效，结果等价于纯BM25"
+            )
         
         # 如果指定了 doc_id 过滤，在合并前先过滤
         if effective_filter:

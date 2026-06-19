@@ -196,7 +196,7 @@ class MilvusDB:
 
             all_data = []
             offset = 0
-            output_fields = ["id", "content", "doc_id", "metadata"]
+            output_fields = ["id", "content", "doc_id", "metadata", "embedding"]
             MILVUS_QUERY_WINDOW = 16384  # Milvus 最大查询窗口
 
             while offset < total:
@@ -219,8 +219,7 @@ class MilvusDB:
                         "doc_id": r.get("doc_id", ""),
                         "content": r.get("content", ""),
                         "metadata": r.get("metadata", {}),
-                        # Milvus 不返回 embedding，调用方需自行处理
-                        "embedding": None,
+                        "embedding": r.get("embedding", None),
                     })
                 offset += len(results)
                 if len(results) < batch_size:

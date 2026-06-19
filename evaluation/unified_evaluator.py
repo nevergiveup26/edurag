@@ -203,12 +203,18 @@ class UnifiedEvaluator:
                     else str(s)
                     for s in sources[:self.config.top_k]
                 ]
+                # 提取实际 doc_id，用于与 relevant_doc_ids 精确匹配
+                doc_ids = [
+                    getattr(s.chunk, 'doc_id', '') if hasattr(s, 'chunk') else ''
+                    for s in sources[:self.config.top_k]
+                ]
                 exec_time = time.time() - t_sample
 
                 score = await self._score_one(
                     question=tc["question"],
                     answer=answer,
                     contexts=contexts,
+                    retrieved_doc_ids=doc_ids,
                     ground_truth=tc.get("ground_truth", ""),
                     relevant_doc_ids=tc.get("relevant_doc_ids"),
                     expected_keywords=tc.get("expected_keywords"),
@@ -280,10 +286,15 @@ class UnifiedEvaluator:
                     else str(s)
                     for s in sources[:self.config.top_k]
                 ]
+                doc_ids = [
+                    getattr(s.chunk, 'doc_id', '') if hasattr(s, 'chunk') else ''
+                    for s in sources[:self.config.top_k]
+                ]
                 return {
                     "question": tc["question"],
                     "answer": answer,
                     "contexts": contexts,
+                    "retrieved_doc_ids": doc_ids,
                     "ground_truth": tc.get("ground_truth", ""),
                     "relevant_doc_ids": tc.get("relevant_doc_ids"),
                     "expected_keywords": tc.get("expected_keywords"),
@@ -319,6 +330,7 @@ class UnifiedEvaluator:
         question: str,
         answer: str,
         contexts: List[str],
+        retrieved_doc_ids: List[str] = None,
         ground_truth: str = "",
         relevant_doc_ids: List[str] = None,
         expected_keywords: List[str] = None,
@@ -326,10 +338,13 @@ class UnifiedEvaluator:
         exec_time: float = 0.0,
     ) -> SampleScore:
         """计算单个样本的全部指标"""
-        # 检索指标
-        retrieved_ids = [f"ctx_{i}" for i in range(len(contexts))]
+        # 检索指标：使用传入的实际 doc_id，或 fallback 到合成 ID
+        if retrieved_doc_ids:
+            actual_doc_ids = retrieved_doc_ids
+        else:
+            actual_doc_ids = [f"ctx_{i}" for i in range(len(contexts))]
         retrieval = calc_retrieval_metrics(
-            retrieved_doc_ids=retrieved_ids,
+            retrieved_doc_ids=actual_doc_ids,
             retrieved_contents=contexts,
             relevant_doc_ids=relevant_doc_ids,
             expected_keywords=expected_keywords,

@@ -874,6 +874,312 @@ def graph_search(keywords: list, max_hops: int = 1) -> str:
         return json.dumps({"expanded_keywords": keywords, "error": str(e)}, ensure_ascii=False)
 
 
+# ========================== 备考辅助 Tool ==========================
+
+@tool
+def diagnose_weakness(answers_history: str, subject: str, grade_level: str) -> str:
+    """
+    薄弱点诊断：分析学生的错题记录，识别知识薄弱点并给出复习建议。
+
+    适用场景：学生上传一组作答记录（含题目、学生答案、标准答案），
+    系统逐题批改后统计错误率，结合知识图谱定位薄弱知识点，
+    输出按优先级排序的薄弱点列表和针对性复习建议。
+
+    Args:
+        answers_history: 作答记录，每行一条，格式为 "题目|学生答案|标准答案"，
+                         用换行符分隔多条记录
+        subject: 学科：语文/数学/英语
+        grade_level: 年级：小学/初中/高中
+    """
+    try:
+        import re as _re
+
+        if not _provider._llm_client:
+            return json.dumps({"error": "LLM 未初始化", "weaknesses": []}, ensure_ascii=False)
+
+        # Step 1: 解析作答记录
+        lines = [l.strip() for l in answers_history.split("\n") if l.strip() and "|" in l]
+        if not lines:
+            return json.dumps({"error": "未解析到有效的作答记录", "weaknesses": []}, ensure_ascii=False)
+
+        records = []
+        for line in lines:
+            parts = line.split("|")
+            if len(parts) >= 3:
+                records.append({
+                    "question": parts[0].strip(),
+                    "student_answer": parts[1].strip(),
+                    "correct_answer": parts[2].strip(),
+                })
+
+        if not records:
+            return json.dumps({"error": "作答记录格式错误", "weaknesses": []}, ensure_ascii=False)
+
+        # Step 2: 逐题批改（使用 LLM 快速判断正误，避免调用完整的 grade_execute）
+        correct_count = 0
+        error_records = []
+        for r in records:
+            grade_prompt = f"""判断以下学生的作答是否正确。如果正确返回"对"，否则返回"错"并简要说明错误原因。
+
+学科: {subject} | 年级: {grade_level}
+题目: {r['question'][:200]}
+学生答案: {r['student_answer'][:200]}
+标准答案: {r['correct_answer'][:200]}
+
+返回JSON: {{"correct": true/false, "error_type": "概念错误/计算错误/理解偏差/无误", "reason": "简要说明"}}"""
+            try:
+                resp = _provider._llm_client.generate(grade_prompt, max_tokens=200)
+                json_match = _re.search(r'\{[\s\S]*\}', resp)
+                if json_match:
+                    grade = json.loads(json_match.group())
+                    if grade.get("correct"):
+                        correct_count += 1
+                    else:
+                        error_records.append({
+                            "question": r["question"],
+                            "error_type": grade.get("error_type", "未知"),
+                            "reason": grade.get("reason", ""),
+                        })
+                else:
+                    error_records.append({"question": r["question"], "error_type": "未知", "reason": ""})
+            except Exception:
+                error_records.append({"question": r["question"], "error_type": "未知", "reason": ""})
+
+        # Step 3: 对错题提取知识点 → 用 graph_search 定位关联
+        topic_errors = {}  # topic -> [error_types]
+        if error_records:
+            # 用 LLM 从错题中提取知识点
+            error_questions = "\n".join(f"- {r['question'][:80]}" for r in error_records[:5])
+            topic_prompt = f"""从以下错题中提取知识点列表（每个知识点一行，只输出知识点名称，不要编号）：
+学科: {subject} | 年级: {grade_level}
+错题:
+{error_questions}
+
+知识点:"""
+            topics_resp = _provider._llm_client.generate(topic_prompt, max_tokens=200)
+            extracted_topics = [t.strip() for t in topics_resp.strip().split("\n") if t.strip() and len(t.strip()) > 1]
+
+            # 尝试用 graph_search 扩展知识点
+            for t in extracted_topics[:5]:
+                try:
+                    graph_result = graph_search.invoke({"keywords": [t]})
+                    graph_data = json.loads(graph_result) if isinstance(graph_result, str) else graph_result
+                    neighbors = graph_data.get("neighbors", [])
+                    topic_errors[t] = {
+                        "error_count": sum(1 for r in error_records if t in r["question"] or t in r.get("reason", "")),
+                        "related": [n.get("entity", "") for n in neighbors[:3]],
+                    }
+                except Exception:
+                    topic_errors[t] = {"error_count": 1, "related": []}
+
+        # Step 4: LLM 聚合分析 → 输出薄弱点报告
+        topic_summary = "\n".join(
+            f"- {t}: {info['error_count']}次错误, 关联: {', '.join(info['related'])}"
+            for t, info in topic_errors.items()
+        ) if topic_errors else "无"
+
+        report_prompt = f"""根据以下分析数据，生成诊断报告。返回严格JSON：
+
+学科: {subject} | 年级: {grade_level}
+总题数: {len(records)} | 正确数: {correct_count} | 正确率: {round(correct_count/len(records)*100, 1) if records else 0}%
+知识点统计:
+{topic_summary}
+
+返回JSON:
+{{"total_questions": {len(records)}, "correct_count": {correct_count}, "accuracy": {round(correct_count/len(records), 2) if records else 0},
+ "weaknesses": [{{"topic": "知识点", "error_rate": 0.75, "confidence": 0.85, "priority": "高/中/低", "related_topics": ["关联1"]}}],
+ "suggestion": "复习建议"}}"""
+
+        report_resp = _provider._llm_client.generate(report_prompt, max_tokens=600)
+        json_match = _re.search(r'\{[\s\S]*\}', report_resp)
+        if json_match:
+            return json_match.group()
+        return json.dumps({
+            "total_questions": len(records),
+            "correct_count": correct_count,
+            "accuracy": round(correct_count / len(records), 2) if records else 0,
+            "weaknesses": [],
+            "suggestion": report_resp.strip(),
+        }, ensure_ascii=False)
+
+    except Exception as e:
+        logger.warning(f"薄弱点诊断失败: {e}")
+        return json.dumps({"error": str(e), "weaknesses": []}, ensure_ascii=False)
+
+
+@tool
+def generate_exam_paper(subject: str, grade_level: str, topics: list,
+                        difficulties: list, question_count: int = 10) -> str:
+    """
+    生成模拟试卷：按学科/年级/知识点/难度分布生成一份模拟试卷。
+
+    适用场景：学生选择学科和知识点后，系统自动检索知识库中的题目，
+    按难度比例组装试卷，输出带题号、题型、分值、知识点的完整试卷。
+
+    Args:
+        subject: 学科：语文/数学/英语
+        grade_level: 年级：小学/初中/高中
+        topics: 知识点列表，如 ["一次函数", "方程"]，空列表则从知识库随机抽取
+        question_count: 题目数量，默认10
+        difficulties: 难度分布 ["易", "中", "难"]，按比例分配
+    """
+    try:
+        import re as _re
+
+        if not _provider._llm_client:
+            return json.dumps({"error": "LLM 未初始化"}, ensure_ascii=False)
+
+        # Step 1: 确定知识点
+        if not topics:
+            # 随机抽取：先用知识库搜索学科相关话题
+            fallback = _provider._knowledge_search_inner(f"{subject} {grade_level} 知识点", top_k=5)
+            try:
+                fallback_data = json.loads(fallback)
+                sources = fallback_data.get("sources", [])
+                topics = [s["content"][:30] for s in sources[:3] if s.get("content")]
+            except Exception:
+                topics = [f"{subject}-{grade_level}-核心"]
+
+        # Step 2: 检索候选题目
+        candidate_questions = []
+        for topic in topics[:3]:  # 最多 3 个知识点
+            result = _provider._knowledge_search_inner(f"{subject} {grade_level} {topic} 题目", top_k=8)
+            try:
+                data = json.loads(result)
+                for s in data.get("sources", []):
+                    if s.get("content"):
+                        candidate_questions.append({
+                            "topic": topic,
+                            "content": s["content"],
+                            "source": s.get("source", ""),
+                        })
+            except Exception:
+                pass
+
+        # Step 3: LLM 组装试卷
+        if candidate_questions:
+            # 有知识库题目 → 基于实际题目生成
+            pool_text = "\n---\n".join(
+                f"[{q['topic']}] {q['content'][:200]}" for q in candidate_questions[:15]
+            )
+            prompt = f"""根据以下知识库候选题目，组装一份模拟试卷。返回严格JSON。
+
+学科: {subject} | 年级: {grade_level}
+知识点: {', '.join(topics)}
+题目数量: {question_count}
+难度分布: {', '.join(difficulties)}
+候选题目池:
+{pool_text[:4000]}
+
+要求:
+1. 从候选池中挑选{question_count}道题，按难度比例分配
+2. 题型多样化：选择题、填空题、解答题合理搭配
+3. 每题标注题号、类型、知识点、难度、分值
+4. 总分100分
+
+返回JSON:
+{{"title": "试卷名称", "total_score": 100, "time_limit": 45,
+ "questions": [{{"id": 1, "type": "选择题", "topic": "知识点", "difficulty": "易", "score": 5, "content": "题目内容"}}],
+ "answer_key": [{{"id": 1, "answer": "参考答案", "hint": "解题提示"}}]}}"""
+        else:
+            # 无候选题目 → LLM 自主生成
+            prompt = f"""生成一份模拟试卷。返回严格JSON。
+
+学科: {subject} | 年级: {grade_level}
+知识点: {', '.join(topics)}
+题目数量: {question_count}
+难度分布: {', '.join(difficulties)}
+
+要求同上，题目内容需贴合{grade_level}{subject}教学大纲。
+
+返回JSON格式同上。"""
+
+        resp = _provider._llm_client.generate(prompt, max_tokens=2000)
+        json_match = _re.search(r'\{[\s\S]*\}', resp)
+        if json_match:
+            return json_match.group()
+        return json.dumps({"title": f"{subject}模拟卷", "questions": [], "error": "JSON解析失败"}, ensure_ascii=False)
+
+    except Exception as e:
+        logger.warning(f"生成试卷失败: {e}")
+        return json.dumps({"error": str(e), "questions": []}, ensure_ascii=False)
+
+
+@tool
+def explain_solution(question: str, correct_answer: str, subject: str,
+                     grade_level: str = "初中") -> str:
+    """
+    解题步骤讲解：对一道题目给出详细的解题步骤、知识点讲解和易错提醒。
+
+    适用场景：学生遇到不会的题目，输入题目和标准答案，
+    系统生成分步骤的解题过程，附前置知识链路和变式题推荐。
+
+    Args:
+        question: 题目内容
+        correct_answer: 标准答案
+        subject: 学科：语文/数学/英语
+        grade_level: 年级：小学/初中/高中，默认初中
+    """
+    try:
+        import re as _re
+
+        if not _provider._llm_client:
+            return json.dumps({"error": "LLM 未初始化"}, ensure_ascii=False)
+
+        # Step 1: 尝试用 graph_search 获取前置知识
+        prerequisites = []
+        try:
+            # 从题目中提取关键词
+            kw_prompt = f"从以下题目中提取3个核心知识点关键词，只输出关键词，逗号分隔：\n{question[:200]}"
+            kw_resp = _provider._llm_client.generate(kw_prompt, max_tokens=100)
+            keywords = [k.strip() for k in kw_resp.replace("，", ",").split(",") if k.strip()]
+            if keywords:
+                graph_result = graph_search.invoke({"keywords": keywords[:3]})
+                graph_data = json.loads(graph_result) if isinstance(graph_result, str) else graph_result
+                neighbors = graph_data.get("neighbors", [])
+                prerequisites = [n.get("entity", "") for n in neighbors[:5] if n.get("entity")]
+        except Exception as e:
+            logger.debug(f"graph_search 获取前置知识失败: {e}")
+
+        # Step 2: LLM 生成结构化讲解
+        prereq_text = "\n".join(f"- {p}" for p in prerequisites) if prerequisites else "无"
+        prompt = f"""对以下题目生成详细的结构化讲解。返回严格JSON。
+
+学科: {subject} | 年级: {grade_level}
+题目: {question[:500]}
+标准答案: {correct_answer[:300]}
+前置知识（来自知识图谱）:
+{prereq_text}
+
+要求:
+1. 步骤拆解：逐步展示解题过程，每步有描述和详细说明
+2. 知识点讲解：列出本题涉及的核心知识点
+3. 易错提醒：给出 2-3 个学生容易犯的错误
+4. 语言要适合{grade_level}学生理解
+
+返回JSON:
+{{"steps": [{{"step": 1, "description": "步骤描述", "detail": "详细说明"}}],
+ "knowledge_points": ["知识点1", "知识点2"],
+ "prerequisites": ["前置知识1"],
+ "common_mistakes": ["易错点1", "易错点2"],
+ "key_formula": "关键公式（如有）",
+ "analogy_hint": "可尝试找类似题巩固"}}"""
+
+        resp = _provider._llm_client.generate(prompt, max_tokens=1000)
+        json_match = _re.search(r'\{[\s\S]*\}', resp)
+        if json_match:
+            result = json.loads(json_match.group())
+            # 补充前置知识
+            if prerequisites and not result.get("prerequisites"):
+                result["prerequisites"] = prerequisites
+            return json.dumps(result, ensure_ascii=False)
+        return json.dumps({"steps": [], "knowledge_points": [], "error": "JSON解析失败"}, ensure_ascii=False)
+
+    except Exception as e:
+        logger.warning(f"解题讲解失败: {e}")
+        return json.dumps({"error": str(e)}, ensure_ascii=False)
+
+
 # ========================== 工具集合 ==========================
 
 # 全部工具列表
@@ -888,6 +1194,9 @@ ALL_TOOLS = [
     analogy_question,
     tavily_web_search,
     graph_search,
+    diagnose_weakness,
+    generate_exam_paper,
+    explain_solution,
 ]
 
 # 聊天Agent工具（不含批改专用工具）
@@ -897,6 +1206,9 @@ CHAT_TOOLS = [
     tavily_web_search,
     graph_search,
     analogy_question,
+    diagnose_weakness,
+    generate_exam_paper,
+    explain_solution,
 ]
 
 # 批改Agent工具

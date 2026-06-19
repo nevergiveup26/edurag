@@ -54,11 +54,16 @@ class VectorRetriever:
         except Exception as e:
             logger.error(f"查询向量化失败: {e}")
             return []
+
+        # 校验 query embedding 非空且维度正确
+        if not query_embedding or len(query_embedding) == 0:
+            logger.error(f"查询向量化返回空结果: query={query[:80]}...")
+            return []
         
         # 计算与所有文档片段的相似度
         results = []
         for chunk in self._chunks:
-            if chunk.embedding is None:
+            if chunk.embedding is None or (isinstance(chunk.embedding, list) and len(chunk.embedding) == 0):
                 continue
             
             # 维度不匹配时跳过该chunk
