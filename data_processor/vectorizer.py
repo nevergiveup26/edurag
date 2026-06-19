@@ -140,8 +140,14 @@ class Vectorizer:
 
     def cosine_similarity(self, vec1: List[float], vec2: List[float]) -> float:
         """计算两个向量的余弦相似度"""
-        v1 = np.array(vec1)
-        v2 = np.array(vec2)
+        v1 = np.array(vec1, dtype=np.float32)
+        v2 = np.array(vec2, dtype=np.float32)
+
+        # 维度校验：0 维或标量 embedding 直接返回 0
+        if v1.ndim == 0 or v2.ndim == 0:
+            return 0.0
+        if v1.shape[0] != v2.shape[0]:
+            return 0.0
 
         norm1 = np.linalg.norm(v1)
         norm2 = np.linalg.norm(v2)

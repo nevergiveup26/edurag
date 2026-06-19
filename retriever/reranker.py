@@ -30,7 +30,7 @@ class Reranker:
     # DashScope qwen3-rerank endpoint (OpenAI-compatible)
     _RERANK_URL = "https://dashscope.aliyuncs.com/compatible-api/v1/reranks"
     _RERANK_MODEL = "qwen3-rerank"
-    _DEFAULT_INSTRUCT = "Given a web search query, retrieve relevant passages that answer the query."
+    _DEFAULT_INSTRUCT = "给定一个教育类查询，检索与知识点讲解、题目解析、学科概念最相关的文档段落。"
 
     def __init__(self, model_name: str = None):
         config = ConfigManager()
@@ -121,8 +121,8 @@ class Reranker:
         top_k = top_k or self.rerank_top_k
 
         try:
-            documents = [r.chunk.content[:500] for r in results]
-            scores = self._call_rerank_api(query, documents, top_n=top_k)
+            documents = [r.chunk.content[:3000] for r in results]
+            scores = self._call_rerank_api(query, documents, top_n=len(documents))
 
             # 更新分数
             for result, score in zip(results, scores):

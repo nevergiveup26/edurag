@@ -71,7 +71,7 @@ class HybridRetriever:
         try:
             vector_results = self.vector_retriever.search(query, top_k=top_k * 2, metadata_filter=metadata_filter)
         except Exception as e:
-            logger.warning(f"向量检索失败（降级到纯BM25）: {e}")
+            logger.warning(f"[Hybrid] 向量检索完全失败，降级到纯BM25: {type(e).__name__}: {e}")
         
         # 如果指定了 doc_id 过滤，在合并前先过滤
         if effective_filter:
